@@ -1,0 +1,24 @@
+{
+    "parent":"lmenu:parent/key_press_any",
+    "criteria": {
+        "key":{
+            "trigger": "tick",
+            "conditions": {
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "input": {
+                            "sneak": true
+                        }
+                    }
+                }
+            }
+        },
+        "enabler":{
+            "trigger": "impossible"
+        }
+    },
+    "rewards": {
+        "function": "lmenu:on_spot/key_press/crouch"
+    }
+}

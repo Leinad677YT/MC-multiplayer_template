@@ -1,0 +1,24 @@
+{
+    "condition": "entity_scores",
+    "entity": "this",
+    "scores": {
+        "lmenu.owner_id": {
+            "max": {
+                "type": "score",
+                "score": "lmenu.player_id",
+                "target": {
+                    "type": "fixed",
+                    "name": "#temp"
+                }
+            },
+            "min": {
+                "type": "score",
+                "score": "lmenu.player_id",
+                "target": {
+                    "type": "fixed",
+                    "name": "#temp"
+                }
+            }
+        }
+    }
+}

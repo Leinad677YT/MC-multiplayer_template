@@ -1,0 +1,27 @@
+{
+    "parent":"lmenu:parent/key_press",
+    "criteria": {
+        "key":{
+            "trigger": "tick",
+            "conditions": {
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "input": {
+                            "left": true
+                        },
+                        "advancements": {
+                            "lmenu:key_press/none":true
+                        }
+                    }
+                }
+            }
+        },
+        "enabler":{
+            "trigger": "impossible"
+        }
+    },
+    "rewards": {
+        "function": "lmenu:key_press/left"
+    }
+}
