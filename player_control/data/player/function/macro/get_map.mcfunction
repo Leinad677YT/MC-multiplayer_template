@@ -1,0 +1,1 @@
+$data modify storage leinad_temp:player from_map set from storage lplayer:map $(list)[{uuid:$(uuid)}]

@@ -1,8 +1,8 @@
 ## EXECUTED [as + at[anchored[eyes], pos[^ ^ ^]]] THE PLAYER WHO TRIGGERED IT
 
 ## SET DISPLAYS IDS
-    scoreboard players operation #temp lmenu.player_id = @s lmenu.player_id
-    execute summon text_display store result score @s lmenu.owner_id summon text_display store result score @s lmenu.owner_id summon text_display store result score @s lmenu.owner_id summon text_display store result score @s lmenu.owner_id summon text_display store result score @s lmenu.owner_id summon item_display store result score @s lmenu.owner_id summon item_display store result score @s lmenu.owner_id run scoreboard players get #temp lmenu.player_id
+    scoreboard players operation #temp lplayer.id = @s lplayer.id
+    execute summon text_display store result score @s lmenu.owner_id summon text_display store result score @s lmenu.owner_id summon text_display store result score @s lmenu.owner_id summon text_display store result score @s lmenu.owner_id summon text_display store result score @s lmenu.owner_id summon item_display store result score @s lmenu.owner_id summon item_display store result score @s lmenu.owner_id run scoreboard players get #temp lplayer.id
 
     scoreboard players set @e[distance=..1,predicate=lmenu:display_from_player,limit=7] lmenu.entity_type 10
     execute as @e[distance=..1,predicate=lmenu:display_from_player,limit=7] run data merge entity @s {billboard:"center",background:0,shadow:true,view_range:0.001}

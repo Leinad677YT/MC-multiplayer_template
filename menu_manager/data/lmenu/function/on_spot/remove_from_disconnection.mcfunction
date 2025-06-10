@@ -1,5 +1,5 @@
 ## REMOVE ENTITIES
-    $scoreboard players operation #temp lmenu.player_id = $(name) lmenu.player_id
+    $scoreboard players operation #temp lplayer.id = $(name) lplayer.id
     kill @e[predicate=lmenu:display_from_player,scores={lmenu.entity_type=10}]
 ##
 

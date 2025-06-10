@@ -1,0 +1,1 @@
+$data modify storage lplayer:map $(list)[{uuid:$(uuid)}].name set value "$(name)"

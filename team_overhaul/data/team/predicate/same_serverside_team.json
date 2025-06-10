@@ -1,0 +1,24 @@
+{
+    "condition": "entity_scores",
+    "entity": "this",
+    "scores": {
+        "lteam.current":{
+            "min": {
+                "type": "score",
+                "score": "lteam.current",
+                "target": {
+                    "type": "fixed",
+                    "name": "#temp"
+                }
+            },
+            "max": {
+                "type": "score",
+                "score": "lteam.current",
+                "target": {
+                    "type": "fixed",
+                    "name": "#temp"
+                }
+            }
+        }
+    }
+}

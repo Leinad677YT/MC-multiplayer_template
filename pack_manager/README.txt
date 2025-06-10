@@ -1,0 +1,1 @@
+this datapack is the one that controls everything, the main load and tick functions should be here

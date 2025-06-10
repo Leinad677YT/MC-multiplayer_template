@@ -1,6 +1,6 @@
  playsound block.amethyst_block.resonate player @s ~ ~ ~ 1 1 1
 ## EXECUTE function
-    scoreboard players operation #temp lmenu.player_id = @s lmenu.player_id
+    scoreboard players operation #temp lplayer.id = @s lplayer.id
     execute if data storage leinad_temp:menu next.function run function lmenu:do_nested_function with storage leinad_temp:menu next
 ##
 ## ENABLE ADVANCEMENTS

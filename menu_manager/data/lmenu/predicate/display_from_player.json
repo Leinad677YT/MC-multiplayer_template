@@ -5,7 +5,7 @@
         "lmenu.owner_id": {
             "max": {
                 "type": "score",
-                "score": "lmenu.player_id",
+                "score": "lplayer.id",
                 "target": {
                     "type": "fixed",
                     "name": "#temp"
@@ -13,7 +13,7 @@
             },
             "min": {
                 "type": "score",
-                "score": "lmenu.player_id",
+                "score": "lplayer.id",
                 "target": {
                     "type": "fixed",
                     "name": "#temp"
