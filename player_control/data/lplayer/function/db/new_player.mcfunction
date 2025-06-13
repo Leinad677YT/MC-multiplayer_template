@@ -14,4 +14,4 @@
     $data modify storage z_p$(name):root data.id set value $(id)
 ##
 
-scoreboard players set @s deathCount 0
+scoreboard players set @s lcore.deathCount 0

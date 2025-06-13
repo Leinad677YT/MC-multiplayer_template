@@ -28,9 +28,9 @@
 ##
 
 ## CREATE NEW SETUP
-    scoreboard players set #temp lmenu.temp_condition 0
-    scoreboard players set #temp1 lmenu.temp_condition 0
-    scoreboard players set #temp2 lmenu.temp_condition 0
+    scoreboard players set #temp lcore.temp_condition 0
+    scoreboard players set #temp1 lcore.temp_condition 0
+    scoreboard players set #temp2 lcore.temp_condition 0
     $execute positioned $(x).0 $(y).0 $(z).0 run function lmenu:control/z/loop
     $execute as @e[tag=lmenu.main_menu] run rotate @s $(r1) $(r2)
 ##

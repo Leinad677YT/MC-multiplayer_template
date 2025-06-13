@@ -20,8 +20,8 @@
 ##
 
 ## REMOVE OLD SETUP
-    execute store result score #temp lmenu.temp_condition run kill @e[tag=lmenu.main_menu]
+    execute store result score #temp lcore.temp_condition run kill @e[tag=lmenu.main_menu]
 ##
 ## ANNOUNCE
-    tellraw @s [{text:"[!] ",color:"#ff9900"},{translate:"leinad.menu.tellraw.remove_main_setup",fallback:"You have removed %s entities from the main menu\n",with:[{score:{name:"#temp",objective:"lmenu.temp_condition"},color:"#ff5555"}]},{translate:"leinad.debug.ensure_all_ok",fallback:"   > remember to ensure everything is okay",color:"dark_gray"}]
+    tellraw @s [{text:"[!] ",color:"#ff9900"},{translate:"leinad.menu.tellraw.remove_main_setup",fallback:"You have removed %s entities from the main menu\n",with:[{score:{name:"#temp",objective:"lcore.temp_condition"},color:"#ff5555"}]},{translate:"leinad.debug.ensure_all_ok",fallback:"   > remember to ensure everything is okay",color:"dark_gray"}]
 ##

@@ -3,7 +3,6 @@
 ##
 ## REMOVE SCOREBOARDS
         scoreboard objectives add llogin.online dummy
-        scoreboard objectives add llogin.autokick dummy
 ##
 ## FORCELOAD
     execute in overworld run forceload add 0 0

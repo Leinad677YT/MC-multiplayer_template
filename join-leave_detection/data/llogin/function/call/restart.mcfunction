@@ -36,7 +36,7 @@
     
     ## SET ONLINE PLAYERS
         scoreboard players add @a llogin.online 0
-        scoreboard players set @a[tag=online] llogin.online 1
+        scoreboard players set @a[tag=llogin.online] llogin.online 1
     ##
 ##
 

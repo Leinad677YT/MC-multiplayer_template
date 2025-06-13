@@ -19,5 +19,4 @@
 ##
 ## ADD SCOREBOARDS
         scoreboard objectives remove llogin.online
-        scoreboard objectives remove llogin.autokick
 ##

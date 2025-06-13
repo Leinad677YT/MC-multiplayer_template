@@ -17,11 +17,11 @@
 
 
 ## CHECK IF THEY ARE NEW IN THE WORLD
-    execute store result score #temp condition run function lplayer:control/isnot_new
+    execute store result score #temp lcore.temp_condition run function lplayer:control/isnot_new
 
-    execute if score #temp condition matches 1..2 run say I HAD DATA ALREADY
-    execute if score #temp condition matches 2 run say BUT CHANGED MY NICKNAME
-    execute if score #temp condition matches 0 run say I AM NEW 
+    execute if score #temp lcore.temp_condition matches 1..2 run say I HAD DATA ALREADY
+    execute if score #temp lcore.temp_condition matches 2 run say BUT CHANGED MY NICKNAME
+    execute if score #temp lcore.temp_condition matches 0 run say I AM NEW 
 
     ## UPDATE PREF-SUF
         function lteam:update_player with storage leinad_temp:llogin player

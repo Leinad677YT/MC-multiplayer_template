@@ -61,7 +61,7 @@
     ##
 
     ## SET NEW {UUID-id MAP + DATA}
-        execute store result score @s lplayer.id run scoreboard players add #newID lplayer.id 1
+        execute store result storage leinad_temp:player macro.id int 1 store result score @s lplayer.id run scoreboard players add #newID lplayer.id 1
         data modify storage leinad_temp:player new_data set from storage leinad_temp:player macro
         data remove storage leinad_temp:player new_data.list
     ##

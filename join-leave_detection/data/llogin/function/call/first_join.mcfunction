@@ -1,1 +1,1 @@
-scoreboard players set @s deathCount 0
+scoreboard players set @s lcore.deathCount 0

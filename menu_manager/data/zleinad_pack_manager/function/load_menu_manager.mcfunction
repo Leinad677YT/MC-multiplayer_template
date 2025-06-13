@@ -2,16 +2,16 @@
 tellraw Leinad677YT [{text:"[!] ",color:dark_aqua},{translate:"leinad.menu.tellraw.load",fallback:"Loading menu_manager",color:"gray"}]
 ##
 ## ADD SCOREBOARDS
-    scoreboard objectives add lmenu.temp_condition dummy
+    scoreboard objectives add lcore.temp_condition dummy
 
     scoreboard objectives add lmenu.session_id dummy
         # the datapack is consistent up to 64 but you may not need that many
         scoreboard players set #max_players lmenu.session_id 64
         scoreboard players set #points_per_row lmenu.session_id 8
 
-    scoreboard objectives add lmenu.owner_id dummy
+    scoreboard objectives add lcore.owner_id dummy
     scoreboard objectives add lplayer.id dummy
-    scoreboard objectives add lmenu.entity_id dummy
+    scoreboard objectives add lcore.entity_id dummy
     scoreboard objectives add lmenu.entity_type dummy
         # 10 = on-spot_menus
     

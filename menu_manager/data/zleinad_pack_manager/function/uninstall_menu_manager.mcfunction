@@ -22,13 +22,13 @@
     tellraw @s [{translate:"leinad.menu.tellraw.uninstall",fallback:"lmenu has been uninstalled"}]
 ##
 ## ADD SCOREBOARDS
-    scoreboard objectives remove lmenu.temp_condition
+    scoreboard objectives remove lcore.temp_condition
 
     scoreboard objectives remove lmenu.session_id
 
-    scoreboard objectives remove lmenu.owner_id
+    scoreboard objectives remove lcore.owner_id
     scoreboard objectives remove lplayer.id
-    scoreboard objectives remove lmenu.entity_id
+    scoreboard objectives remove lcore.entity_id
     scoreboard objectives remove lmenu.entity_type
     
     scoreboard objectives remove lmenu.stage_main
