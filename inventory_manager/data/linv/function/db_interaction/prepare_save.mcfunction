@@ -1,0 +1,1 @@
+$execute positioned 2 -63 0 positioned ~$(x) ~ ~$(z) run function linv:db_interaction/save with storage leinad_temp:player invcache

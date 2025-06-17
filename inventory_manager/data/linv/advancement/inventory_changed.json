@@ -1,0 +1,7 @@
+{
+    "criteria": {
+        "change":{
+            "trigger": "inventory_changed"
+        }
+    }
+}

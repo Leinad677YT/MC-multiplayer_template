@@ -1,6 +1,6 @@
 ## REMOVE ENTITIES
     scoreboard players operation #temp lplayer.id = @s lplayer.id
-    kill @e[predicate=lmenu:display_from_player,scores={lmenu.entity_type=10}]
+    kill @e[predicate=lmenu:display_from_player,scores={lcore.entity_type=10}]
 ##
 
 ## ENABLE OWN MOVEMENT AGAIN

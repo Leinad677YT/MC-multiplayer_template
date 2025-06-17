@@ -14,11 +14,6 @@
   #   BEFORE DECIDING WHICH MENU TYPES YOU NEED 
 ###
 
-## DIND'T READ
-    execute if score #z_i_need_this_to_avoid_people_from_not_reading_readmes lmenu.stage_main matches 1 run data modify storage leinad_temp:menu loaded set value 1b
-    execute unless data storage leinad_temp:menu {loaded:1b} run return run tellraw @s [{text:"",color:"#ff9900"},{text:"[!] ",color:"#9e0000"},{translate:"leinad.debug.load_function_not_executed",fallback:"You didn't follow the README file, try again later C:"}]
-##
-
 ## REMOVE OLD SETUP
     execute store result score #temp lcore.temp_condition run kill @e[tag=lmenu.main_menu]
 ##

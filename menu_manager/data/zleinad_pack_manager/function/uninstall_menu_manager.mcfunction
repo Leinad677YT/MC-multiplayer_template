@@ -16,21 +16,12 @@
 
 ## REMOVE "VISIBLE" MENUS
     function lmenu:control/delete_main_fixed_setup
-    kill @e[scores={lmenu.entity_type=10}]
+    kill @e[scores={lcore.entity_type=10}]
 ##
 ## TELLRAW
     tellraw @s [{translate:"leinad.menu.tellraw.uninstall",fallback:"lmenu has been uninstalled"}]
 ##
 ## ADD SCOREBOARDS
-    scoreboard objectives remove lcore.temp_condition
-
-    scoreboard objectives remove lmenu.session_id
-
-    scoreboard objectives remove lcore.owner_id
-    scoreboard objectives remove lplayer.id
-    scoreboard objectives remove lcore.entity_id
-    scoreboard objectives remove lmenu.entity_type
-    
     scoreboard objectives remove lmenu.stage_main
 
     scoreboard objectives remove lmenu.stage_secondary

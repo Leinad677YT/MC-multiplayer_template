@@ -22,4 +22,6 @@ tellraw Leinad677YT [{text:"[!] ",color:dark_aqua},{translate:"leinad.team.tellr
     execute in overworld run forceload add 0 0
 ##
 
-tellraw Leinad677YT [{text:"[^] ",color:dark_aqua},{text:"Fin de carga de team_overhaul",color:"gray"}]
+## RELOAD MENU DATA
+    function lmenu:control/reload_data
+##

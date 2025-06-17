@@ -10,7 +10,7 @@
     
     ## GET NICKNAME
         # in this very specific situation it was already set before
-        # loot replace block 0 -63 0 container.0 loot server:phead_own
+        # loot replace block 0 -63 0 container.0 loot lcore:phead_own
 
         ## LOWERCASE THE NAME            THX SILICAT <3
             data modify storage stringlib:temp data.Input set from block 0 -63 0 Items[0].components."minecraft:profile".name

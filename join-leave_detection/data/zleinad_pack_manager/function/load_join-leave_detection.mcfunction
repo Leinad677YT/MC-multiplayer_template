@@ -3,6 +3,9 @@
 ##
 ## REMOVE SCOREBOARDS
         scoreboard objectives add llogin.online dummy
+        scoreboard objectives add llogin.session_id dummy
+            scoreboard players set #max_players llogin.session_id 64
+
 ##
 ## FORCELOAD
     execute in overworld run forceload add 0 0

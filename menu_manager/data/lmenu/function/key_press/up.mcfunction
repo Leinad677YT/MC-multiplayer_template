@@ -14,9 +14,9 @@
 
 
 
-    execute store result score #temp1 lcore.temp_condition run scoreboard players operation #temp lcore.temp_condition = @s lmenu.session_id
-    execute store result storage leinad_temp:menu temp.x int 1 run scoreboard players operation #temp lcore.temp_condition %= #points_per_row lmenu.session_id
-    execute store result storage leinad_temp:menu temp.z int 1 run scoreboard players operation #temp1 lcore.temp_condition /= #points_per_row lmenu.session_id
+    execute store result score #temp1 lcore.temp_condition run scoreboard players operation #temp lcore.temp_condition = @s llogin.session_id
+    execute store result storage leinad_temp:menu temp.x int 1 run scoreboard players operation #temp lcore.temp_condition %= #points_per_row llogin.session_id
+    execute store result storage leinad_temp:menu temp.z int 1 run scoreboard players operation #temp1 lcore.temp_condition /= #points_per_row llogin.session_id
 ##
 
 execute store result score @s lmenu.stage_secondary run data get storage leinad_temp:menu next.adv_u.target_stage

@@ -6,7 +6,7 @@
 ##
 
 ## GET NAME + UUID
-    loot replace block 0 -63 0 container.0 loot server:phead_own
+    loot replace block 0 -63 0 container.0 loot lcore:phead_own
     data modify storage leinad_temp:llogin player set from block 0 -63 0 Items[0].components.minecraft:profile
 
 ## 
@@ -32,4 +32,5 @@
 ## APPEND TO ONLINE LIST
     data modify storage leinad_temp:llogin online append from storage leinad_temp:llogin player.name
     scoreboard players set @s llogin.online 1
+    scoreboard players set @s llogin.session_id -1
 ##

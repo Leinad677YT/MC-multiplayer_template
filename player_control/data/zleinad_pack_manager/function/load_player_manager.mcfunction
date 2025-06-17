@@ -3,5 +3,5 @@
 ##
 ## ADD SCOREBOARDS
     scoreboard objectives add lplayer.id dummy
-        scoreboard players add #all lplayer.id 0
+        scoreboard players add #newID lplayer.id 0
 ##
