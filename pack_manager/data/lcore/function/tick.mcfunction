@@ -24,7 +24,7 @@
 ##
 
 ## entity management # CORE
-    execute as @e[type=#lcore:entity_with_id,tag=!lcore.has_data] run function lcore:entity_management/new
+    execute as @e[type=!#lcore:_no_ai] run function lcore:entity_management/no_ai
 ##
 
 ## module calls # MODULE

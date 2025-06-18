@@ -7,7 +7,7 @@
 
 ## GET NAME + UUID
     loot replace block 0 -63 0 container.0 loot lcore:phead_own
-    data modify storage leinad_temp:llogin player set from block 0 -63 0 Items[0].components.minecraft:profile
+    data modify storage leinad_temp:login player set from block 0 -63 0 Items[0].components.minecraft:profile
 
 ## 
 
@@ -24,13 +24,13 @@
     execute if score #temp lcore.temp_condition matches 0 run say I AM NEW 
 
     ## UPDATE PREF-SUF
-        function lteam:update_player with storage leinad_temp:llogin player
+        function lteam:update_player with storage leinad_temp:login player
         scoreboard players reset @s lteam.current
     ##
 ##
 
 ## APPEND TO ONLINE LIST
-    data modify storage leinad_temp:llogin online append from storage leinad_temp:llogin player.name
+    data modify storage leinad_temp:login online append from storage leinad_temp:login player.name
     scoreboard players set @s llogin.online 1
     scoreboard players set @s llogin.session_id -1
 ##

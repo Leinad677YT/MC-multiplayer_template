@@ -1,18 +1,18 @@
 ## GET NAME[0]
     
-    data modify storage leinad_temp:llogin name set string storage leinad_temp:llogin online[0]
+    data modify storage leinad_temp:login name set string storage leinad_temp:login online[0]
     
     ## DELETE FROM ARRAY
-        data remove storage leinad_temp:llogin online[0]
+        data remove storage leinad_temp:login online[0]
     ##
 ##
 
 ## DISCONECTED CHECK
-    function llogin:call/disconnected with storage leinad_temp:llogin
+    function llogin:call/disconnected with storage leinad_temp:login
 ##
 
 ## NEEDS EXTRA ITERATIONS?
-    execute if data storage leinad_temp:llogin online[0] run return run function llogin:call/restart
+    execute if data storage leinad_temp:login online[0] run return run function llogin:call/restart
 ##
 
 ## < POST-LOOP > ##
@@ -41,8 +41,8 @@
 ##
 
 ## UPDATE PLAYERLIST
-    data modify storage leinad_temp:llogin online set from storage leinad_temp:llogin online_
-    data remove storage leinad_temp:llogin online_
+    data modify storage leinad_temp:login online set from storage leinad_temp:login online_
+    data remove storage leinad_temp:login online_
 ##
 
 

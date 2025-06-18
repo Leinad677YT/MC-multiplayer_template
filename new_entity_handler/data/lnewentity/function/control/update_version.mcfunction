@@ -1,0 +1,1 @@
+$data modify storage leinad_perm:version on_entity_spawn.data.$(version) set from storage leinad_perm:version on_entity_spawn.data.current
