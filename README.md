@@ -24,6 +24,8 @@ Without them, none of the modules would work.
 > - **menu_manager**
 >   - Library to make input menus easily with simple functions
 >   - See `https://github.com/Leinad677YT/MC-input_menu_manager` for more info
+> - **stringlib**
+>   - adapted version of `@SilicatYT`'s library (ty)
 > ### MODULES
 > - **hit_detection [MID]**
 >   - Adds a fixed item into entities that makes you able to control all attacks
