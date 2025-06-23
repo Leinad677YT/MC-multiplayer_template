@@ -5,10 +5,11 @@
 ## MODIFYABLE
     ## NEW SPAWN_DATA ON THIS VERSION
         data modify storage leinad_temp:entity_spawn macro.data set value {scoreboards:[{name:"lcore.entity_id",non_deleted_on_module:1b}],tags:[]}
+        function #zleinad_pack_manager:call/new_entity/entity_data
     ##
 ##
 
-## TO AVOID USELESS CHECKS
+## TO AVOID USELESS CHECKS ON ENTITIES
     scoreboard objectives remove lnewentity.aux_checks
     scoreboard objectives add lnewentity.aux_checks dummy
 ##
@@ -19,7 +20,7 @@
 ##     N # Continue
 
 ## PREPARE SCOREBOARDS
-    scoreboard objectives add lcore.entity_id dummy
+    # scoreboard objectives add lcore.entity_id dummy
     scoreboard players set #entities_have_id lcore.entity_id 1
 ##
 

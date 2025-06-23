@@ -1,1 +1,0 @@
-$function linv:slot/reset_from_hotb-8/$(slot)

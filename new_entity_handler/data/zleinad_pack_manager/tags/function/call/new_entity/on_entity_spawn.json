@@ -1,0 +1,6 @@
+{
+    "values": [
+        "#zleinad_pack_manager:core/new_entity/on_entity_spawn",
+        "#zleinad_pack_manager:user/new_entity/on_entity_spawn"
+    ]
+}

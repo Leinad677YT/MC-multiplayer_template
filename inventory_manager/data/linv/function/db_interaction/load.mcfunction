@@ -1,19 +1,21 @@
-# survival:{inventory:[],e_chest:[],xp_p:0,xp_l:0,food:20,health:20}
+# MODE:{inventory:[],e_chest:[],equipment:[],xp_p:0,xp_l:0,health:20,pos:{},spawnpoint:{},max_health:20}
 
 ## CACHE
-$data modify block ~ ~ ~ Items set from storage z_p$(name):root data.$(mode).e_chest
-$data modify block ~ ~ ~1 Items set from storage z_p$(name):root data.$(mode).inventory
-$data modify block ~ ~ ~2 Items set from storage z_p$(name):root data.$(mode).equipment
+$data modify block ~ ~ ~ Items set from storage z_p$(lower):root data.$(mode).inventory.heavy.e_chest
+$data modify block ~ ~ ~1 Items set from storage z_p$(lower):root data.$(mode).inventory.heavy.inventory
+$data modify block ~ ~ ~2 Items set from storage z_p$(lower):root data.$(mode).inventory.heavy.equipment
 
 ## OTHER DATA
-$function linv:db_interaction/setdata/set_food with storage z_p$(name):root data.$(mode)
-$function linv:db_interaction/setdata/set_health with storage z_p$(name):root data.$(mode)
-$function linv:db_interaction/setdata/set_xp with storage z_p$(name):root data.$(mode)
+$data modify storage leinad_temp:player inventory set from storage z_p$(lower):root data.$(mode).inventory.light
+
+## HEALTH
+function linv:db_interaction/setdata/set_health with storage leinad_temp:player inventory
 
 ## POSITINAL STUFF
-$function linv:db_interaction/setdata/set_pos with storage z_p$(name):root data.$(mode).pos
-$function linv:db_interaction/setdata/set_spawn with storage z_p$(name):root data.$(mode).spawnpoint
+function linv:user/set_pos with storage leinad_temp:player inventory.pos
+function linv:db_interaction/setdata/set_spawn with storage leinad_temp:player inventory.spawnpoint
 
+execute if data storage leinad_temp:player inventory{stores_items:false} run return fail
 ## ITEMS
 item replace entity @s enderchest.0 from block ~ ~ ~ container.0
 item replace entity @s enderchest.1 from block ~ ~ ~ container.1
@@ -91,7 +93,7 @@ item replace entity @s weapon.offhand from block ~ ~ ~2 container.13
 item replace entity @s player.cursor from block ~ ~ ~2 container.14
 
 execute at @s run summon item ~ ~ ~ {Item:{id:"stone"},Tags:["temp_check2"]}
-$execute at @s as @e[type=item,tag=temp_check2,distance=..2,limit=1] in overworld positioned 2 -63 0 positioned ~$(x) ~ ~$(z) run item replace entity @s container.0 from block ~ ~ ~2 container.15
+$execute at @s as @e[type=item,tag=temp_check2,distance=..2,limit=1] in lcore:zvoid positioned 0 $(session) 0 run item replace entity @s container.0 from block ~ ~ ~2 container.15
 
 execute at @s run summon item ~ ~ ~ {Item:{id:"stone"},Tags:["temp_check3"]}
-$execute at @s as @e[type=item,tag=temp_check3,distance=..2,limit=1] in overworld positioned 2 -63 0 positioned ~$(x) ~ ~$(z) run item replace entity @s container.0 from block ~ ~ ~2 container.16
+$execute at @s as @e[type=item,tag=temp_check3,distance=..2,limit=1] in lcore:zvoid positioned 0 $(session) 0 run item replace entity @s container.0 from block ~ ~ ~2 container.16

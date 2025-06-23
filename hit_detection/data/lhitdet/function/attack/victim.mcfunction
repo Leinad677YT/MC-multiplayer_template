@@ -6,8 +6,8 @@ scoreboard players operation @s lhitdet.attacked_by = #temp lcore.temp_condition
 scoreboard players operation @s lhitdet.attacked_by_player = #temp1 lcore.temp_condition
 
 
-function #lhitdet:victim
-execute on attacker run function #lhitdet:attacker
+function #zleinad_pack_manager:call/hit_det/victim
+execute on attacker run function #zleinad_pack_manager:call/hit_det/attacker
 ## Melee / Ranged
 execute if score #is_ranged lcore.temp_condition matches 0 run return run function lhitdet:attack/melee
 

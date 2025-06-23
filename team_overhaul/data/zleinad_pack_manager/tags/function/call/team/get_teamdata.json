@@ -1,0 +1,6 @@
+{
+    "values": [
+        "#zleinad_pack_manager:core/team/get_teamdata",
+        "#zleinad_pack_manager:user/team/get_teamdata"
+    ]
+}

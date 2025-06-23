@@ -19,9 +19,12 @@
 
 ## 
 
-## STORE FOR IMPORT
-    data modify storage stringlib:temp data.Input set from storage leinad_temp:login name
-    function str:tolow_fast
-    data modify storage leinad_temp:login import.name set from storage stringlib:output to_lowercase
-    function lplayer:macro/save_import with storage leinad_temp:login import
+## CALL THE OTHER FUNCTIONS
+    $function #zleinad_pack_manager:call/login/disconnected with storage leinad_perm:online session[{name:"$(name)"}]
+##
+
+## FINISH
+    ## SESSION DATA
+        $data remove storage leinad_perm:online session[{name:"$(name)"}]
+    ##
 ##

@@ -2,13 +2,15 @@
 
 tellraw Leinad677YT [{text:"[!] ",color:dark_aqua},{translate:"leinad.team.tellraw.load",fallback:"Loading team_overhaul",color:"gray"}]
 
+## FORCELOAD
+    execute in lcore:zvoid run setblock 15 1 15 oak_sign
+##
+
 ## SCOREBOARDS
     
     ## VISUALS
         scoreboard objectives add lteam.pref dummy
-        scoreboard objectives add lteam.suf1 dummy
-        scoreboard objectives add lteam.suf2 dummy
-        scoreboard objectives add lteam.suf3 dummy
+        scoreboard objectives add lteam.suff dummy
     ##
 
     ## SERVERSIDE
@@ -16,12 +18,4 @@ tellraw Leinad677YT [{text:"[!] ",color:dark_aqua},{translate:"leinad.team.tellr
         scoreboard objectives add lteam.invited dummy
         scoreboard objectives add lteam.invited_to dummy
     ##
-##
-
-## FORCELOAD not needed in this datapack group
-    execute in overworld run forceload add 0 0
-##
-
-## RELOAD MENU DATA
-    function lmenu:control/reload_data
 ##

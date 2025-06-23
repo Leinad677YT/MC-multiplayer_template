@@ -1,5 +1,5 @@
 # MC-multiplayer_template
-The root folders on this repository are all datapacks, but there are a few of them that should be installed at the same time, the **core datapacks**
+The root folders on this repository are all datapacks, but there are a few of them that should be installed at the same time, the **core datapacks**.
 
 Because this aims to help with multiplayer compatibility, the core datapacks handle players joining/leaving the world, player databases, per-player teams and some ID systems. 
 Without them, none of the modules would work.
@@ -17,15 +17,18 @@ Without them, none of the modules would work.
 > - **join-leave_detection**
 >   - Adds function calls for login related events
 > - **player_manager**
->   - Creates 1 storage for every player, to move the data by moving the file
+>   - Creates and manages 1 storage for every player, to move the data by moving the file
 > - **team_overhaul**
 >   - Creates a team for every player in the world
 >   - This allows to customize prefixes/suffixes, to allow friendly fire, see the `hit_detection` module
+> ### CORE MODULES (works as core, but not required)
+> - **new_entity_handler**
+>   - Auto-assigns entities inside certain tag a new id, it always being the one in the #newID `lcore.entity_id` score (increments by 1 on every spawn)
+>   - Creates a call for entities spawning
+> ### CORE LIBRARIES
 > - **menu_manager**
 >   - Library to make input menus easily with simple functions
 >   - See `https://github.com/Leinad677YT/MC-input_menu_manager` for more info
-> - **stringlib**
->   - adapted version of `@SilicatYT`'s library (ty)
 > ### MODULES
 > - **hit_detection [MID]**
 >   - Adds a fixed item into entities that makes you able to control all attacks

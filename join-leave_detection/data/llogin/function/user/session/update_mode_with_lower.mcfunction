@@ -1,0 +1,1 @@
+$data modify storage leinad_perm:online session[{lower:$(lower)}].mode set value "$(mode)"

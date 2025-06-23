@@ -16,6 +16,7 @@
             "id": "zleinad_pack_manager:load_menu_manager",
             "required": false
         },
-        "#zleinad_pack_manager:load_modules"
+        "#zleinad_pack_manager:load_modules",
+        "#zleinad_pack_manager:load_user"
     ]
 }

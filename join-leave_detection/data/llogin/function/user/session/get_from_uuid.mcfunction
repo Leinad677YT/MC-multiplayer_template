@@ -1,0 +1,1 @@
+$data modify storage leinad_temp:player playerdata set from storage leinad_perm:online session[{uuid:$(uuid)}]

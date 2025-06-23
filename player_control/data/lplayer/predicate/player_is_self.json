@@ -1,0 +1,24 @@
+{
+    "condition": "entity_scores",
+    "entity": "this",
+    "scores": {
+        "lplayer.id": {
+            "min": {
+                "type": "score",
+                "score": "lplayer.id",
+                "target": {
+                    "type": "fixed",
+                    "name": "#temp"
+                }
+            },
+            "max": {
+                "type": "score",
+                "score": "lplayer.id",
+                "target": {
+                    "type": "fixed",
+                    "name": "#temp"
+                }
+            }
+        }
+    }
+}

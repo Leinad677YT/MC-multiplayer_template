@@ -1,0 +1,6 @@
+{
+    "values": [
+        "#zleinad_pack_manager:core/inventory/change_pre_cache",
+        "#zleinad_pack_manager:user/inventory/change_pre_cache"
+    ]
+}

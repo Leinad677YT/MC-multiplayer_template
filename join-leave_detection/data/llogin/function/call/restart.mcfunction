@@ -2,13 +2,13 @@
     
     data modify storage leinad_temp:login name set string storage leinad_temp:login online[0]
     
-    ## DELETE FROM ARRAY
-        data remove storage leinad_temp:login online[0]
-    ##
+##
+## DISCONECTED CHECK
+    execute if data storage leinad_temp:login online[0] run function llogin:call/disconnected with storage leinad_temp:login
 ##
 
-## DISCONECTED CHECK
-    function llogin:call/disconnected with storage leinad_temp:login
+## DELETE FROM ARRAY
+    data remove storage leinad_temp:login online[0]
 ##
 
 ## NEEDS EXTRA ITERATIONS?
@@ -44,9 +44,3 @@
     data modify storage leinad_temp:login online set from storage leinad_temp:login online_
     data remove storage leinad_temp:login online_
 ##
-
-
-########################################### DEBUGGING ##########################################################
-## execute as @a[tag=logged_in] run say logged_in
-## execute as @a[tag=in_llogin] run say in_llogin
-

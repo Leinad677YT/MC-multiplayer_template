@@ -10,20 +10,14 @@
     
     ## GET NICKNAME
         # in this very specific situation it was already set before
-        # loot replace block 0 -63 0 container.0 loot lcore:phead_own
+        # loot replace block 15 0 15 container.0 loot lcore:phead_own
 
         ## LOWERCASE THE NAME            THX SILICAT <3
-            data modify storage stringlib:temp data.Input set from block 0 -63 0 Items[0].components."minecraft:profile".name
-            function str:tolow_fast
-        ##
-
-        ## SET THE NAME INTO THE MACRO
-            data modify storage leinad_temp:player macro.name set from storage stringlib:output to_lowercase
-        ##
+        function llogin:auxiliary/string/lowercase_nickname
     ##
     
     ## GET LIST AND UUID 
-        data modify storage leinad_temp:player macro.uuid set from block 0 -63 0 Items[0].components."minecraft:profile".id
+        data modify storage leinad_temp:player macro.uuid set from block 15 0 15 Items[0].components."minecraft:profile".id
         # there is a total of 214* lists, which is kinda big ngl I'm a bit worried O_o              214 ~ FLOOR(*)
         # MAMAAAAAAAAAAAAAAAAAAAAAA LA BASE DE DATOS ME DA MIEDITO                                  * = { (2^31-1) * 10^-7 }
         execute store result storage leinad_temp:player macro.list int 0.0000001 run data get storage leinad_temp:player macro.uuid[0]
@@ -44,7 +38,8 @@
     ##
     ## (4) clone own data to new name
         execute store result storage leinad_temp:player is_new.from_uuid.id int 1 run scoreboard players get @s lplayer.id
-        data modify storage leinad_temp:player is_new.from_uuid.newname set from storage stringlib:output to_lowercase 
+        data modify storage leinad_temp:player is_new.from_uuid.newname set string storage leinad_temp:login player_.name
+        data modify storage leinad_temp:player macro.name set string storage leinad_temp:login player_.name
         execute if score #bool lplayer.id matches 4 run function lplayer:db/store_new_old_owner with storage leinad_temp:player is_new.from_uuid
         execute if score #bool lplayer.id matches 4 run function lplayer:macro/update_uuid_map with storage leinad_temp:player macro
     ##

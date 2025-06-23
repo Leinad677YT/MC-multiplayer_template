@@ -1,0 +1,26 @@
+{
+    "carvers": [],
+    "downfall": 2921009,
+    "effects": {
+        "sky_color": 6354175,
+        "fog_color": 6354175,
+        "water_color": 6354175,
+        "water_fog_color": 6354175,
+        "mood_sound": {
+            "sound": "minecraft:intentionally_empty",
+            "tick_delay": -1000000000,
+            "block_search_extent": 0,
+            "offset": 0
+        },
+        "ambient_sound": {
+            "sound_id": "minecraft:intentionally_empty",
+            "range": -1
+        },
+        "music": []
+    },
+    "features": [],
+    "has_precipitation": false,
+    "spawn_costs": {},
+    "spawners": {},
+    "temperature": 0.5
+}

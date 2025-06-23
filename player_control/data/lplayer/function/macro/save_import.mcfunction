@@ -1,1 +1,0 @@
-$data modify storage z_p$(name):import data set from storage z_p$(name):root data

@@ -1,2 +1,2 @@
-$data modify storage z_p$(name):root data set from storage z_p$(name):import data
-$data modify storage z_p$(name):root data.id set from storage lplayer:map $(list)[{uuid:$(uuid)}].id 
+$data modify storage z_p$(lower):root data merge from storage z_p$(lower):import data
+$execute store result storage storage z_p$(lower):root data.id int 1 run scoreboard players get @s lplayer.id
