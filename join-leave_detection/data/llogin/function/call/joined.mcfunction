@@ -1,7 +1,7 @@
 ## CALLED FROM tick.mcfunction AS player IN lcore:zvoid
 
 ## AVOID RESTART
-    scoreboard players add #lastplayercount llogin.online 1
+    # scoreboard players add #lastplayercount llogin.online 1
     # scoreboard players add #playercount llogin.online 1
 ##
 

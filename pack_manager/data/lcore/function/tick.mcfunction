@@ -1,6 +1,6 @@
 ## llogin # CORE
     ## PLAYER JOINS
-        execute in lcore:zvoid as @a[scores={llogin.online=0, lcore.deathCount=0}] run function llogin:call/joined
+        execute in lcore:zvoid as @a[predicate=lcore:joins] run function llogin:call/joined
     ##
 
     ##   = lplayer.id -> RESTART
@@ -9,7 +9,7 @@
     
     ##   UPDATE ONLINE LIST
         scoreboard players operation #lastplayercount llogin.online = #playercount llogin.online
-        execute store result score #playercount llogin.online run list
+        execute store result score #playercount llogin.online if entity @a
     ##
 
     ## ASSIGN session_id
@@ -19,7 +19,7 @@
 
 ## death management # CORE
         # this NEEDS to happen at least 1 tick before the join detection, that's why join calls require (deathCount = 0)
-    execute as @a[scores={lcore.deathCount=1..,lcore.time_since_death=1..}] at @s if function lcore:auxiliary/player_exists run function lcore:player_management/player_died
+    execute as @a[predicate=lcore:is_ded] at @s if function lcore:auxiliary/player_exists run function lcore:player_management/player_died
 ##
 
 ## entity management # CORE
