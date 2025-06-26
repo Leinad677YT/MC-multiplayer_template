@@ -10,6 +10,7 @@
 
 ## ADD SCOREBOARDS
     scoreboard objectives add lcore.temp_condition dummy
+        scoreboard players add #max_scheduled_events_per_tick lcore.temp_condition 20
     scoreboard objectives add lcore.math dummy
     scoreboard objectives add lcore.cte dummy
     scoreboard objectives add lcore.entity_id dummy

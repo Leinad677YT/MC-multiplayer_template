@@ -2,11 +2,12 @@
     "condition": "minecraft:all_of",
     "terms": [
         {
-            "condition": "entity_scores",
-            "entity": "this",
-            "scores": {
-                "lcore.deathCount": {
-                    "min": 0
+            "condition": "inverted",
+            "term": {
+                "condition": "entity_scores",
+                "entity": "this",
+                "scores": {
+                    "llogin.online": 1
                 }
             }
         },
@@ -16,7 +17,7 @@
                 "condition": "entity_scores",
                 "entity": "this",
                 "scores": {
-                    "llogin.online": 1
+                    "lcore.deathCount": 1
                 }
             }
         }

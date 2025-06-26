@@ -19,7 +19,7 @@
     kill @e[scores={lcore.entity_type=10}]
 ##
 ## TELLRAW
-    tellraw @s [{translate:"leinad.menu.tellraw.uninstall",fallback:"lmenu has been uninstalled"}]
+    tellraw @s [{translate:"leinad.lplayer.tellraw.uninstall",fallback:"lplayer has been uninstalled"}]
 ##
 ## REMOVE SCOREBOARDS
     scoreboard objectives remove lplayer.id

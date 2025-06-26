@@ -1,1 +1,0 @@
-$data modify storage z_p$(lower):root data.$(mode) set from storage leinad_perm:data initial_playerdata.$(mode)

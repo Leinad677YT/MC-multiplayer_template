@@ -1,0 +1,1 @@
+$return run data get storage leinad_perm:uuid "$(uuid)"

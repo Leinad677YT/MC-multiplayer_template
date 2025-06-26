@@ -1,0 +1,1 @@
+$data modify storage leinad_temp:login player_ set from storage leinad_perm:id $(id)

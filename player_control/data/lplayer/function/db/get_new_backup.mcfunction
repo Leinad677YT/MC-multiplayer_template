@@ -1,0 +1,1 @@
+$return run scoreboard players add #$(lower) lplayer.backup 1

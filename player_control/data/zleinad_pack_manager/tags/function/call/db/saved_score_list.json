@@ -1,0 +1,6 @@
+{
+    "values": [
+        "#zleinad_pack_manager:core/db/saved_score_list",
+        "#zleinad_pack_manager:user/db/saved_score_list"
+    ]
+}

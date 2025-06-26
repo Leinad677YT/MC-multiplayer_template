@@ -1,12 +1,12 @@
 # MODE:{inventory:[],e_chest:[],equipment:[],xp_p:0,xp_l:0,health:20,pos:{},spawnpoint:{},max_health:20}
 
 ## CACHE
-$data modify block ~ ~ ~ Items set from storage z_p$(lower):root data.$(mode).inventory.heavy.e_chest
-$data modify block ~ ~ ~1 Items set from storage z_p$(lower):root data.$(mode).inventory.heavy.inventory
-$data modify block ~ ~ ~2 Items set from storage z_p$(lower):root data.$(mode).inventory.heavy.equipment
+$data modify block ~ ~ ~ Items set from storage z_p$(lower):root data.mode.$(mode).inventory.heavy.e_chest
+$data modify block ~ ~ ~1 Items set from storage z_p$(lower):root data.mode.$(mode).inventory.heavy.inventory
+$data modify block ~ ~ ~2 Items set from storage z_p$(lower):root data.mode.$(mode).inventory.heavy.equipment
 
 ## OTHER DATA
-$data modify storage leinad_temp:player inventory set from storage z_p$(lower):root data.$(mode).inventory.light
+$data modify storage leinad_temp:player inventory set from storage z_p$(lower):root data.mode.$(mode).inventory.light
 
 ## HEALTH
 function linv:db_interaction/setdata/set_health with storage leinad_temp:player inventory

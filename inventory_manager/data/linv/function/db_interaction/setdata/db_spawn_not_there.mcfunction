@@ -8,4 +8,4 @@ $execute in $(dimension) positioned $(x) $(y) $(z) unless entity @a[name=$(name)
 
 #$execute in $(dimension) run spawnpoint @s $(x) $(y) $(z) 
 
-$data modify storage z_p$(lower):root data.$(mode).inventory.light.spawnpoint merge from storage leinad_temp:player spawn.macro
+$data modify storage z_p$(lower):root data.mode.$(mode).inventory.light.spawnpoint merge from storage leinad_temp:player spawn.macro

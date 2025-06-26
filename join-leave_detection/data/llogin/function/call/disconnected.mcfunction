@@ -12,9 +12,9 @@
     ##
 
     ## SERVERSIDE TEAM
-        $scoreboard players reset $(name) lteam.current
-        $scoreboard players reset $(name) lteam.invited
-        $scoreboard players reset $(name) lteam.invited_to
+        # $scoreboard players reset $(name) lteam.current
+        # $scoreboard players reset $(name) lteam.invited
+        # $scoreboard players reset $(name) lteam.invited_to
     ##
 
 ## 
@@ -24,6 +24,20 @@
 ##
 
 ## FINISH
+        
+    ## SCHEDULED DISCONNECTION FUNCTIONS
+        $data modify storage leinad_perm:schedule with_context.execute append from storage leinad_perm:online session[{name:"$(name)"}].scheduled[{on_disconnect:1b}]
+        execute if data storage leinad_perm:schedule context.execute[0] run return run function lschedule:from_function/execute_queue with storage leinad_perm:schedule context.execute[-1]
+    ##
+
+    ## SAVE SCORES
+        $function lplayer:score/save_scores with storage leinad_perm:online session[{name:"$(name)"}]
+        scoreboard players reset #temp_score lcore.temp_condition
+        $scoreboard players operation #temp_score lcore.temp_condition = $(name) lplayer.id
+        $scoreboard players reset $(name)
+        $scoreboard players operation $(name) lplayer.id = #temp_score lcore.temp_condition
+    ##
+    
     ## SESSION DATA
         $data remove storage leinad_perm:online session[{name:"$(name)"}]
     ##
