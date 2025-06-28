@@ -1,6 +1,6 @@
 {
     "values": [
-        "#zleinad_pack_manager:module/call/hit_det/atk_melee",
-        "#zleinad_pack_manager:user/hit_det/atk_melee"
+        "#zleinad_pack_manager:core/call/hit_det/atk_melee",
+        "#l.user:hit_det/atk_melee"
     ]
 }

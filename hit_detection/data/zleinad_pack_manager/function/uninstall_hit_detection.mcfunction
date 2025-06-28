@@ -5,10 +5,10 @@
 ###
 
 ## TELLRAW
-    tellraw @s [{translate:"leinad.hit_det.tellraw.uninstall",fallback:"lhitdet has been uninstalled"}]
+    tellraw @s [{translate:"leinad.hit_det.tellraw.uninstall",fallback:"l.hit_det has been uninstalled"}]
 ##
 ## REMOVE SCOREBOARDS
-        scoreboard objectives remove lhitdet.is_invulnerable
-        scoreboard objectives remove lhitdet.attacked_by
-        scoreboard objectives remove lhitdet.attacked_by_player
+        scoreboard objectives remove l.hit_det.is_invulnerable
+        scoreboard objectives remove l.hit_det.attacked_by
+        scoreboard objectives remove l.hit_det.attacked_by_player
 ##

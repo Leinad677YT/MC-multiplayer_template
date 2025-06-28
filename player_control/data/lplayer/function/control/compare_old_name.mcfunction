@@ -1,1 +1,0 @@
-$execute store result score #temp2 lcore.temp_condition if data storage leinad_perm:id $(id){name:"$(name)"}

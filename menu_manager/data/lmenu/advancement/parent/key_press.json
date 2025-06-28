@@ -1,8 +1,0 @@
-{
-    "parent":"lmenu:parent/key_press_any",
-    "criteria": {
-        "impossible":{
-            "trigger": "impossible"
-        }
-    }
-}

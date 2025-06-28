@@ -1,1 +1,0 @@
-$execute in lcore:zvoid positioned 0 $(session) 0 run function linv:db_interaction/load with storage leinad_temp:player playerdata

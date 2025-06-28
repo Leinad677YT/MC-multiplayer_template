@@ -23,7 +23,7 @@ Without them, none of the modules would work.
 >   - This allows to customize prefixes/suffixes, to allow friendly fire, see the `hit_detection` module
 > ### CORE MODULES (works as core, but not required)
 > - **new_entity_handler**
->   - Auto-assigns entities inside certain tag a new id, it always being the one in the #newID `lcore.entity_id` score (increments by 1 on every spawn)
+>   - Auto-assigns entities inside certain tag a new id, it always being the one in the #newID `l.core.entity_id` score (increments by 1 on every spawn)
 >   - Creates a call for entities spawning
 > ### CORE LIBRARIES
 > - **menu_manager**

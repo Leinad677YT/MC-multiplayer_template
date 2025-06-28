@@ -1,6 +1,6 @@
 {
     "values": [
-        "#zleinad_pack_manager:core/player/moved_speed",
-        "#zleinad_pack_manager:user/player/moved_speed"
+        "#zleinad_pack_manager:core/call/player/moved_speed",
+        "#l.user:player/moved_speed"
     ]
 }

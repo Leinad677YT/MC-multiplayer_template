@@ -1,0 +1,10 @@
+{
+	"criteria": {
+		"a": {
+			"trigger": "minecraft:changed_dimension"
+		}
+	},
+	"rewards": {
+		"function": "l.core:player_management/player_moved_other"
+	}
+}

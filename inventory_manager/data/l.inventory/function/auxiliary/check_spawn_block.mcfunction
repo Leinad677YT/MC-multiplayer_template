@@ -1,0 +1,2 @@
+$execute if data storage z_p$(lower):root data.mode.$(mode).inventory.light.spawnpoint{forced:1b} run scoreboard players set #temp l.core.temp_condition 1
+$execute in $(dimension) positioned ~ ~ ~ run function l.inventory:auxiliary/check_spawn_block_correct with storage z_p$(lower):root data.mode.$(mode).inventory.light.spawnpoint

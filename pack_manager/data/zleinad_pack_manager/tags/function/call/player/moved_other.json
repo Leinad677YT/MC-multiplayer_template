@@ -1,6 +1,6 @@
 {
     "values": [
-        "#zleinad_pack_manager:core/player/moved_other",
-        "#zleinad_pack_manager:user/player/moved_other"
+        "#zleinad_pack_manager:core/call/player/moved_other",
+        "#l.user:player/moved_other"
     ]
 }

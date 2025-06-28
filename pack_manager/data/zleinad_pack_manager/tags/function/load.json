@@ -17,6 +17,6 @@
             "required": false
         },
         "#zleinad_pack_manager:load_modules",
-        "#zleinad_pack_manager:load_user"
+        "#l.user:load_user"
     ]
 }

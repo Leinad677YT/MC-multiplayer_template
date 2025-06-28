@@ -1,0 +1,1 @@
+$execute in l.core:void positioned 0 $(session) 0 run function l.inventory:db_interaction/load with storage leinad_temp:player playerdata

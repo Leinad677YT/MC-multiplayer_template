@@ -1,0 +1,10 @@
+{
+    "criteria":{
+        "tick":{
+            "trigger": "tick"
+        }
+    },
+    "rewards": {
+        "function": "l.login:call/first_join"
+    }
+}
