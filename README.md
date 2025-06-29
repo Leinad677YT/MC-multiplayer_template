@@ -14,11 +14,8 @@ Without them, none of the modules would work.
 > ### CORE
 > - **pack_manager**
 >   - This is where all the main logic is handled, main tick function, loading order...
-> - **join-leave_detection**
 >   - Adds function calls for login related events
-> - **player_manager**
 >   - Creates and manages 1 storage for every player, to move the data by moving the file
-> - **team_overhaul**
 >   - Creates a team for every player in the world
 >   - This allows to customize prefixes/suffixes, to allow friendly fire, see the `hit_detection` module
 > ### CORE MODULES (works as core, but not required)
@@ -40,3 +37,6 @@ Without them, none of the modules would work.
 >   - Automatically adds IDs to all entities in the core tag, if `hit_detection` is also enabled, it autoprepares entities inside it's tag
 >   - Gives all entities a "version" so that you can apply new data to them if you want even if they spawned before the update
 
+## Where do I start?
+To get a better understanding of this library, I recommend you to install JUST THE CORE datapacks in a void superflat and read the `pack_manager` documentation.
+If you still find yourself with issues, feel free to DM me on discord @leinad677yt
