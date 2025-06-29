@@ -1,7 +1,7 @@
 ##  Team data
 The `#get_teamdata` functions are meant to modify the player individual teams.
 
-Inside the path `storage leinad_temp:teamdata raw.prefix` and `storage leinad_temp:teamdata raw.suffix`. should be a text component like in the ones used in the very bad examples :works_as_intended:
+Inside the path `storage leinad_temp:teamdata raw.prefix` and `storage leinad_temp:teamdata raw.suffix`. should be a text component like in the ones used in the very bad examples :works_as_intended: (check inside the namespace)
 
 The `storage leinad_temp:teamdata raw` path **MINIMAL** structure should match the following scheme:
 ```

@@ -2,7 +2,7 @@
 
 > [!WARNING]
 > **DO NOT** modify `leinad_temp:player playerdata` 
-> while on the function tags unless you restore it afterwards on the same tag
+> while on the function calls unless you restore it afterwards on the same call
 
 > [!NOTE]
 > **YOU** are the one in charge of the database status,
