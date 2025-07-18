@@ -1,5 +1,9 @@
 {
     "values": [
+        {
+            "id": "timelib:zprivate/tick",
+            "required": false
+        },
         "#zleinad_pack_manager:core/tick/midway",
         "#l.user:tick/midway"
     ]

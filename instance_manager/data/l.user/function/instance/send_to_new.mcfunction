@@ -1,0 +1,1 @@
+## called with session-data + room_type

@@ -1,6 +1,7 @@
 scoreboard players set #temp l.core.temp_condition -1
-execute on attacker store success score #temp1 l.core.temp_condition if entity @s[type=player] run scoreboard players operation #temp l.core.temp_condition = @s l.player.id
-execute if score #temp1 l.core.temp_condition matches 0 run scoreboard players operation #temp l.core.temp_condition = @s l.core.entity_id
+execute on attacker store success score #temp1 l.core.temp_condition if entity @s[type=player]
+execute if score #temp1 l.core.temp_condition matches 1 on attacker run scoreboard players operation #temp l.core.temp_condition = @s l.player.id
+execute if score #temp1 l.core.temp_condition matches 0 on attacker run scoreboard players operation #temp l.core.temp_condition = @s l.core.entity_id
 
 scoreboard players operation @s l.hit_det.attacked_by = #temp l.core.temp_condition
 scoreboard players operation @s l.hit_det.attacked_by_player = #temp1 l.core.temp_condition

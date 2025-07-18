@@ -1,0 +1,1 @@
+execute store result score #time_to_check l.schedule.timer run data get storage leinad_perm:schedule pending[0].time 1

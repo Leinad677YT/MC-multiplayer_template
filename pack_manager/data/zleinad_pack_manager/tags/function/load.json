@@ -1,6 +1,10 @@
 {
     "values": [
         {
+            "id": "timelib:zprivate/load",
+            "required": false
+        },
+        {
             "id": "zleinad_pack_manager:load_join-leave_detection",
             "required": false
         },
