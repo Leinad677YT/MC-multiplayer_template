@@ -8,5 +8,5 @@ function timelib:zprivate/update_time/get_unix_timestamp/decode with storage tim
 # Update the date & time
 function timelib:zprivate/update_time/get_unix_timestamp/update
 
-execute in l.core:void run data modify storage timelib:zprivate CommandBlock.Output set from block 15 1 15 LastOutput.text
+execute in l.core:void run data modify storage timelib:zprivate CommandBlock.Output set from block 15 2 15 LastOutput.text
 function timelib:zprivate/update_time/main

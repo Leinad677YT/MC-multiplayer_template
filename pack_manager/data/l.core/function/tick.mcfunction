@@ -26,11 +26,17 @@
     execute as @e[type=!#l.core:_no_ai] run function l.core:entity_management/no_ai
 ##
 
+
+
 ## module calls # MODULE
     function #zleinad_pack_manager:call/tick/midway
 ##
 
 ## SCHEDULE
+
+    ## CHECK QUEUES
+        function l.schedule:tick
+    ##
 
     ## PRIORITY QUEUE
         execute if data storage leinad_perm:schedule prioritary.execute[0] run return run function l.schedule:tick_priority/execute_queue with storage leinad_perm:schedule prioritary.execute[-1]

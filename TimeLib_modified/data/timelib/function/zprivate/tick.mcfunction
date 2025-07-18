@@ -14,5 +14,5 @@
         execute as @a[scores={TimeLib.Internal.TotalWorldTime=1..},limit=1] run function timelib:zprivate/game_unpaused
         scoreboard players set @a TimeLib.Internal.TotalWorldTime -1
 
-    execute in l.core:void store success score #TimeLib.DaytimeChanged TimeLib run data modify storage timelib:zprivate CommandBlock.Output set from block 15 1 15 LastOutput.text
+    execute in l.core:void store success score #TimeLib.DaytimeChanged TimeLib run data modify storage timelib:zprivate CommandBlock.Output set from block 15 2 15 LastOutput.text
     execute if score #TimeLib.DaytimeChanged TimeLib matches 1 run function timelib:zprivate/update_time/main

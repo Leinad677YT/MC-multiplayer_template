@@ -10,7 +10,8 @@
 
 ## ADD SCOREBOARDS
     scoreboard objectives add l.core.temp_condition dummy
-        scoreboard players add #max_scheduled_events_per_tick l.core.temp_condition 20
+        scoreboard players set #current_tick l.core.temp_condition 0
+        scoreboard players set #max_scheduled_events_per_tick l.core.temp_condition 20
     scoreboard objectives add l.core.math dummy
     scoreboard objectives add l.core.cte dummy
     scoreboard objectives add l.core.entity_id dummy
@@ -26,4 +27,8 @@
 ## LOAD MODULES
     function #zleinad_pack_manager:load
     tellraw Leinad677YT [{translate:"leinad.debug.tellraw.load",fallback:"<Leinad677YT> All data from compatible packs has been loaded! "},{text:"IF YOU READ THE READMES OF COURSE",bold:true}]
+##
+
+## REMOVE TEMP SCHEDULE
+    data remove storage leinad_perm:schedule queue_t[]
 ##

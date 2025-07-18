@@ -71,5 +71,5 @@ data remove storage timelib:output Minute
 data remove storage timelib:output Second
 
 # Remove the blocks and forceload
-# execute in l.core:void run fill 15 0 15 15 1 15 minecraft:air
+# execute in l.core:void run fill 15 0 15 15 2 15 minecraft:air
 # execute in l.core:void run forceload remove 0 0
