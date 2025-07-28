@@ -14,6 +14,7 @@
         scoreboard players set #max_scheduled_events_per_tick l.core.temp_condition 20
     scoreboard objectives add l.core.math dummy
     scoreboard objectives add l.core.cte dummy
+        scoreboard players set #2 l.core.cte 2
     scoreboard objectives add l.core.entity_id dummy
         scoreboard players add #newID l.core.entity_id 0
     scoreboard objectives add l.core.entity_type dummy

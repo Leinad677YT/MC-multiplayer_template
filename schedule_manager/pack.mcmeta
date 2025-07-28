@@ -1,0 +1,6 @@
+{
+    "pack": {
+        "description": "Library that controls scheduled events,\n > expanded by TimeLib to use irl time\n > expanded by MultiplayerTemplate to have per-player queues",
+        "pack_format":81
+    }
+}

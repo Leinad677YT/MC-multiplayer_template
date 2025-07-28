@@ -1,6 +1,10 @@
 {
   "pack": {
       "pack_format": 71,
-      "description": "Data Pack library for getting the real life date & time.\nCreated by CMDred."
+      "supported_formats": {
+        "min_inclusive": 71,
+        "max_inclusive": 81
+      },
+      "description": "Data Pack library for getting the real life date & time.\nCreated by CMDred.\n Modified version for Multiplayer Template, all stuff breaking may be caused by Leinad (me)"
   }
 }

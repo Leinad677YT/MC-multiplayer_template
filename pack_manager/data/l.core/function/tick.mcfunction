@@ -31,19 +31,3 @@
 ## module calls # MODULE
     function #zleinad_pack_manager:call/tick/midway
 ##
-
-## SCHEDULE
-
-    ## CHECK QUEUES
-        function l.schedule:tick
-    ##
-
-    ## PRIORITY QUEUE
-        execute if data storage leinad_perm:schedule prioritary.execute[0] run return run function l.schedule:tick_priority/execute_queue with storage leinad_perm:schedule prioritary.execute[-1]
-    ##
-
-    ## LIMITED QUEUE
-        scoreboard players set #current_scheduled_event l.core.temp_condition 0
-        execute if data storage leinad_perm:schedule generic.execute[0] run return run function l.schedule:no_context/execute_queue with storage leinad_perm:schedule generic.execute[-1]
-    ##
-##

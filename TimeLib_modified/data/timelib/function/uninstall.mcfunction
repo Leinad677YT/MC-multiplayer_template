@@ -1,3 +1,6 @@
+# Version error checking
+execute if score #TimeLib.VersionError load.status matches 1 run return run function timelib:zprivate/version_error
+
 # Check if TimeLib is installed
 scoreboard objectives add TimeLib.Uninstall dummy
 execute store success score #TimeLib TimeLib.Uninstall run scoreboard objectives remove TimeLib
@@ -6,7 +9,11 @@ execute if score #TimeLib TimeLib.Uninstall matches 0 run return run scoreboard 
 scoreboard objectives remove TimeLib.Uninstall
 
 # Tellraw
-tellraw @a [{text:"",color:"red"},{text:"🕒 TimeLib >> ",color:"#2DE1E1"},{text:"Uninstalled TimeLib (v2.2.0)\n",color:"white"},"⚠ Removed the following things (Overworld):\n- Block at 15 0 15\n- Block at 29999999 1 29999999\n- Forceloaded chunk at 29999999 29999999\n\n","⚠ Did not remove:\n- 'load.status' scoreboard from the 'Lantern Load' library"]
+tellraw @a [{text:"",color:"red"},{text:"🕒 TimeLib >> ",color:"#2DE1E1"},{text:"Uninstalled TimeLib (v2.3.0.l)\n",color:"white"},"⚠ This was a modified version of timelib, things may break"]
+
+# Lantern Load & Version Checking
+scoreboard players reset #TimeLib load.status
+scoreboard players reset #TimeLib.Version load.status
 
 # Remove scoreboards
 scoreboard objectives remove TimeLib.UnixTime
@@ -71,5 +78,8 @@ data remove storage timelib:output Minute
 data remove storage timelib:output Second
 
 # Remove the blocks and forceload
-# execute in l.core:void run fill 15 0 15 15 2 15 minecraft:air
-# execute in l.core:void run forceload remove 0 0
+#execute in l.core:void run fill 15 0 15 15 2 15 minecraft:air
+#execute in l.core:void run forceload remove 29999999 29999999
+
+# Stop the tick function
+schedule clear timelib:zprivate/tick

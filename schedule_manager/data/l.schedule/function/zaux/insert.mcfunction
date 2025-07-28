@@ -1,0 +1,1 @@
+$data modify storage leinad_perm:schedule queue_t insert $(check) from storage leinad_temp:schedule to_schedule
