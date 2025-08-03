@@ -5,9 +5,9 @@ schedule function timelib:zprivate/tick 1t
     # (Important): The player head does not resolve instantly. While unresolved, it will behave as if the unix timestamp hadn't changed, so it won't go backwards in time.
     # (Important): If the unix timestamp has changed, it will update the time directly from its own function.
     # (Important): If a player is online, the loot table is used instead, as that will resolve the head much quicker.
-    execute in l.core:void run item replace block 15 0 15 container.0 with minecraft:player_head[minecraft:profile={name:"SilicatYT"}]
-    execute as @a[limit=1] in l.core:void run loot replace block 15 0 15 container.0 loot timelib:player_head
-    execute in l.core:void store success score #TimeLib.UnixTimestampChanged TimeLib run data modify storage timelib:zprivate Base64.Value set from block 15 0 15 Items[1].components."minecraft:profile".properties[0].value
+    execute in l.core:void run item replace block 15 0 15 container.1 with minecraft:player_head[minecraft:profile={name:"SilicatYT"}]
+    execute as @a[limit=1] in l.core:void run loot replace block 15 0 15 container.1 loot timelib:player_head
+    execute in l.core:void store success score #TimeLib.UnixTimestampChanged TimeLib run data modify storage timelib:zprivate Base64.Value set from block 15 0 15 Items[{Slot:1b}].components."minecraft:profile".properties[0].value
     execute if score #TimeLib.UnixTimestampChanged TimeLib matches 1 run return run function timelib:zprivate/update_time/get_unix_timestamp/main
 
     # Check if the daytime has changed

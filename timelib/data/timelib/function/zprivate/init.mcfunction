@@ -29,9 +29,7 @@ scoreboard players set #TimeLib.1461 TimeLib 1461
 scoreboard players set #TimeLib.3600 TimeLib 3600
 scoreboard players set #TimeLib.86400 TimeLib 86400
 
-# Forceload the chunk
-# execute in l.core:void run forceload add 29999999 29999999
-execute in l.core:void run setblock 15 0 15 minecraft:barrel
+# COMMANDBLOCK
 execute in l.core:void run setblock 15 2 15 minecraft:repeating_command_block{TrackOutput:1b,auto:1b,Command:"."}
 
 # Setup lookup tables
