@@ -8,7 +8,7 @@ Without them, none of the modules would work.
 > **This is still WIP.** Most things may break if you update any previous install of this to a new version
 
 > [!NOTE]
-> At this moment, it works on 1.21.5 and 1.21.6
+> At this moment, it works from 1.21.5 to 1.21.8
 
 ## CONTENT LIST
 > ### CORE
