@@ -1,5 +1,5 @@
 ## TELLRAW
-    tellraw Leinad677YT [{text:"[!] ",color:dark_aqua},{translate:"leinad.inventory.tellraw.load",fallback:"Loading inventory_manager",color:"gray"}]
+    tellraw @a[tag=l.core.tellraw] [{text:"[!] ",color:dark_aqua},{translate:"leinad.inventory.tellraw.load",fallback:"Loading inventory_manager",color:"gray"}]
 ##
 
 ## FORCELOAD

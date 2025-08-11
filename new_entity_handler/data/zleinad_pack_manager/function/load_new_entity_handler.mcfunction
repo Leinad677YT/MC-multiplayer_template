@@ -1,5 +1,5 @@
 ## TELLRAW
-    tellraw Leinad677YT [{text:"[!] ",color:dark_aqua},{translate:"leinad.l.new_entity.tellraw.load",fallback:"Loading new_entity_handler",color:"gray"}]
+    tellraw @a[tag=l.core.tellraw] [{text:"[!] ",color:dark_aqua},{translate:"leinad.l.new_entity.tellraw.load",fallback:"Loading new_entity_handler",color:"gray"}]
 ##
 
 ## MODIFYABLE

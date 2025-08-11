@@ -1,5 +1,5 @@
 ## TELLRAW
-    tellraw Leinad677YT [{text:"[!] ",color:dark_aqua},{translate:"leinad.player.tellraw.load",fallback:"Loading player_manager",color:"gray"}]
+    tellraw @a[tag=l.core.tellraw] [{text:"[!] ",color:dark_aqua},{translate:"leinad.player.tellraw.load",fallback:"Loading player_manager",color:"gray"}]
 ##
 ## ADD SCOREBOARDS
     scoreboard objectives add l.player.id dummy

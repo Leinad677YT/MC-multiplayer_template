@@ -1,7 +1,7 @@
 ## CALLED FROM tick.mcfunction AS player IN l.core:void
 
 ## ROOT TELLRAW
-    tellraw @s [{text:"[+] ",color:"dark_aqua"},{text:"console.player.join",color:"gray"}]
+    tellraw @s[tag=l.core.tellraw] [{text:"[+] ",color:"dark_aqua"},{text:"console.player.join",color:"gray"}]
 ##
 
 ## SET ONLINE

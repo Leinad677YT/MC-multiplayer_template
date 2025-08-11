@@ -1,6 +1,6 @@
 ## load function
 
-tellraw Leinad677YT [{text:"[!] ",color:dark_aqua},{translate:"leinad.team.tellraw.load",fallback:"Loading team_overhaul",color:"gray"}]
+tellraw @a[tag=l.core.tellraw] [{text:"[!] ",color:dark_aqua},{translate:"leinad.team.tellraw.load",fallback:"Loading team_overhaul",color:"gray"}]
 
 ## FORCELOAD
     execute in l.core:void run setblock 15 1 15 oak_sign

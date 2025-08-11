@@ -43,6 +43,10 @@ Everything that you can use, is inside the `l.user` namespace, **this holds true
 - calling the functions from outisde
 - **not modifying the original files**
 
+### Turn on developer mode
+
+There is an entity tag aimed for players, it is `l.core.tellraw`, and all players with this tag will receive their respective /tellraw commands when loading modules or their "self-join msg"
+
 ## How do I know what does everything do?
 
 Inside their related function call folders or root folders, there should be a README file with all the info required to use that module. **DO NOT TRY TO REMOVE MODULES ON THIS PACK, THEY ARE ALL CORE MODULES AND DEPEND ON EACHOTHER**

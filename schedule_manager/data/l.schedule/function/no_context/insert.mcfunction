@@ -1,0 +1,1 @@
+$data modify storage leinad_perm:schedule generic.queue insert $(check) from storage leinad_temp:schedule to_schedule

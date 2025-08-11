@@ -1,5 +1,5 @@
 ## TELLRAW
-    tellraw Leinad677YT [{text:"[!] ",color:dark_aqua},{translate:"leinad.menu.tellraw.load",fallback:"Loading menu_manager",color:"gray"}]
+    tellraw @a[tag=l.core.tellraw] [{text:"[!] ",color:dark_aqua},{translate:"leinad.menu.tellraw.load",fallback:"Loading menu_manager",color:"gray"}]
 ##
 ## ADD SCOREBOARDS
         # the system is consistent up to 64 players which is set on the l.login core module

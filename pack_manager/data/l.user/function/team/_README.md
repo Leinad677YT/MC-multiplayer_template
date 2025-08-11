@@ -1,6 +1,6 @@
 ## Serverside
 > [!TIP]
-> I recommend you to just use the scores until I boil at 1000 degrees kelvin these spaghettis to see if they get better
+> I recommend you to just use the scores until I boil at 1000 kelvin these spaghettis to see if they get better
 
 ## Player individual team
 

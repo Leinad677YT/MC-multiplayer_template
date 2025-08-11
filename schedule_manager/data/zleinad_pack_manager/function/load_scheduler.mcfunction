@@ -2,7 +2,7 @@
 
 
 ## TELLRAW
-    tellraw Leinad677YT [{text:"[!] ",color:dark_aqua},{translate:"leinad.l.schedule.tellraw.load",fallback:"Loading event_scheduler",color:"gray"}]
+    tellraw @a[tag=l.core.tellraw] [{text:"[!] ",color:dark_aqua},{translate:"leinad.l.schedule.tellraw.load",fallback:"Loading event_scheduler",color:"gray"}]
 ##
 
 ## SCOREBOARD

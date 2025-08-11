@@ -1,5 +1,5 @@
 ## TELLRAW
-    tellraw Leinad677YT [{text:"[!] ",color:dark_aqua},{translate:"leinad.l.login.tellraw.load",fallback:"Loading join-leave_detection",color:"gray"}]
+    tellraw @a[tag=l.core.tellraw] [{text:"[!] ",color:dark_aqua},{translate:"leinad.l.login.tellraw.load",fallback:"Loading join-leave_detection",color:"gray"}]
 ##
 ## ADD SCOREBOARDS
         scoreboard objectives add l.login.online dummy

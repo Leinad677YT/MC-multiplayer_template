@@ -1,5 +1,5 @@
 ## TELLRAW
-    tellraw Leinad677YT [{text:"[!] ",color:dark_aqua},{translate:"leinad.l.hit_det.tellraw.load",fallback:"Loading hit_detection",color:"gray"}]
+    tellraw @a[tag=l.core.tellraw] [{text:"[!] ",color:dark_aqua},{translate:"leinad.l.hit_det.tellraw.load",fallback:"Loading hit_detection",color:"gray"}]
 ##
 ## ADD SCOREBOARDS
         scoreboard objectives add l.hit_det.is_invulnerable dummy

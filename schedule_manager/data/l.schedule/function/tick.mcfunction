@@ -6,6 +6,10 @@
     execute if data storage leinad_perm:schedule queue_t[0] run function l.schedule:check_queue_t
 ##
 
+## LIMITED QUEUE
+    execute if data storage leinad_perm:schedule generic.queue[0] run function l.schedule:check_queue_limited
+##
+
 ## EXECUTION
 
     ## PRIORITY QUEUE

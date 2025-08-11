@@ -1,5 +1,5 @@
 ## TELLRAW
-    tellraw Leinad677YT [{text:"[+] ",color:dark_aqua},{translate:"leinad.core.tellraw.load",fallback:"Starting reload!",color:"gray"}]
+    tellraw @a[tag=l.core.tellraw] [{text:"[+] ",color:dark_aqua},{translate:"leinad.core.tellraw.load",fallback:"Starting reload!",color:"gray"}]
 ##
 
 ## FORCELOAD + 0,0 BARREL
@@ -27,7 +27,7 @@
 
 ## LOAD MODULES
     function #zleinad_pack_manager:load
-    tellraw Leinad677YT [{translate:"leinad.debug.tellraw.load",fallback:"<Leinad677YT> All data from compatible packs has been loaded! "},{text:"IF YOU READ THE READMES OF COURSE",bold:true}]
+    tellraw @a[tag=l.core.tellraw] [{translate:"leinad.debug.tellraw.load",fallback:"<Leinad677YT> All data from compatible packs has been loaded! "},{text:"\nIF YOU READ THE READMES, OF COURSE",bold:true}]
 ##
 
 ## REMOVE TEMP SCHEDULE
