@@ -2,7 +2,7 @@
     # data set outside in temp storage
     execute store result score #temp l.core.temp_condition run data modify storage leinad_perm:version on_entity_spawn.data.current set from storage leinad_temp:entity_spawn macro.data
     ## IF IT WAS THE SAME, NO NEED TO UPDATE
-    execute if score #temp l.core.temp_condition matches 0 run return fail
+    execute if score #temp l.core.temp_condition matches 0 run return run data remove storage leinad_temp:entity_spawn macro
 ##
 
 ## GET NEW VERSION

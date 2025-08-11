@@ -22,4 +22,4 @@ Their **MINIMAL** structure should match the following scheme depending on the m
 There should be a file here that isn't in other calls, but there isn't, that file is the `manage_old_data` call.
 That call doesn't exist because modules fix themselves (at least by now) when updating, but if you add data to the entity nbt it won't remove it, to solve issues, use their related function following the call inside `l.new_entity/function/manage_old_data`:
 
-```$function zleinad_pack_manager/user/call/new_entity/fix_v$(version) with storage storage leinad_perm:version on_entity_spawn.data.$(version)``` 
+```$function l.user/new_entity/fix_v$(version) with storage storage leinad_perm:version on_entity_spawn.data.$(version)``` 

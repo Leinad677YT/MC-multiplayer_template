@@ -13,6 +13,6 @@
         # this is independant for every world/world update, 
         # remember to check which "notes" you have on the storage
         # `storage leinad_perm:version on_entity_spawn.data.$(version)`
-        $function zleinad_pack_manager/user/call/new_entity/fix_v$(version) with storage storage leinad_perm:version on_entity_spawn.data.$(version)
+        $function l.user/new_entity/fix_v$(version) with storage storage leinad_perm:version on_entity_spawn.data.$(version)
     ##
 ##

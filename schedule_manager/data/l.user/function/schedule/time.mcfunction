@@ -1,0 +1,31 @@
+## DATA
+    
+    ## TIME
+        scoreboard players operation #time_to_insert l.core.temp_condition = #TimeLib TimeLib.UnixTime
+        $scoreboard players add #time_to_insert l.core.temp_condition $(seconds)
+        execute store result storage leinad_temp:schedule to_schedule.time int 1 run scoreboard players get #time_to_insert l.core.temp_condition
+    ##
+
+    $data modify storage leinad_temp:schedule to_schedule merge value $(context)
+    $data modify storage leinad_temp:schedule to_schedule.function set value "$(function)"
+##
+
+## GET POSITION ON QUEUE
+    
+    ## AMOUNT /// TIMESTAMPS
+        execute store result score #schedule.amount l.core.temp_condition store result score #schedule.first.pos l.core.temp_condition if data storage leinad_perm:schedule queue_t[]
+        execute store result score #schedule.check.pos l.core.temp_condition run scoreboard players remove #schedule.first.pos l.core.temp_condition 1
+        scoreboard players set #schedule.last.pos l.core.temp_condition 0
+        execute store result storage leinad_temp:schedule insert.check int 1 run scoreboard players operation #schedule.check.pos l.core.temp_condition /= #2 l.core.cte
+    ##
+
+    ## INSERT
+        function l.schedule:zaux_/get_queue_pos
+    ##
+##
+
+## REMOVE TEMP DATA
+    data remove storage leinad_temp:schedule to_schedule
+    data remove storage leinad_temp:schedule insert
+##
+

@@ -24,7 +24,7 @@
 ## 
 
 ## MAKE EASY ACCESS TO PLAYER DATA
-    data modify storage leinad_temp:login session_ set value {name:"",lower:"",id:-1,scheduled:[{function:""}]}
+    data modify storage leinad_temp:login session_ set value {name:"",lower:"",id:-1,schedule:[],schedule_trigger:[],schedule_:[]}
     data modify storage leinad_temp:login session_.name set string storage leinad_temp:login player.name
     data modify storage leinad_temp:login session_.lower set string storage leinad_temp:login player.lower
     data modify storage leinad_temp:login session_.uuid set from storage leinad_temp:login player.uuid
@@ -81,18 +81,20 @@
     function l.user:team/update_player with storage leinad_temp:login player
 ##
 
-## CALL OTHER FUNCTIONS
-    function #zleinad_pack_manager:call/login/joined
-##
-
 ## FINISH WITH SESSION STUFF
     execute store result storage leinad_temp:login session_.id int 1 run scoreboard players get @s l.player.id
     execute store result storage leinad_temp:login session_.session int 1 run scoreboard players get @s l.login.session_id
     data modify storage leinad_perm:online session append from storage leinad_temp:login session_
 ##
 
+## CALL OTHER FUNCTIONS
+    function #zleinad_pack_manager:call/login/joined with storage leinad_temp:login session_
+##
+
 data remove storage leinad_temp:login player
 data remove storage leinad_temp:login player_
+data remove storage leinad_temp:login session_
+data remove storage leinad_temp:player playerdata
 
 ########################## DEBUGGING #############################
 

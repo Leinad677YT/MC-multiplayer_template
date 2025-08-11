@@ -27,7 +27,7 @@
         
     ## SCHEDULED DISCONNECTION FUNCTIONS # MODULE
         $data modify storage leinad_perm:schedule function append from storage leinad_perm:online session[{name:"$(name)"}].schedule_trigger[{trigger:0}]
-        execute if data storage leinad_perm:schedule function[0] run return run function l.user:misc/execute_queue with storage leinad_perm:schedule function[-1]
+        execute if data storage leinad_perm:schedule function[0] run function l.user:misc/execute_queue with storage leinad_perm:schedule function[-1]
     ##
 
     ## SAVE SCORES

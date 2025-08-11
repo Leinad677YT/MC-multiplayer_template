@@ -11,11 +11,10 @@ Which leads us to the available functionality of the core library (this one)
 
 ## Content
 
-There are **4** core aspects covered:
+There are **3** core aspects covered:
 - World-exportable player databases
 - Distinction on player scoreboards (temp/perm)
 - Indivudual teams for players*
-- Scheduled events manager **[WIP]**
 
 #### Player databases and scoreboards
 > To make easier "data saving" and gaining the ability to move data from 1 world to another, I had to assign the player scoreboards to their UUIDs instead if their names. This is because any namechange results in players keeping advancements, items and all data *except for scoreboards* which usually results in maps not being able to handle them.
@@ -47,3 +46,10 @@ Everything that you can use, is inside the `l.user` namespace, **this holds true
 ## How do I know what does everything do?
 
 Inside their related function call folders or root folders, there should be a README file with all the info required to use that module. **DO NOT TRY TO REMOVE MODULES ON THIS PACK, THEY ARE ALL CORE MODULES AND DEPEND ON EACHOTHER**
+
+## What is the `misc` module
+That is not a module, that's the "namespace" where all the non-module related functions will end up. :works_as_intended:
+
+As of right now it comes with a _"queue executor"_, which will call all the functions you place inside it until the list contains 0 elements. 
+
+I will say tho, **do not leave things here after escaping your function**. This feature is experimental as it can break pretty easily in  mid-tick functions or by leaving a broken element on it.

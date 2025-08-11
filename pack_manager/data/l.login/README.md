@@ -2,7 +2,7 @@
 
 ### Content
 
-This pack controls when a player enters/leaves the game
-> - **functions**   > _`l.login/function/user/`_
-> - **call events** > _`zleinad_pack_manager/tags/function/user/login/`_
+This core module controls when a player enters/leaves the game
+> - **functions**   > _`l.user/function/login/`_
+> - **call events** > _`l.user/tags/function/login/`_
 
