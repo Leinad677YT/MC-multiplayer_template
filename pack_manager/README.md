@@ -14,7 +14,7 @@ Which leads us to the available functionality of the core library (this one)
 There are **3** core aspects covered:
 - World-exportable player databases
 - Distinction on player scoreboards (temp/perm)
-- Indivudual teams for players*
+- Individual teams for players*
 
 #### Player databases and scoreboards
 > To make easier "data saving" and gaining the ability to move data from 1 world to another, I had to assign the player scoreboards to their UUIDs instead if their names. This is because any namechange results in players keeping advancements, items and all data *except for scoreboards* which usually results in maps not being able to handle them.
