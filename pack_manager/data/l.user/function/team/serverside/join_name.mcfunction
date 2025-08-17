@@ -1,10 +1,10 @@
-$execute unless entity @a[scores={l.team.current=$(team)}] run return run function l.core:show_error {error_code:"JOIN_TO_NONEXISTENT_TEAM"}
+$execute unless entity $(name) run return run function l.core:show_error {error_code:"JOIN_TO_OFFLINE_PLAYER"}
 ## PLAYER WAS INSIDE A TEAM => LEAVE IT
     execute if score @s l.team.current matches -2147483648..2147483647 run function l.user:team/serverside/leave
 ##
 
 ## JOIN
-    $scoreboard players set @s l.team.current $(team)
+    $scoreboard players operation @s l.team.current = $(name) l.team.current
 ##
 
 ## CALL

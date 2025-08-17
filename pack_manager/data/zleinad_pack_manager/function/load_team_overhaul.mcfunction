@@ -15,7 +15,5 @@ tellraw @a[tag=l.core.tellraw] [{text:"[!] ",color:dark_aqua},{translate:"leinad
 
     ## SERVERSIDE
         scoreboard objectives add l.team.current dummy
-        scoreboard objectives add l.team.invited dummy
-        scoreboard objectives add l.team.invited_to dummy
     ##
 ##

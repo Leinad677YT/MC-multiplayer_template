@@ -1,0 +1,4 @@
+execute if entity @s[tag=l.instance.already_waiting] run return run function l.core:show_error {error_code:"ALREADY_WAITING_INSTANCE"}
+execute if entity @s[tag=l.instance.already_assigned] run return run function l.core:show_error {error_code:"ALREADY_PLAYING_INSTANCE"}
+
+$scoreboard players set @s l.instance.current $(id)

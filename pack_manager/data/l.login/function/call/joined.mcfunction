@@ -71,8 +71,9 @@
     scoreboard players set @s l.login.online 1
 ##
 
-## TRY TO GET 1ST TRY SESSION ID
-    scoreboard players set @s l.login.session_id -1
+## GET SESSION ID
+    scoreboard players set #temp l.core.temp_condition 0
+    scoreboard players set @s l.login.session_id -100
     function l.login:auxiliary/assign_session_id
 ##
 

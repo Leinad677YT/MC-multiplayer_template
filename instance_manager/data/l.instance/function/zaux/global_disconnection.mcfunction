@@ -1,0 +1,1 @@
+$data remove storage leinad_perm:instance waiting[{player:$(id)}]

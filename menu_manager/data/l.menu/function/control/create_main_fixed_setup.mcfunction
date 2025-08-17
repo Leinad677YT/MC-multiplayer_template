@@ -31,5 +31,5 @@
 ##
 
 ## ANNOUNCE END
-    tellraw @s [{text:"[!] ",color:"#ff9900"},{translate:"leinad.menu.tellraw.create_main_setup",fallback:"New fixed menu has been setup"}]
+    tellraw @s [{text:"[^] ",color:"#ff9900"},{translate:"leinad.menu.tellraw.create_main_setup",fallback:"New fixed menu has been setup"}]
 ##

@@ -20,18 +20,19 @@
 ## 
 
 ## CALL THE OTHER FUNCTIONS
-    $function #zleinad_pack_manager:call/login/disconnected with storage leinad_perm:online session[{name:"$(name)"}]
+    $data modify storage leinad_perm:online session[{name:"$(name)"}].leaving set value 1b
+    function #zleinad_pack_manager:call/login/disconnected with storage leinad_perm:online session[{leaving:1b}]
 ##
 
 ## FINISH
         
     ## SCHEDULED DISCONNECTION FUNCTIONS # MODULE
-        $data modify storage leinad_perm:schedule function append from storage leinad_perm:online session[{name:"$(name)"}].schedule_trigger[{trigger:0}]
+        data modify storage leinad_perm:schedule function append from storage leinad_perm:online session[{leaving:1b}].schedule_trigger[{trigger:0}]
         execute if data storage leinad_perm:schedule function[0] run function l.user:misc/execute_queue with storage leinad_perm:schedule function[-1]
     ##
 
     ## SAVE SCORES
-        $function l.player:score/save_scores with storage leinad_perm:online session[{name:"$(name)"}]
+        function l.player:score/save_scores with storage leinad_perm:online session[{leaving:1b}]
         scoreboard players reset #temp_score l.core.temp_condition
         $scoreboard players operation #temp_score l.core.temp_condition = $(name) l.player.id
         $scoreboard players reset $(name)
@@ -39,6 +40,6 @@
     ##
     
     ## SESSION DATA
-        $data remove storage leinad_perm:online session[{name:"$(name)"}]
+        data remove storage leinad_perm:online session[{leaving:1b}]
     ##
 ##

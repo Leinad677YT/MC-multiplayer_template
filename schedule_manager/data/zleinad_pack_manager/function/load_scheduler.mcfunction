@@ -11,5 +11,6 @@
 
 ## CLEAR TICK SCHEDULES
     data remove storage leinad_perm:schedule queue_t[]
+    data remove storage leinad_perm:schedule generic.queue[]
     data remove storage leinad_perm:online session[].schedule_[]
 ##

@@ -1,0 +1,1 @@
+$data remove storage leinad_perm:online session[{id:$(player)}].schedule_trigger[{function:"l.instance:manage_leaving"}]

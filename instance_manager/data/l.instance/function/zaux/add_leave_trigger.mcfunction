@@ -1,0 +1,1 @@
+$function l.user:schedule/player/trigger {trigger:0,lower:"$(lower)",function:"l.instance:manage_leaving",context:{id:"$(playing_on)"}}
