@@ -30,5 +30,8 @@ Their **MINIMAL** structure should match the following scheme depending on the m
 }
 ```
 
-## User functions
+## Leave instance and Disconnection leave instance
+These calls are executed with the session data of the player in question, depending on how they left. They are meant to help you manage their "return" to the main part of the world.
 
+## Start clearing
+This call gets executed with the room data right before the clearing starts. This is meant to help you control things like custom instance data or anything not already managed internally.

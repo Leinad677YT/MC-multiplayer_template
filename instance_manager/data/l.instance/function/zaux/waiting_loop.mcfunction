@@ -10,7 +10,7 @@
 
 ## THERE WAS
     ## ASSIGN
-        $tag @a[scores={l.player.id=$(player)},limit= 1] remove l.instance.already_waiting
+        $execute if score #bool l.instance.current matches 1.. run tag @a[scores={l.player.id=$(player)},limit= 1] remove l.instance.already_waiting
         $execute if score #bool l.instance.current matches 1.. as @a[scores={l.player.id=$(player)},limit= 1] run function l.user:instance/send_new {type:$(type)}
     ##
     
