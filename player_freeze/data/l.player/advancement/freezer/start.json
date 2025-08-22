@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "a":{
+            "trigger": "tick"
+        }
+    },
+    "rewards": {
+        "function": "l.player:freezer/change_start"
+    }
+}

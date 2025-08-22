@@ -13,6 +13,9 @@ This pack helps managing temporal games (instances). It allows you to send or ki
 To move players into an instance, you have 2 options. Either you send all players inside the same serverside team to a new one, or you send a specific player into an already existing one.
 For any of these 2, the player that queues **must not** be already queuing up into a game.
 
+> [!NOTE]
+> For a player to be on an instance, it needs to avoid serverside team changes, as all players on the same instance require to have the same team. Any team change made internally will result into a kick from the instance.
+
 ### Instance creation and management
 
 To simplify the process, this module comes with an integrated instance clearing system. It depends on how you create the instances and uses markers to mark "actions" for the clear system.

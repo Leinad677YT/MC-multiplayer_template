@@ -13,12 +13,6 @@
                 }
             }
         },
-		"fall": {
-			"trigger": "minecraft:fall_from_height",
-			"conditions": {
-                
-            }
-		},
 		"pearl": {
 			"trigger": "minecraft:entity_hurt_player",
 			"conditions": {
@@ -37,7 +31,7 @@
     },
 	"requirements": [
 		[
-			"change","fall","pearl"
+			"change","pearl"
 		]
 	],
     "rewards": {

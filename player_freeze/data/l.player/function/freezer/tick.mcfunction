@@ -1,0 +1,1 @@
+execute as @e[type=marker,tag=l.player_freeze.pending] at @s run function l.player:freezer/restore_start

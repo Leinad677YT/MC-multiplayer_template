@@ -4,5 +4,5 @@ execute if entity @s[type=!#l.core:horsey] unless items entity @s armor.body * r
 execute if entity @s[type=!#l.core:horsey] run item modify entity @s armor.body l.hit_det:add_ench
 
 execute if entity @s[type=!#l.core:horsey] run return fail
-execute unless items entity @s weapon.offhand * run item replace entity @s weapon.offhand with minecraft:poisonous_potato[ enchantments={vanishing_curse:1}]
-item modify entity @s weapon.offhand l.hit_det:add_ench
+execute unless items entity @s armor.feet * run item replace entity @s armor.feet with minecraft:poisonous_potato[ enchantments={vanishing_curse:1},equippable={slot:"feet"}]
+item modify entity @s armor.feet l.hit_det:add_ench
