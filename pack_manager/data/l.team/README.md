@@ -8,4 +8,3 @@ This core module controls per-player teams along with "serverside teams"
 
 > - **functions**   > _`l.user/function/team/`_
 > - **call events** > _`l.user/tags/function/team/`_
-

@@ -9,6 +9,7 @@
 > remember to set their starting data correctly before loading
 
 ##  Starting data
+
 The `#starting_data` functions are meant to **SET** the data inside the path `storage leinad_perm:data initial_playerdata`. The data here is the default for the modes.
 
 Their **MINIMAL** structure should match the following scheme depending on the modules loaded:
@@ -51,6 +52,7 @@ Their **MINIMAL** structure should match the following scheme depending on the m
 > Remember, a mode shouldn't necessarely be a different gamemode, you can mix multiple of them to make multi-character games
 
 ##  Saved score list
+
 The `#saved_score_list` functions are meant to modify the data inside the path `storage leinad_perm:data saved_scores`. Your functions should **APPEND** values in the following format
 
 ```
@@ -63,6 +65,7 @@ The `#saved_score_list` functions are meant to modify the data inside the path `
 > All objectives that aren't on the list by the time a player leaves will be lost to time
 
 ##  Imported score list
+
 The `#imported_score_list` functions are meant to modify the data inside the path `storage leinad_perm:data imported_scores`. Your functions should **APPEND** values in the following format
 
 ```

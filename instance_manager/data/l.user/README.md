@@ -1,4 +1,5 @@
 ##  Available instance locations
+
 The `#set_available` functions are meant to **APPEND** the data inside the path `storage leinad_perm:data instance_db`. Every item on the list will be treated as 1 full instance.
 
 Their **MINIMAL** structure should match the following scheme

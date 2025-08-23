@@ -20,6 +20,7 @@ There are more than 1 ways to make something happen in some time, this module co
 All of them, are controlled internally like this:
 
 #### TIME SCHEDULING
+
 > [!NOTE]
 > If you add to the context `save:1b`, **it WILL** save the event on the player queues when they disconnect with it on their queue.
 
@@ -33,6 +34,7 @@ Will add to the time queue of Pepito777 (as lower is just the lowercased nicknam
 > The **offline** player schedules are saved under `storage z_p$(lower):root data.schedule`
 
 #### TICK SCHEDULING
+
 > [!WARNING]
 > This queue type cannot be saved between sessions, even with `save:1b`
 
@@ -44,6 +46,7 @@ Will add to the tick queue: `function foo:bar {a:"test",function:"foo:bar",time:
 Will add to the tick queue of Pepito777 (as lower is just the lowercased nickname): `function foo:bar {a:"test",function:"foo:bar",time:INTERNAL_TICK_OF_TRIGGER}`, and it will execute after 20 ticks. This only works if the player is online.
 
 #### TRIGGER SCHEDULING
+
 > [!NOTE]
 > If you add to the context `save:1b`, **it WILL** save the event on the queue when the player leaves with it on its queue.
 

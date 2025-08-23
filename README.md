@@ -1,4 +1,5 @@
 # MC-multiplayer_template
+
 The root folders on this repository are all datapacks, but there are a few of them that should be installed at the same time, the **core datapacks**.
 
 Because this aims to help with multiplayer compatibility, the core datapacks handle players joining/leaving the world, player databases, per-player teams and some ID systems. 
@@ -11,6 +12,7 @@ Without them, none of the modules would work.
 > At this moment, it works from 1.21.5 to 1.21.8
 
 ## CONTENT LIST
+
 > ### CORE
 > - **pack_manager**
 >   - This is where all the main logic is handled, main tick function, loading order...
@@ -47,6 +49,8 @@ Without them, none of the modules would work.
 > - **player_freeze [HEAVY]**
 >   - Adds a way to apply freezing to players
 >   - Very unstable, read the documentation for more info, requires `inventory_manager`
+
 ## Where do I start?
+
 To get a better understanding of this library, I recommend you to install JUST THE CORE datapacks in a void superflat and read the `pack_manager` documentation.
 If you still find yourself with issues, feel free to DM me on discord @leinad677yt
