@@ -9,7 +9,7 @@
 ##
 
 ## RESET TEXTS
-    $data modify storage leinad_temp:teamdata macro set value {name:"$(name)",prefix:[],suffix:""}
+    $data modify storage leinad_temp:teamdata macro set value {name:"$(name)",prefix:[],suffix:[]}
 ##
 
 ## GET TEAM MODIFICATIONS

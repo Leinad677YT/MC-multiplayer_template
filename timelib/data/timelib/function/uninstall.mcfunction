@@ -1,5 +1,5 @@
 # Version error checking
-execute if score #TimeLib.VersionError load.status matches 1 run return run function timelib:zprivate/version_error
+#execute if score #TimeLib.VersionError load.status matches 1 run return run function timelib:zprivate/version_error
 
 # Check if TimeLib is installed
 scoreboard objectives add TimeLib.Uninstall dummy
@@ -12,8 +12,8 @@ scoreboard objectives remove TimeLib.Uninstall
 tellraw @a [{text:"",color:"red"},{text:"🕒 TimeLib >> ",color:"#2DE1E1"},{text:"Uninstalled TimeLib (v2.3.0.l)\n",color:"white"},"⚠ This was a modified version of timelib, things may break"]
 
 # Lantern Load & Version Checking
-scoreboard players reset #TimeLib load.status
-scoreboard players reset #TimeLib.Version load.status
+#scoreboard players reset #TimeLib load.status
+#scoreboard players reset #TimeLib.Version load.status
 
 # Remove scoreboards
 scoreboard objectives remove TimeLib.UnixTime

@@ -18,7 +18,7 @@
     # lowercase (.lower)
     data modify storage leinad_temp:player playerdata.name set string storage leinad_temp:login player.name
     function l.user:misc/lowercase_nickname
-    data modify storage leinad_temp:login player.lower set string storage leinad_temp:player playerdata.name
+    data modify storage leinad_temp:login player.lower set string storage leinad_temp:player playerdata.lower
     # old data from uuid (id)
     execute store result score #temp l.core.temp_condition store result storage leinad_temp:login player.id int 1 run function l.user:player/misc/get_id_from_uuid with storage leinad_temp:login player
     # id from score (ID)

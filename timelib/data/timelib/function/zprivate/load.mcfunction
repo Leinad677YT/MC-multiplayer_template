@@ -6,7 +6,7 @@
 
     # Lantern Load
     # (Note): If the version check fails, load.status will not be set, and therefore it won't start ticking.
-    scoreboard players set #TimeLib load.status 1
+    #scoreboard players set #TimeLib load.status 1
 
 # Init
 scoreboard objectives add TimeLib dummy

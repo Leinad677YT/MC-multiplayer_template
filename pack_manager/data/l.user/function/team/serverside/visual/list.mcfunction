@@ -1,7 +1,7 @@
 ## Lists players on your current team
 
 ## IF NEEDED, CREATE NEW TEAM
-    execute unless score @s l.team.current = @s l.team.current store result score @s l.team.current run scoreboard players add #new l.team.current 1
+    function l.user:team/serverside/create_or_ensure
 ##
 
 ## TELLRAW

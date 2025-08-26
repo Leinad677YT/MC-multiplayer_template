@@ -12,6 +12,6 @@
 ##
 
 ## EXECUTE ALL SESSION RELATED FUNCTIONS
-    execute if score #temp l.core.temp_condition matches 65 run return run function l.core:show_error {error_code:"TOO_MANY_PLAYERS"}
+    execute if score #temp l.core.temp_condition matches 65 run function l.core:show_error {error_code:"TOO_MANY_PLAYERS"}
     function #zleinad_pack_manager:call/login/session
 ##
