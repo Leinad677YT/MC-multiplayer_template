@@ -1,0 +1,6 @@
+{
+    "pack": {
+        "description": "Adds an easy way to get which room a player is inside of",
+        "pack_format":81
+    }
+}

@@ -1,0 +1,1 @@
+execute positioned ~ ~-10000 ~ run function l.room:detection

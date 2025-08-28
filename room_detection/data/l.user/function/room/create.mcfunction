@@ -1,0 +1,1 @@
+execute positioned ~ ~-10000 ~ summon interaction run function l.room:zaux/create
