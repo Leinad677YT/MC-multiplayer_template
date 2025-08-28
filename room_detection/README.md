@@ -4,6 +4,9 @@
 
 This pack places on a scoreboard the _room id_ of the place the player is inside of, tagging the players if they are inside one.
 
+> [!IMPORTANT]
+> Negative ids are reserved for internal reasons. This is to allow me to make generators as modules without the need to worry about breaking anything. Why so many? to reduce the risk of repeating them, I'm gonna guess that you won't have more than 2^31 unique rooms at the same time. Sorry for the inconvenience.
+
 ### Specification
 
 - **entity tag**
