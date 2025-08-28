@@ -49,6 +49,9 @@ Without them, none of the modules would work.
 > - **player_freeze [HEAVY]**
 >   - Adds a way to apply freezing to players
 >   - Very unstable, read the documentation for more info, requires `inventory_manager`
+> - **room_detection [LIGHT]**
+>   - Adds a way to easily detect which room a player is into.
+>   - Very useful for things like dungeon management.
 
 ## Where do I start?
 
