@@ -1,0 +1,1 @@
+$data modify storage leinad_perm:data pending_inf_gen append value {group:$(group)}

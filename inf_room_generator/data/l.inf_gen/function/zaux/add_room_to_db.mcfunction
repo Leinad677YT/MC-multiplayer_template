@@ -1,0 +1,2 @@
+$data modify storage leinad_perm:room $(id) set from storage leinad_temp:room new_room
+$data modify storage leinad_perm:data inf_gen_groups[{id:$(group)}].rooms append from storage leinad_temp:room new_room

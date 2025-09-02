@@ -1,0 +1,17 @@
+{
+    "type": "zl.inf_garden:game",
+    "generator": {
+        "type": "minecraft:flat",
+        "settings": {
+            "biome": "zl.inf_garden:game",
+            "lakes": false,
+            "features": false,
+            "layers": [
+                {
+                    "height": 32,
+                    "block": "minecraft:tuff"
+                }
+            ]
+        }
+    }
+}

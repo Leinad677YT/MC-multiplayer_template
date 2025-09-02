@@ -1,5 +1,9 @@
 {
     "values": [
+        {
+            "id": "l.schedule:player/load",
+            "required": false
+        },
         "#zleinad_pack_manager:core/call/login/joined",
         "#l.user:login/joined"
     ]

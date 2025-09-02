@@ -91,7 +91,9 @@
 ##
 
 ## CALL OTHER FUNCTIONS
-    function #zleinad_pack_manager:call/login/joined with storage leinad_temp:login session_
+   
+
+    execute at @s run function #zleinad_pack_manager:call/login/joined with storage leinad_temp:login session_
 ##
 
 data remove storage leinad_temp:login player

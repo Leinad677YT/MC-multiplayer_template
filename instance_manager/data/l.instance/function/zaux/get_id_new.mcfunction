@@ -1,5 +1,5 @@
 ## called with session-data + room_type
- $say {group:$(group), type: $(type), for:$(for)}
+# $say {group:$(group), type: $(type), for:$(for)}
 
 ## IS THERE ANY ROOM DIRECTLY AVAILABLE
 

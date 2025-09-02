@@ -1,0 +1,1 @@
+$execute as @e[tag=zl.inf_garden.door,tag=l.inf_gen.on_r$(new_room_id)] at @s run function zl.inf_garden:generation/global/check_connection/get_target with storage leinad_temp:game inf_garden.generation

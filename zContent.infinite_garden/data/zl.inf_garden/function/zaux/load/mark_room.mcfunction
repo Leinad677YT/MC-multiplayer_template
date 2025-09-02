@@ -1,0 +1,1 @@
+$data modify storage leinad_perm:room $(room_id).dimension set value "$(dimension)"

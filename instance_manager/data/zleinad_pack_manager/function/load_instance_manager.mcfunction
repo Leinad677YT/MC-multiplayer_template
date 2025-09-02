@@ -20,7 +20,7 @@
         data modify storage leinad_perm:data instance_db[].for set value -2147483648
         data modify storage leinad_perm:data instance_db[].type set value ""
         # iterate over the backup data
-        function l.instance:zaux/backup_db with storage leinad_perm:data instance_db[0]
+        execute if data storage leinad_perm:data instance_db[0] run function l.instance:zaux/backup_db with storage leinad_perm:data instance_db[-1]
         # set data from backup scores
         data modify storage leinad_perm:data instance_db set from storage leinad_temp:instance list
         data remove storage leinad_temp:instance list

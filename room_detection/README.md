@@ -9,6 +9,9 @@ This pack places on a scoreboard the _room id_ of the place the player is inside
 
 ### Specification
 
+- **predicate**
+    - `l.user:room/check`  
+        > Successful if the entity `l.room.current` score matches with the one on `#check l.room.current`.  
 - **entity tag**
     - `l.room.inside`  
         > Applied to entities after a detection if they are inside a room.  

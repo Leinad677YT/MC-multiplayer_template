@@ -1,0 +1,26 @@
+{
+    "condition": "entity_scores",
+    "entity": "this",
+    "scores": {
+        "l.room.current": {
+            "min": {
+                "type": "score",
+                "score": "l.room.current",
+                "target": {
+                    "type": "fixed",
+                    "name": "#check"
+                },
+                "scale": 1
+            },
+            "max": {
+                "type": "score",
+                "score": "l.room.current",
+                "target": {
+                    "type": "fixed",
+                    "name": "#check"
+                },
+                "scale": 1
+            }
+        }
+    }
+}

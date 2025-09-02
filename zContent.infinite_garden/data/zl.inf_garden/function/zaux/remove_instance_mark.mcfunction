@@ -1,0 +1,1 @@
+$data remove storage leinad_perm:data instance_db[{id:$(id)}].finished

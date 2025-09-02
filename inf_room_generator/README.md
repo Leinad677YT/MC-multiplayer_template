@@ -1,0 +1,9 @@
+# GENERATION MODULE
+
+> [!WARNING]
+>  THIS IS STILL BEING WORKED ON, PLEASE STAND BY
+
+## Content
+
+
+### Specification
