@@ -1,5 +1,4 @@
 ## INCREASE DEPTH
-    tellraw @a [{text:"DEPTH: "},{score:{name:"#current_depth",objective:"l.room.current"}}]
     scoreboard players add #current_depth l.room.current 1
 ##
 

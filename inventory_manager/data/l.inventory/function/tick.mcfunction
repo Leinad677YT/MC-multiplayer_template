@@ -4,6 +4,10 @@
         ##
             execute as @a[advancements={l.inventory:inventory_changed=true}] at @s run function #zleinad_pack_manager:call/inventory/change_pre_cache
         ##
+    
+        ## UPDATE ALL FORCE-UPDATE PLAYERS
+            execute in l.core:void as @a[tag=l.inventory.force_cache,advancements={l.inventory:inventory_changed=false}] run function l.inventory:cache/update_force
+        ##
 
         ## RESET CHECKS
             scoreboard players set @a[scores={l.inventory.open_echest=1}] l.inventory.cache_echest_timer 100

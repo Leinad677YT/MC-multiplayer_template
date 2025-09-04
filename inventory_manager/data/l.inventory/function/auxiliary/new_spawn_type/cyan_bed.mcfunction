@@ -1,4 +1,4 @@
-execute if entity @s[tag=l.inventory.not_save_spawn] run return fail
+execute if entity @s[tag=!l.inventory.save_spawn] run return fail
 
 data modify storage leinad_temp:player spawn set from entity @s respawn
 data modify storage leinad_temp:player spawn.macro set value {forced:false,block:"minecraft:cyan_bed"}

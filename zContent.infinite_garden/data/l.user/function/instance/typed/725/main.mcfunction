@@ -29,9 +29,6 @@
 
 ## PLACE ROOM
     
-    ## PHYSICAL
-        $execute in $(dimension) run fill 0 8 0 15 15 15 air strict
-    ##
 
     ## DATABASE
         data modify storage leinad_temp:game inf_garden.macro.safe set value 0b
@@ -52,11 +49,20 @@
     ##
 ##
 
-## MOVE PLAYER
-    $execute in $(dimension) run tp @a[scores={l.instance.current=$(id)}] 8.0 8.0 8.0
+## PLAYERS AND START ROOM
+
+    ## PHYSICAL
+        $data modify storage leinad_perm:data initial_playerdata.inf_garden.light.pos.dimension set value "$(dimension)"
+        $data modify storage leinad_perm:data initial_playerdata.inf_garden.light.pos.dimension set value "$(dimension)"
+        $execute in $(dimension) run fill 0 8 0 15 15 15 air strict
+    ##
+    $execute as @a[scores={l.instance.current=$(id)}] run function l.user:player/load {mode:inf_garden}
+    $tag @a[scores={l.instance.current=$(id)}] add zl.inf_garden.in_game
 ##
 
+
 ## EXIT LOAD STATUS
+    $execute in $(dimension) run forceload remove 0 0
     $data modify storage leinad_perm:data instance_db[{id:$(id)}].finished set value 1b
     return -1
 ##

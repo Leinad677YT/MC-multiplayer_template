@@ -32,6 +32,3 @@
 ## UPDATE DATA BACK
     $data modify storage leinad_perm:room $(id) set from storage leinad_temp:room current_room
 ##
-
-$tellraw @a "> $(id)"
-$tellraw @a {storage:"leinad_perm:room",nbt:"$(id).doors"}

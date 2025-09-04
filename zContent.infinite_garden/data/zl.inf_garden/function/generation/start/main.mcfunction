@@ -53,7 +53,7 @@
         ##       ---------------        ##
 
         data modify storage leinad_temp:game inf_garden.temp set value [{shape:1},{shape:2},{shape:3},{shape:4},{shape:5},{shape:6},{shape:7},{shape:8},{shape:9},{shape:10}]
-        data modify storage leinad_temp:game inf_garden.temp set value [{shape:10}]
+data modify storage leinad_temp:game inf_garden.temp set value [{shape:10}]
         execute unless score #temp.4 zl.inf_garden.global matches 1 unless score #temp.7 zl.inf_garden.global matches 1 run data remove storage leinad_temp:game inf_garden.temp[{shape:1}]
         execute unless score #temp.1 zl.inf_garden.global matches 1 unless score #temp.4 zl.inf_garden.global matches 1 run data remove storage leinad_temp:game inf_garden.temp[{shape:2}]
         execute unless score #temp.1 zl.inf_garden.global matches 1 unless score #temp.2 zl.inf_garden.global matches 1 run data remove storage leinad_temp:game inf_garden.temp[{shape:3}]

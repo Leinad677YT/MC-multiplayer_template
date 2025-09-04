@@ -73,3 +73,9 @@ item replace block ~ ~ ~2 container.12 from entity @s armor.head
 item replace block ~ ~ ~2 container.13 from entity @s weapon.offhand
 
 item replace block ~ ~ ~2 container.14 from entity @s player.cursor
+item replace block ~ ~ ~2 container.15 from entity @s player.crafting.0
+item replace block ~ ~ ~2 container.16 from entity @s player.crafting.1
+item replace block ~ ~ ~2 container.17 from entity @s player.crafting.2
+item replace block ~ ~ ~2 container.18 from entity @s player.crafting.3
+
+item replace block ~ ~ ~2 container.19 from entity @s weapon.mainhand

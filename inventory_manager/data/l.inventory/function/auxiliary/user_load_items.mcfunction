@@ -1,21 +1,3 @@
-# MODE:{inventory:[],e_chest:[],equipment:[],xp_p:0,xp_l:0,health:20,pos:{},spawnpoint:{},max_health:20}
-
-## CACHE
-$data modify block ~ ~ ~ Items set from storage z_p$(lower):root data.mode.$(mode).inventory.heavy.e_chest
-$data modify block ~ ~ ~1 Items set from storage z_p$(lower):root data.mode.$(mode).inventory.heavy.inventory
-$data modify block ~ ~ ~2 Items set from storage z_p$(lower):root data.mode.$(mode).inventory.heavy.equipment
-
-## OTHER DATA
-$data modify storage leinad_temp:player inventory set from storage z_p$(lower):root data.mode.$(mode).inventory.light
-
-## HEALTH
-function l.inventory:db_interaction/setdata/set_health with storage leinad_temp:player inventory
-
-## POSITINAL STUFF
-function l.user:inventory/overwrite/set_pos with storage leinad_temp:player inventory.pos
-function l.inventory:db_interaction/setdata/set_spawn with storage leinad_temp:player inventory.spawnpoint
-
-#execute if data storage leinad_temp:player inventory{stores_items:false} run return fail
 ## ITEMS
 item replace entity @s enderchest.0 from block ~ ~ ~ container.0
 item replace entity @s enderchest.1 from block ~ ~ ~ container.1

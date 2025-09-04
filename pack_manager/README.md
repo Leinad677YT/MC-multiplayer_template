@@ -269,7 +269,7 @@ As the core of the library, this datapack controls the order of execution inside
         >>          },
         >>          light:{             // this gets copied for easy access (not items)
         >>              health: int,                // positive
-        >>              max_health: float/double,   // positive
+        >>              max_health: float/double,   // positive (base attribute)
         >>              pos:{
         >>                  dimension: string,  // VALID dimension
         >>                  x: float,           // VALID position
@@ -286,8 +286,8 @@ As the core of the library, this datapack controls the order of execution inside
         >>                  block: string,      // the block id that the module should check for
         >>                  forced: 1b [bool]   // TRUE = skip block check
         >>              },
-        >>              stores_items: bool,     // if the module has to load/save the player items on this mode
-        >>          }
+        >>              stores_items: bool,     // if the module has to save the player items on this mode
+        >>          }                           // false means that items will not be saved, but they will be cached
         >>      }
         >>   }
         >> }

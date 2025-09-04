@@ -1,6 +1,6 @@
 ## STORE NEW POS
     ## I'll optimize this some day, I swear
-    execute if entity @s[tag=l.inventory.not_save_pos] run return fail
+    execute if entity @s[tag=!l.inventory.save_pos] run return fail
     
     execute store result storage leinad_temp:player playerdata.id int 1 run scoreboard players get @s l.player.id
    function l.user:login/session/get_from_id with storage leinad_temp:player playerdata

@@ -1,4 +1,4 @@
-execute if entity @s[tag=l.inventory.not_save_spawn] run return fail
+execute if entity @s[tag=!l.inventory.save_spawn] run return fail
 
 ## PREPARE DATA
     data modify storage leinad_temp:player spawn set from entity @s respawn
