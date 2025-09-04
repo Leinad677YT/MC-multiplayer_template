@@ -145,3 +145,7 @@ This pack helps with inventory (mode) management, saving items, health, spawnpoi
     > Now contains `dimension`, which is the string of the current dimension of the player. Updates with `l.user:inventory/overwrite/set_pos`, any dimension change while with the `l.inventory.save_pos` tag and when joining the world.  
     >
     > This data does not imply that the dimension will get saved, its only useful to locate the players and limit entity selectors. 
+- **load and save global calls**
+    > Both of these 2 will load/save **all** of this pack contents. 
+    >> [!NOTE]
+    >> If you only want to manage specific data from this module, you should not use the generic call and instead opt for the specific functions designated to that.  
