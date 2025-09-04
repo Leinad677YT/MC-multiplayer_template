@@ -1,4 +1,4 @@
-# CORE MODULE
+# PLAYER MODULE
 
 ## Content
 
