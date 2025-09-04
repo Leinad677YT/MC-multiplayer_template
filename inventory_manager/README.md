@@ -78,7 +78,12 @@ This pack helps with inventory (mode) management, saving items, health, spawnpoi
         > Overwrites the last saved position of the player with a specified one, *this will tp the player there*. 
         > Called `as` the player with $(x), $(y), $(z), $(angle) and $(dimension).
         >> [!WARNING]
-        >> This only overwrites their dimension if they weren't already there, to change position on the same dimension use regular `/tp` and `/scoreboard`
+        >> This only overwrites their saved dimension if they weren't already there and have the `l.inventory.save_pos` tag. To change position on the same dimension use regular `/tp` and `/scoreboard` operations.
+    - `l.user:inventory/overwrite/set_pos`  
+        > Overwrites the last saved dimension of the player with a specified one. 
+        > Called with $(lower) and $(dimension).
+        >> [!WARNING]
+        >> This only overwrites their saved dimension. It's useful when you need multiple dimensions and `l.user:inventory/overwrite/set_pos` doesn't fit your usecase.
     - `l.user:inventory/overwrite/set_spawnpoint_\*`  
         > Overwrites the spawnpoint of the player with a specified one.  
         >
@@ -133,3 +138,10 @@ This pack helps with inventory (mode) management, saving items, health, spawnpoi
         >>   }
         >> }
         >> ```  
+
+#### Enhancements
+
+- **session data**
+    > Now contains `dimension`, which is the string of the current dimension of the player. Updates with `l.user:inventory/overwrite/set_pos`, any dimension change while with the `l.inventory.save_pos` tag and when joining the world.  
+    >
+    > This data does not imply that the dimension will get saved, its only useful to locate the players and limit entity selectors. 

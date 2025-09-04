@@ -1,0 +1,1 @@
+$data modify storage leinad_temp:player temp merge from storage leinad_perm:online session[{id:$(id)}]

@@ -1,1 +1,1 @@
-$data modify storage leinad_perm:online session[{lower:$(lower)}].dimension set from storage leinad_temp:player auxiliary.dimension
+$data modify storage leinad_perm:online session[{id:$(id)}].dimension set value "$(dimension)"

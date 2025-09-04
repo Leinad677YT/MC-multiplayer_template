@@ -1,0 +1,1 @@
+$data modify storage z_p$(lower):root data.$(mode).inventory.light.pos.dimension set value "$(dimension)"
