@@ -31,11 +31,11 @@ Without them, none of the modules would work.
 > ### CORE LIBRARIES
 > - **menu_manager**
 >   - Library to make input menus easily with simple functions
->   - See `https://github.com/Leinad677YT/MC-input_menu_manager` for more info
+>   - See [https://github.com/Leinad677YT/MC-input_menu_manager](https://github.com/Leinad677YT/MC-input_menu_manager) for more info
 > - **TimeLib**
 >   - By CMDRed, specifically @silicatYT with some help from BananaRedPanda. 
 >   - Library that gets the irl time into scores and data storages for us to use it
->   - See `https://github.com/CMDRed/TimeLib` for more info
+>   - See [https://github.com/CMDRed/TimeLib](https://github.com/CMDRed/TimeLib) for more info
 > ### MODULES
 > - **instance_manager [LIGHT]**
 >   - Creates a complete system for temporal gamemodes, from room creation to calls on players joining an instance.
