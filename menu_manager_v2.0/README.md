@@ -10,8 +10,8 @@ This means that it can work without:
 
 Thus, making it more immersive in some scenarios.
 
-> [!WARNING]
-> If you use spectator to fix the players in place, remember that they can see for 1tick the position of other players with the `/tp` from the hotbar menu **AND** that they can't see the entity they are riding.
+> [!TIP]
+> If you use spectator to fix the players in place, remember that they can see for 1tick the position of other players with the `/tp` from the hotbar menu **AND** that they can't see the entity they are spectating.
 
 ### Definitions
 
@@ -82,11 +82,11 @@ Specific stage data goes inside a storage where every stage has the following pa
 The data itself, should have the following structure:
 ```
 {
-    t_$(trigger1): {        // TRIGGER REDIRECTS
+    t_$(trigger1): {        // TRIGGER REDIRECTS (executes l.user:menu/change_stage directly)
         main: int,
         secondary: int
     },
-    t_$(trigger2): {        // TRIGGER EXECUTES
+    t_$(trigger2): {        // TRIGGER EXECUTES (in the form of `$function $(function)`)
         function: string
     },
     t_$(trigger3): {        // TRIGGER REDIRECTS AND EXECUTES
