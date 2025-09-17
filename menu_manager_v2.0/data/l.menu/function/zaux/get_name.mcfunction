@@ -1,0 +1,1 @@
+$data modify storage leinad_temp:menu displays.name set from storage leinad_perm:online session[{id:$(id)}].name

@@ -71,7 +71,7 @@ As the core of the library, this datapack controls the order of execution inside
     > There are 2 different save files, and each one serves a different purpose.
     > - Save files (`z_p$(lower):root data`)
     >   > The storage where all in-world data gets saved and read, this is where things are stored directly during runtime without external triggers.  
-    >   > Inside `data.scores` are the scores of the last online player with this nickname, and the `load` and `save` functions will consider any "root subpath" of data as a different `mode` (look below). 
+    >   > Inside `data.scores` are the scores of the last online player with this nickname, and the `load` and `save` functions will consider any path inside `data.mode` as a different `mode` (look below). 
     > - Import files (`z_i$(lower):$(slot) data`)
     >   > The storages that should be used to transfer data between worlds. They should only be interacted with using their related `import` functions.
     >

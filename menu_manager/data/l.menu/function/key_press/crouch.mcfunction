@@ -1,6 +1,0 @@
-## THIS IS THE SNEAKING TRIGGER, IT IS THE DEFAULT "EXIT BUTTON" FOR PLAYERS
-
-## RESET DISPLAYS
-    function l.user:menu/restore_menu
-##
-

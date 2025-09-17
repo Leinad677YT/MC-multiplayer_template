@@ -1,2 +1,0 @@
-execute store result storage leinad_temp:game inf_garden.macro.player_id int 1 run scoreboard players get @s l.player.id
-function zl.inf_garden:zaux/mark_session with storage leinad_temp:game inf_garden.macro

@@ -11,7 +11,7 @@ data modify storage leinad_perm:data initial_playerdata.inf_garden set value {\
                 pos: {\
                     dimension: "zl.inf_garden:game",\
                     x: 8.0f,\
-                    y: 10.0f,\
+                    y: 8.0f,\
                     z: 8.0f,\
                     angle: 0.0f\
                 },\

@@ -38,26 +38,27 @@
     ## ROOM VOLUME
         # scaled by 1000 (16x8x16 room)
         scoreboard players set #create_width l.room.current 16000
-        scoreboard players set #create_height l.room.current 8000
+        scoreboard players set #create_height l.room.current 32000
         # ID is given before
-        $execute in $(dimension) positioned 8.0 8.0 8.0 run function l.user:room/create
+        $execute in $(dimension) positioned 8.0 0.0 8.0 run function l.user:room/create
         $data modify storage leinad_temp:game inf_garden.macro.instance_id set value $(id)
         data modify storage leinad_temp:game inf_garden.macro.generator set value "start"
         $execute in $(dimension) run function zl.inf_garden:zaux/load/add_clear_to_start
         function zl.inf_garden:zaux/load/mark_room with storage leinad_temp:game inf_garden.macro
-        $execute as @a[scores={l.instance.current=$(id)}] run function zl.inf_garden:zaux/mark_session_
     ##
 ##
 
 ## PLAYERS AND START ROOM
 
     ## PHYSICAL
-        $data modify storage leinad_perm:data initial_playerdata.inf_garden.light.pos.dimension set value "$(dimension)"
-        $data modify storage leinad_perm:data initial_playerdata.inf_garden.light.pos.dimension set value "$(dimension)"
-        $execute in $(dimension) run fill 0 8 0 15 15 15 air strict
+        $execute in $(dimension) run function l.user:instance/typed/725/start_game with storage leinad_temp:game inf_garden.macro
+        function zl.inf_garden:zaux/place_room with storage leinad_temp:game inf_garden.macro
+        $execute in $(dimension) run function #zl.user:manage_start_door with storage leinad_temp:game inf_garden.macro
     ##
-    $execute as @a[scores={l.instance.current=$(id)}] run function l.user:player/load {mode:inf_garden}
-    $tag @a[scores={l.instance.current=$(id)}] add zl.inf_garden.in_game
+    
+    ## PLAYERS
+        $execute in $(dimension) as @a[scores={l.instance.current=$(id)}] run function zl.inf_garden:manage_player
+    ##
 ##
 
 

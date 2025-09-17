@@ -7,4 +7,3 @@ tag @s add l.inf_gen.clear_etag
 tag @s add l.instance.clear_etag
 $tag @s add l.inf_gen.on_r$(room_id)
 rotate @s ~180 0
-tellraw @a {entity:"@s",nbt:"Rotation[0]"}

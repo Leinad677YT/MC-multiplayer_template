@@ -8,3 +8,7 @@
         scoreboard players set #1600 zl.inf_garden.global 1600
         scoreboard players set #3600 zl.inf_garden.global 3600
 ##
+
+## ROOM POOLS
+    function zl.inf_garden:data/room_db
+##

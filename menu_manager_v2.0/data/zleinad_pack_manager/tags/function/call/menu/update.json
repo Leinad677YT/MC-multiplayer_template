@@ -1,0 +1,7 @@
+{
+    "values": [
+        "#zleinad_pack_manager:core/call/menu/update_pre",
+        "#l.user:menu/update",
+        "#zleinad_pack_manager:core/call/menu/update_pos"
+    ]
+}
