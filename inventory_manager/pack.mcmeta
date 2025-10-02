@@ -1,6 +1,8 @@
 {
     "pack": {
-    "pack_format": 71,
-        "description": {"text":"PLIS NO ME VUELVAS A REHACER POR FAVOOOOOOOOOOOOOOOOOR"}
-    }
+        "supported_formats": [65, 81],
+        "description": {"text":"PLIS NO ME VUELVAS A REHACER POR FAVOOOOOOOOOOOOOOOOOR"},
+        "min_format": 65,
+        "max_format": 9999
+               }
 }

@@ -15,7 +15,8 @@ data modify storage leinad_temp:player spawn.macro set value {forced:true,block:
     data modify storage leinad_temp:player spawn.macro.x set from storage leinad_temp:player spawn.pos[0]
     data modify storage leinad_temp:player spawn.macro.y set from storage leinad_temp:player spawn.pos[1]
     data modify storage leinad_temp:player spawn.macro.z set from storage leinad_temp:player spawn.pos[2]
-    data modify storage leinad_temp:player spawn.macro.angle set from storage leinad_temp:player spawn.angle
+    execute if data storage leinad_temp:player spawn.angle run data modify storage leinad_temp:player spawn.macro.angle set from storage leinad_temp:player spawn.angle
+    execute unless data storage leinad_temp:player spawn.angle run data modify storage leinad_temp:player spawn.macro.angle set from storage leinad_temp:player spawn.yaw
 
     data modify storage leinad_temp:player spawn.macro.dimension set from storage leinad_temp:player spawn.dimension
     execute unless data storage leinad_temp:player spawn.dimension run data modify storage leinad_temp:player spawn.macro.dimension set value "minecraft:overworld"

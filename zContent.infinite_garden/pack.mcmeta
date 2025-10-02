@@ -1,6 +1,8 @@
 {
     "pack": {
-        "pack_format": 81,
-        "description": "InfiniteGarden datapack version"
-    }
+        "supported_formats": [65, 81],
+        "description": "InfiniteGarden datapack version",
+        "min_format": 65,
+        "max_format": 9999
+               }
 }

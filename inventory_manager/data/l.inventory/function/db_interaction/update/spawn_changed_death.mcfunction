@@ -30,7 +30,8 @@ execute if entity @s[tag=!l.inventory.save_spawn] run return fail
     data modify storage leinad_temp:player spawn.macro.x set from storage leinad_temp:player spawn.pos[0]
     data modify storage leinad_temp:player spawn.macro.y set from storage leinad_temp:player spawn.pos[1]
     data modify storage leinad_temp:player spawn.macro.z set from storage leinad_temp:player spawn.pos[2]
-    data modify storage leinad_temp:player spawn.macro.angle set from storage leinad_temp:player spawn.angle
+    execute if data storage leinad_temp:player spawn.angle run data modify storage leinad_temp:player spawn.macro.angle set from storage leinad_temp:player spawn.angle
+    execute unless data storage leinad_temp:player spawn.angle run data modify storage leinad_temp:player spawn.macro.angle set from storage leinad_temp:player spawn.yaw
 ##
 
 ## UPLOAD DATA

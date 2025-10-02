@@ -1,6 +1,7 @@
 {
   "pack": {
-      "pack_format": 71,
-      "description": "Data Pack library for getting the real life date & time.\nCreated by CMDred."
-  }
+      "description": "Data Pack library for getting the real life date & time.\nCreated by CMDred.",
+        "min_format": 65,
+        "max_format": 9999
+               }
 }

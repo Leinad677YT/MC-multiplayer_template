@@ -2,22 +2,8 @@
 
 ## ONLINE CHECK
     # if was online, append again
-    $execute if entity @a[name=$(name)] run return run data modify storage leinad_temp:login online_ append from storage leinad_temp:login name
+    $execute if entity @a[name=$(name),scores={l.login.left=0}] run return run data modify storage leinad_temp:login online_ append from storage leinad_temp:login name
 ##
-
-## OFFLINE
-
-    ## PERSONAL TEAM
-        $team remove z_p$(name)
-    ##
-
-    ## SERVERSIDE TEAM
-        # $scoreboard players reset $(name) l.team.current
-        # $scoreboard players reset $(name) l.team.invited
-        # $scoreboard players reset $(name) l.team.invited_to
-    ##
-
-## 
 
 ## CALL THE OTHER FUNCTIONS
     $data modify storage leinad_perm:online session[{name:"$(name)"}].leaving set value 1b
@@ -39,7 +25,13 @@
         $scoreboard players operation $(name) l.player.id = #temp_score l.core.temp_condition
     ##
     
+    ## PERSONAL TEAM
+        $team remove z_p$(name)
+    ##
+
     ## SESSION DATA
         data remove storage leinad_perm:online session[{leaving:1b}]
     ##
+
+    
 ##

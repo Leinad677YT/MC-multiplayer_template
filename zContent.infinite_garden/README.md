@@ -70,4 +70,4 @@ As you may have already guessed, _this can't be done inside the structure direct
 
 This part is kinda tricky and the hardest of them all to control. Every generator type is contained inside `zl.inf_garden:generation/$(generator)`. The free doors will then execute the `main` subfunction of their respective generator when a `inf_generator` group update happens (either forced by the update function or by a room change).
 
-The fastest way to make a new generator is to blatantly stole another one already done and tweaking it to your needs. The final room will be selected from a storage if you chose to copy mine.
+The fastest way to make a new generator is to blatantly stole another one already done and tweaking it to your needs. The final room will be selected from a storage if you choose to copy mine.

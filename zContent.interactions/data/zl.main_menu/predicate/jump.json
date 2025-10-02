@@ -1,0 +1,26 @@
+{
+    "condition": "all_of",
+    "terms": [
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type_specific": {
+                    "type": "player",
+                    "input": {
+                        "jump": true
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_scores",
+            "entity": "this",
+            "scores": {
+                "zl.menu_trigger.delay": {
+                    "min": 4
+                }
+            }
+        }
+    ]
+}

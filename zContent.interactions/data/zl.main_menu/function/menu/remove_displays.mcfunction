@@ -1,0 +1,1 @@
+$kill @e[type=#l.menu:displays,tag=l.main_menu.display,tag=l.menu.for_$(name)]

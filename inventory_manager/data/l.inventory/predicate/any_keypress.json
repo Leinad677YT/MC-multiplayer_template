@@ -1,0 +1,65 @@
+{
+    "condition": "any_of",
+    "terms": [
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type_specific": {
+                    "type": "player",
+                    "input": {
+                        "backward": true
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type_specific": {
+                    "type": "player",
+                    "input": {
+                        "forward": true
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type_specific": {
+                    "type": "player",
+                    "input": {
+                        "left": true
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type_specific": {
+                    "type": "player",
+                    "input": {
+                        "right": true
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type_specific": {
+                    "type": "player",
+                    "input": {
+                        "jump": true
+                    }
+                }
+            }
+        }
+    ]
+}

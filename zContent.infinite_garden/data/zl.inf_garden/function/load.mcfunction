@@ -1,5 +1,5 @@
 ## TELLRAW
-    tellraw Leinad677YT [{text:"[+] ",color:"#3ce233"},{color:"#9dffa5",translate:"leinad.zl.inf_garden.tellraw.load",fallback:"¡Infinite Garden ha sido cargado!"}]
+    tellraw @a[tag=l.core.tellraw] [{text:"[+] ",color:"#3ce233"},{color:"#9dffa5",translate:"leinad.zl.inf_garden.tellraw.load",fallback:"¡Infinite Garden ha sido cargado!"}]
 ##
 
 ## SCOREBOARDS

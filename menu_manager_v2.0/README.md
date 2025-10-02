@@ -43,9 +43,14 @@ Thus, making it more immersive in some scenarios.
     - `l.user:menu/change_stage`
         > Executed `as` and `at` the player that you want to interact with the menu _with_ `$(main)` and `$(secondary)`.  
         > It will override the player stage with the specified one, updating the displays that the target stage data has specified.
+    - `l.user:menu/change_stage_schedule`
+        > Executed _with_ `$(name)`, `$(main)` and `$(secondary)`.  
+        > This is a redirection to `l.user:menu/change_stage` that automatically sets the player context. Very useful along the scheduler module for animations or timing in general.
 - **function calls**
-    - `l.user:menu/update`
+    - `#l.user:menu/update`
         > You should update you menu data that requires to be updated on reload inside this function. To know how to properly set up the data look inside **[Data structure](#data-structure)**
+    - `#l.user:menu/interacted`
+        > Executed with `$(main)` and `$(secondary)` from the menu a player was in **before** the `$(trigger)` (also called with it) was detected and **after** validation. Done _at_ and _as_ the specific player.
 
 ### Data structure
 

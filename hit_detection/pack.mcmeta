@@ -1,6 +1,8 @@
 {
     "pack": {
-        "pack_format": 71,
-        "description": [{"text": "Made by Leinad677\n","color": "#3c00ff"},{"text": "Adds a fixed item on entities that manages all entity related damage, NOT ENVIROMENT","color":"#a4dfeb"}]
-    }
+        "supported_formats": [65, 81],
+        "description": [{"text": "Made by Leinad677\n","color": "#3c00ff"},{"text": "Adds a fixed item on entities that manages all entity related damage, NOT ENVIROMENT","color":"#a4dfeb"}],
+        "min_format": 65,
+        "max_format": 9999
+               }
 }

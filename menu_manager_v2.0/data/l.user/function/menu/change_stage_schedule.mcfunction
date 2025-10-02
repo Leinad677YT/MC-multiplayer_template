@@ -1,0 +1,1 @@
+$execute as $(name) at @s run function l.user:menu/change_stage {main:$(main),secondary:$(secondary)}

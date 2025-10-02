@@ -2,10 +2,13 @@
     "carvers": [],
     "downfall": 2921009,
     "effects": {
-        "sky_color": 6354175,
-        "fog_color": 6354175,
-        "water_color": 6354175,
-        "water_fog_color": 6354175,
+        "sky_color": 7585016,
+        "fog_color": 10484223,
+        "water_color": 4047306,
+        "water_fog_color": 4813723,
+        "grass_color": 5418322,
+        "foliage_color": 4361026,
+        "dry_foliage_color": 15128140,
         "mood_sound": {
             "sound": "minecraft:intentionally_empty",
             "tick_delay": -1000000000,

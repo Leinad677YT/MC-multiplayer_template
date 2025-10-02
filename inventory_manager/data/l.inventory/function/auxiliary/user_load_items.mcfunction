@@ -80,8 +80,8 @@ item replace entity @s player.crafting.3 from block ~ ~ ~2 container.18
 
 item replace entity @s weapon.mainhand from block ~ ~ ~2 container.19
 
-execute at @s run summon item ~ ~ ~ {Item:{id:"stone"},Tags:["temp_check2"]}
+execute at @s run summon item ~ ~ ~ {Item:{id:"stone"},Tags:["temp_check2"],PickupDelay:2}
 $execute at @s as @e[type=item,tag=temp_check2,distance=..2,limit=1] in l.core:void positioned 0 $(session) 0 run item replace entity @s container.0 from block ~ ~ ~2 container.25
 
-execute at @s run summon item ~ ~ ~ {Item:{id:"stone"},Tags:["temp_check3"]}
+execute at @s run summon item ~ ~ ~ {Item:{id:"stone"},Tags:["temp_check3"],PickupDelay:2}
 $execute at @s as @e[type=item,tag=temp_check3,distance=..2,limit=1] in l.core:void positioned 0 $(session) 0 run item replace entity @s container.0 from block ~ ~ ~2 container.26

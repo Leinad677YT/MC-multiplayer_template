@@ -1,5 +1,4 @@
 ## GET NAME[0]
-    
     data modify storage leinad_temp:login name set string storage leinad_temp:login online[0]
     
 ##

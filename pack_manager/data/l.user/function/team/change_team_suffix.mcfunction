@@ -9,6 +9,5 @@
 ## THIS SHOULD NOT BE CALLED SEPARATELY
 
 ## SET VALUES
-    $team modify z_p$(name) prefix $(prefix)
     $team modify z_p$(name) suffix $(suffix)
 ##

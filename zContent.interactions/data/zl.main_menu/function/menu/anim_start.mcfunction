@@ -1,0 +1,1 @@
+$function l.user:schedule/player/ticks {ticks:3,lower:"$(lower)",function:"l.user:menu/change_stage_schedule",context:{name:$(name),main:-677,secondary:1}}

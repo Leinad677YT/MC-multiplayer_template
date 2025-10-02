@@ -180,9 +180,9 @@ As the core of the library, this datapack controls the order of execution inside
     - `l.user:team/update_player`  
         > Refreshes a player's per-player team. This works exactly like how it does when they log in. Which means that it will first do the `#l.user:team/get_teamdata` call and then update the prefixes and suffixes of the player.
         > Called with `$(name)` and `as` the desired player.  
-    - `l.user:team/change_team_data`  
+    - `l.user:team/change_team_prefix`, `l.user:team/change_team_suffix` and `l.user:team/restore_pref_suf`
         > Overwrites a per-player team prefix and suffix.
-        > Called with `$(name)`, `$(prefix)` and `$(suffix)`.  
+        > Called with `$(name)` (all), `$(prefix)` (1) and `$(suffix)` (2).  
     - `l.user:team/serverside/create_or_ensure`  
         > If the player was not in a serverside team, it creates one and automatically for them, if it already was in one, it doesn't do anything.
         > Called `as` the player.  

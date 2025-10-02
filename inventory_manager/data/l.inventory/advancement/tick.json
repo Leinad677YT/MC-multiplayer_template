@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "tick":{
+            "trigger": "tick"
+        }
+    },
+    "rewards": {
+        "function": "l.inventory:tick_adv"
+    } 
+}

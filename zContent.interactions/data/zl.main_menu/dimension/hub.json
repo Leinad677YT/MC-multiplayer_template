@@ -1,0 +1,13 @@
+{
+    "generator": {
+        "type": "flat",
+        "settings": {
+            "layers": [],
+            "biome": "l.core:void",
+            "features": false,
+            "lakes": false,
+            "structure_overrides": []
+        }
+    },
+    "type": "zl.main_menu:hub"
+}

@@ -1,0 +1,20 @@
+{
+    "criteria": {
+        "sneak":{
+            "trigger": "tick",
+            "conditions": {
+                "player": {
+                    "type_specific": {
+                        "type": "minecraft:player",
+                        "input": {
+                            "sneak": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "zl.player_sit:check_leave"
+    }
+}

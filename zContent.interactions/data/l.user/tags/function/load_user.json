@@ -1,0 +1,7 @@
+{
+    "values": [
+        "zl.main_menu:load",
+        "zl.player_sit:load",
+        "zl.visual:load"
+    ]
+}

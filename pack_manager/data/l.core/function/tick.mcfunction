@@ -1,15 +1,16 @@
 ## l.login # CORE
-    ## PLAYER JOINS
-        execute in l.core:void as @a[predicate=l.core:joins] run function l.login:call/joined
-    ##
-
     ##   = l.player.id -> RESTART
         execute unless score #playercount l.login.online = #lastplayercount l.login.online run function l.login:call/restart
+        execute if entity @a[scores={l.login.left=1..}] if score #playercount l.login.online = #lastplayercount l.login.online run function l.login:call/restart
     ##
     
     ##   UPDATE ONLINE LIST
         scoreboard players operation #lastplayercount l.login.online = #playercount l.login.online
         execute store result score #playercount l.login.online if entity @a
+    ##
+
+    ## PLAYER JOINS
+        execute in l.core:void as @a[predicate=l.core:joins] run function l.login:call/joined
     ##
 
     ## ASSIGN session_id
@@ -30,4 +31,8 @@
 
 ## module calls # MODULE
     function #zleinad_pack_manager:call/tick/midway
+##
+
+## schedule pre-tick
+    schedule function l.core:pre_tick 1t
 ##

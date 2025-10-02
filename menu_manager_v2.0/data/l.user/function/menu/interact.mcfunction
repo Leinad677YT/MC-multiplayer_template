@@ -5,6 +5,7 @@
 ## FUNCTION AND STAGE CHANGES
     execute if data storage leinad_temp:menu interaction.function run function l.menu:zaux/redirect with storage leinad_temp:menu interaction
     execute if data storage leinad_temp:menu interaction.main run function l.user:menu/change_stage with storage leinad_temp:menu interaction
+    $function #zleinad_pack_manager:call/menu/interacted {main:"$(main)", secondary:"$(secondary)", trigger:"$(trigger)"}
 ##
 
 ## REMOVE TEMP DATA

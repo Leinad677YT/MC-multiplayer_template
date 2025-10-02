@@ -3,6 +3,7 @@
 ##
 ## ADD SCOREBOARDS
         scoreboard objectives add l.login.online dummy
+        scoreboard objectives add l.login.left minecraft.custom:minecraft.leave_game
         scoreboard objectives add l.login.session_id dummy
             scoreboard players set #max_players l.login.session_id 64
 ##

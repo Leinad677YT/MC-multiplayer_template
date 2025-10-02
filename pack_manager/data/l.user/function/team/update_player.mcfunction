@@ -9,6 +9,7 @@
 ##
 
 ## RESET TEXTS
+    data remove storage leinad_temp:teamdata raw
     $data modify storage leinad_temp:teamdata macro set value {name:"$(name)",prefix:[],suffix:[]}
 ##
 
@@ -23,18 +24,20 @@
         # remember that you can add as many lines as you need if the data fits on the sign
         
         # prefix
-        data modify block 15 1 15 front_text.messages[0] set value [{nbt: "raw.prefix",storage: "leinad_temp:teamdata",interpret:true}]
+        execute in l.core:void run data modify block 15 1 15 front_text.messages[0] set value [{nbt: "raw.prefix",storage: "leinad_temp:teamdata",interpret:true}]
         # suffix
-        data modify block 15 1 15 front_text.messages[1] set value [{nbt: "raw.suffix",storage: "leinad_temp:teamdata",interpret:true}]
+        execute in l.core:void run data modify block 15 1 15 front_text.messages[1] set value [{nbt: "raw.suffix",storage: "leinad_temp:teamdata",interpret:true}]
     ##
 
     ## MOVE TEXT TO STORAGE
-        data modify storage leinad_temp:teamdata macro.prefix set from block 15 1 15 front_text.messages[0]
-        data modify storage leinad_temp:teamdata macro.suffix set from block 15 1 15 front_text.messages[1]
+        execute in l.core:void run data modify storage leinad_temp:teamdata macro.prefix set from block 15 1 15 front_text.messages[0]
+        execute in l.core:void run data modify storage leinad_temp:teamdata macro.suffix set from block 15 1 15 front_text.messages[1]
     ##
 
     ## [ DATA -> PREFIX / SUFFIX ] CONVERSION
-        function l.user:team/change_team_data with storage leinad_temp:teamdata macro
+        function l.user:team/restore_pref_suf with storage leinad_temp:teamdata raw
+        execute if data storage leinad_temp:teamdata raw.prefix[0] run function l.user:team/change_team_prefix with storage leinad_temp:teamdata macro
+        execute if data storage leinad_temp:teamdata raw.suffix[0] run function l.user:team/change_team_suffix with storage leinad_temp:teamdata macro
     ##
 ##
 

@@ -1,0 +1,1 @@
+$data modify storage leinad_temp:game main_menu set from storage leinad_perm:online session[{id:$(id)}]

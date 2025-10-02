@@ -1,6 +1,8 @@
 {
     "pack": {
+        "supported_formats": [65, 81],
         "description": "Mom can I have a Backroom generator? No, we have Backroom generator at home, Backroom generator at home:",
-        "pack_format":81
-    }
+        "min_format": 65,
+        "max_format": 9999
+               }
 }

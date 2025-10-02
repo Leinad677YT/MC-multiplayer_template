@@ -1,6 +1,3 @@
-advancement revoke @s only l.inventory:any_keypress
-#title @s actionbar E
-
 execute store result storage leinad_temp:player invcache.session int 1 run scoreboard players get @s l.login.session_id
 
 

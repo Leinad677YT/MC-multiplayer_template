@@ -1,0 +1,1 @@
+$data modify storage leinad_temp:game sit.name set from storage leinad_perm:online session[{id:$(id)}].name
