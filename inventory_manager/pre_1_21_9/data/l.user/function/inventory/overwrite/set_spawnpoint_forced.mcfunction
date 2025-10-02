@@ -1,4 +1,4 @@
-$execute in $(dimension) run spawnpoint @s $(x) $(y) $(z) $(angle) ~
+$execute in $(dimension) run spawnpoint @s $(x) $(y) $(z) $(angle)
 data modify storage leinad_temp:player spawn set from entity @s respawn
 data modify storage leinad_temp:player spawn.macro set value {forced:true,block:""}
 

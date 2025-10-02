@@ -1,6 +1,7 @@
 {
     "pack": {
         "supported_formats": [65, 81],
+        "pack_format": 81,
         "description": "Adds an easy way to get which room a player is inside of",
         "min_format": 65,
         "max_format": 9999

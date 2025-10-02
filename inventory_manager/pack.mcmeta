@@ -1,8 +1,20 @@
 {
     "pack": {
         "supported_formats": [65, 81],
+        "pack_format": 81,
         "description": {"text":"PLIS NO ME VUELVAS A REHACER POR FAVOOOOOOOOOOOOOOOOOR"},
         "min_format": 65,
         "max_format": 9999
-               }
+    },
+    "overlays": {
+        "entries": [
+            {
+                "directory": "pre_1_21_9",
+                "formats": {
+                    "max_inclusive": 81,
+                    "min_inclusive": 65
+                }
+            }
+        ]
+    }
 }

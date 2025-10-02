@@ -1,8 +1,6 @@
-$execute in $(dimension) run spawnpoint @s $(x) $(y) $(z) $(angle) ~
-data modify storage leinad_temp:player spawn set from entity @s respawn
-data modify storage leinad_temp:player spawn.macro set value {forced:true,block:""}
-
+spawnpoint @s ~ ~ ~ ~
 ## PREPARE DATA
+    data modify storage leinad_temp:player spawn set from entity @s respawn
     execute store result storage leinad_temp:player spawn.macro.id int 1 run scoreboard players get @s l.player.id
    function l.user:login/session/get_from_id with storage leinad_temp:player spawn.macro
     data modify storage leinad_temp:player spawn.macro.lower set from storage leinad_temp:player playerdata.lower
@@ -23,8 +21,7 @@ data modify storage leinad_temp:player spawn.macro set value {forced:true,block:
 ##
 
 ## UPLOAD DATA
-    function l.inventory:db_interaction/setdata/db_spawn with storage leinad_temp:player spawn.macro
+    function l.inventory:db_interaction/setdata/db_spawn_op with storage leinad_temp:player spawn.macro
 ##
-
 
 data remove storage leinad_temp:player spawn

@@ -2,8 +2,8 @@
     "pack": {
         "supported_formats": [65, 81],
         "pack_format": 81,
-        "description": "Allows you to apply freezing to tagged players",
+        "description": {"text":"PLIS NO ME VUELVAS A REHACER POR FAVOOOOOOOOOOOOOOOOOR"},
         "min_format": 65,
         "max_format": 9999
-               }
+    }
 }
