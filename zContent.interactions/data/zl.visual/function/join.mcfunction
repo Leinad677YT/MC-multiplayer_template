@@ -1,1 +1,0 @@
-tellraw @a [{text:""},{text:"+",color:"dark_aqua"},{selector:"@s"}]

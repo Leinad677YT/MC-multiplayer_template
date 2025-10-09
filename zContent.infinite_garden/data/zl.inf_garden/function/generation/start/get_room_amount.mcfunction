@@ -1,1 +1,0 @@
-$execute store result storage leinad_temp:game inf_garden.generation.room_amount int 1 if data storage zl.inf_garden:gen_start type_$(shape)[]

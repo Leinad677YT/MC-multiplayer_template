@@ -1,1 +1,0 @@
-$data modify storage leinad_temp:game inf_garden.generation.shape set from storage leinad_temp:game inf_garden.temp[$(roll)].shape

@@ -1,1 +1,0 @@
-scoreboard players set @s zl.menu_trigger.delay 0

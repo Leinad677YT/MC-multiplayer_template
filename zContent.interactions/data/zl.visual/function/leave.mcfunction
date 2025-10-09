@@ -1,1 +1,0 @@
-$tellraw @a [{text:""},{text:"- ",color:"dark_aqua"},{text:"$(name)",color:"#6d8392"}]

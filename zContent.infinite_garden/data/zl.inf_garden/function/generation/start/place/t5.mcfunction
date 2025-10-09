@@ -1,1 +1,0 @@
-$execute positioned ^-23 ^ ^1 run place template $(structure) ~ 0 ~ $(rotation) none 1 677 strict

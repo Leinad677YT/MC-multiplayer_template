@@ -1,2 +1,0 @@
-### Current generator list:
-- **Start**

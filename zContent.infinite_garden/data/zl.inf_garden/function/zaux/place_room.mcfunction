@@ -1,1 +1,0 @@
-$execute in $(dimension) run place template $(template) 0 0 0 none none 1 1 strict
