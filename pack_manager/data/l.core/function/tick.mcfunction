@@ -1,7 +1,7 @@
 ## l.login # CORE
     ##   = l.player.id -> RESTART
         execute unless score #playercount l.login.online = #lastplayercount l.login.online run function l.login:call/restart
-        execute if entity @a[scores={l.login.left=1..}] if score #playercount l.login.online = #lastplayercount l.login.online run function l.login:call/restart
+        execute if entity @a[scores={l.login.left=1..}] run function l.login:call/restart
     ##
     
     ##   UPDATE ONLINE LIST

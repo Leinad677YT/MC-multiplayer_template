@@ -2,7 +2,7 @@
 
 ## ONLINE CHECK
     # if was online, append again
-    $execute if entity @a[name=$(name),scores={l.login.left=0}] run return run data modify storage leinad_temp:login online_ append from storage leinad_temp:login name
+    $execute if entity @a[name=$(name)] as @a[name=$(name)] unless score @s l.login.left matches 1.. run return run data modify storage leinad_temp:login online_ append from storage leinad_temp:login name
 ##
 
 ## CALL THE OTHER FUNCTIONS

@@ -4,12 +4,12 @@
 # Check if TimeLib is installed
 scoreboard objectives add TimeLib.Uninstall dummy
 execute store success score #TimeLib TimeLib.Uninstall run scoreboard objectives remove TimeLib
-execute if score #TimeLib TimeLib.Uninstall matches 0 run tellraw @a ["",{text:"🕒 TimeLib >> ",color:"#2DE1E1"},{text:"⚠ Could not remove TimeLib. Is it installed?",color:"red"}]
+execute if score #TimeLib TimeLib.Uninstall matches 0 run tellraw @a [{text:""},{text:"🕒 TimeLib >> ",color:"#2DE1E1"},{text:"⚠ Could not remove TimeLib. Is it installed?",color:"red"}]
 execute if score #TimeLib TimeLib.Uninstall matches 0 run return run scoreboard objectives remove TimeLib.Uninstall
 scoreboard objectives remove TimeLib.Uninstall
 
 # Tellraw
-tellraw @a [{text:"",color:"red"},{text:"🕒 TimeLib >> ",color:"#2DE1E1"},{text:"Uninstalled TimeLib (v2.3.0.l)\n",color:"white"},"⚠ This was a modified version of timelib, things may break"]
+tellraw @a [{text:"",color:"red"},{text:"🕒 TimeLib >> ",color:"#2DE1E1"},{text:"Uninstalled TimeLib (v2.3.0.l)\n",color:"white"},{text:"⚠ This was a modified version of timelib, things may break"}]
 
 # Lantern Load & Version Checking
 #scoreboard players reset #TimeLib load.status

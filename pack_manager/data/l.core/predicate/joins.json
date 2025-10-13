@@ -20,6 +20,18 @@
                     "l.core.deathCount": 1
                 }
             }
+        },
+        {
+            "condition": "inverted",
+            "term": {
+                "condition": "entity_scores",
+                "entity": "this",
+                "scores": {
+                    "l.login.left": {
+                        "min": 1
+                    }
+                }
+            }
         }
     ]
 }
