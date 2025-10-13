@@ -27,8 +27,6 @@ This pack helps with inventory (mode) management, saving items, health, spawnpoi
     >>      - container.13 <-> weapon.offhand  
     >>      - container.14 <-> player.cursor  
     >>      - container.15 <-> player.crafting.*  
-    >>      - container.25 <-> TEMP1    // temporal slot for custom purposes
-    >>      - container.26 <-> TEMP2    // temporal slot for custom purposes
 
 #### Tools
 - **entity tags**   

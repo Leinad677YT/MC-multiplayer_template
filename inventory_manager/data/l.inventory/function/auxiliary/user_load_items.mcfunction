@@ -77,9 +77,3 @@ item replace entity @s player.crafting.0 from block ~ ~ ~2 container.15
 item replace entity @s player.crafting.1 from block ~ ~ ~2 container.16
 item replace entity @s player.crafting.2 from block ~ ~ ~2 container.17
 item replace entity @s player.crafting.3 from block ~ ~ ~2 container.18
-
-execute at @s run summon item ~ ~ ~ {Item:{id:"stone"},Tags:["temp_check2"],PickupDelay:2}
-$execute at @s as @e[type=item,tag=temp_check2,distance=..2,limit=1] in l.core:void positioned 0 $(session) 0 run item replace entity @s container.0 from block ~ ~ ~2 container.25
-
-execute at @s run summon item ~ ~ ~ {Item:{id:"stone"},Tags:["temp_check3"],PickupDelay:2}
-$execute at @s as @e[type=item,tag=temp_check3,distance=..2,limit=1] in l.core:void positioned 0 $(session) 0 run item replace entity @s container.0 from block ~ ~ ~2 container.26
