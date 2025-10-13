@@ -57,7 +57,7 @@ Without them, none of the modules would work.
 
 As I'm the one that made it, I already had a usage for it in mind when I first started working on this.
 
-All the `zContent.*` datapacks are fully compatible (and dependant on all the modules 99% of the time) with the library. They contain gameplay/customizations that I use on maps/servers. Feel free to look inside or use them for your projects, **but remember that they are licensed as well, so please ask me and/or credit me if they are used for something else than
+All the `zContent.*` datapacks are fully compatible (and dependant on all the modules 99% of the time) with the library. They contain gameplay/customizations that I use on maps/servers. Feel free to look inside or use them for your projects: [https://github.com/Leinad677YT/MC-MT_ContentModules](https://github.com/Leinad677YT/MC-MT_ContentModules)
 
 ## Where do I start?
 
