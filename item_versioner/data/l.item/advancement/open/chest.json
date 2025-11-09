@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "container":{
+            "trigger": "minecraft:default_block_use",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "minecraft:block_state_property",
+                        "block": "minecraft:chest"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "l.item:open/chest"
+    }
+}

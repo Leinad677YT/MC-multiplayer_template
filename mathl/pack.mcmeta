@@ -1,0 +1,9 @@
+{
+    "pack": {
+        "supported_formats": [65, 81],
+        "pack_format": 81,
+        "description": "Manages custom vehicles",
+        "min_format": 65,
+        "max_format": 9999
+               }
+}

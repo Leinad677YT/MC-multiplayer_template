@@ -1,0 +1,2 @@
+$execute store result score #item_version l.core.temp_condition run data get storage l.item:data $(item_group).$(item_id).version
+$execute store result score #item_is_updated l.core.temp_condition if score #item_version l.core.temp_condition matches ..$(item_version)
