@@ -1,7 +1,7 @@
 ## GET NAME[0]
     data modify storage leinad_temp:login name set string storage leinad_temp:login online[0]
-    
 ##
+
 ## DISCONECTED CHECK
     execute if data storage leinad_temp:login online[0] run function l.login:call/disconnected with storage leinad_temp:login
 ##

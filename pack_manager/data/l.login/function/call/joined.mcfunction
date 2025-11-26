@@ -91,8 +91,6 @@
 ##
 
 ## CALL OTHER FUNCTIONS
-   
-
     execute at @s run function #zleinad_pack_manager:call/login/joined with storage leinad_temp:login session_
 ##
 

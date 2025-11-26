@@ -8,6 +8,6 @@ execute store result score @s l.inventory.coord.z00 run data get storage leinad_
     $data modify storage leinad_temp:player temp.dimension set value "$(dimension)"
     execute store result storage leinad_temp:player temp.id int 1 run scoreboard players get @s l.player.id
 
-    function l.inventory:auxiliary/update_dimension with storage leinad_temp:player playerdata
+    function l.inventory:auxiliary/update_dimension with storage leinad_temp:player temp
 
 data remove storage leinad_temp:player temp
