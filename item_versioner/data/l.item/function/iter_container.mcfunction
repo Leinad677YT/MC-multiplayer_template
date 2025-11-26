@@ -1,8 +1,8 @@
 ## CONTAINER FULLY UPDATED => RETURN
-    execute unless predicate l.item:block_needs_updates run return fail
-    execute store result score #item_is_managed l.core.temp_condition run data get block ~ ~ ~ components."minecraft:custom_data".l_item_global_version
-    execute if score #item_is_managed l.core.temp_condition matches 0 run return fail
-    execute if score #item_is_managed l.core.temp_condition >= #l.item.global_item_version l.core.temp_condition run return fail
+    # execute unless predicate l.item:block_needs_updates run return fail
+    # execute store result score #item_is_managed l.core.temp_condition run data get block ~ ~ ~ components."minecraft:custom_data".l_item_global_version
+    # execute if score #item_is_managed l.core.temp_condition matches 0 run return fail
+    # execute if score #item_is_managed l.core.temp_condition >= #l.item.global_item_version l.core.temp_condition run return fail
 ##
 
 ## COPY CONTENTS INSIDE A STORAGE

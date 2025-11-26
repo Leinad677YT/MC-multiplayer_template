@@ -1,6 +1,6 @@
 
 ## IF ACTIVE AND VALID => TRIGGER
-    $execute if predicate $(predicate) if data storage l.menu:$(main) $(secondary).t_$(trigger) run return run scoreboard players set #tick_trigger l.menu.stage_main 1
+    $execute if entity @s[predicate=$(predicate)] if data storage l.menu:$(main) $(secondary).t_$(trigger) run return run scoreboard players set #tick_trigger l.menu.stage_main 1
 ##
 
 ## ITERATE OVER TICKING TRIGGERS

@@ -28,6 +28,11 @@ Apart from merging `$(components)`, users can merge data inside `components."min
 Data inside **`l.item:data`**
 ```C
 {
+    dimensions: [
+        { dimension: $(dimension1)},
+        { dimension: $(dimension2)},
+        ... // dimensions present here will update items in their BLOCK containers
+    ],
     groups: [
         { gid: $(gid1), version: [INT] $(version1)},
         { gid: $(gid2), version: [INT] $(version2)},
@@ -58,9 +63,24 @@ Data inside **`l.item:data`**
 }
 ```
 
+Data inside **`l.item:$(dimension)`**
+```C
+{
+    $(block_id): [
+        {
+            x: $(x),
+            y: $(y),
+            z: $(z)
+        }
+    ]
+}
+```
+
 Items are updated (inside their respective inventories) when:
 - A player inventory changes
 - A chest gets opened by a player // OJO MARCARLOS NO FUNCIONA BIEN DE FORMA DIRECTA CON LOS COPPER GOLEMS NI HOPPERS/DROPPERS
 
 Block checks are done like the following:
 - A player interacts with a container
+
+
