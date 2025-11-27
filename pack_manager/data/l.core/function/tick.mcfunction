@@ -4,9 +4,9 @@
         execute if entity @a[scores={l.login.left=1..}] run function l.login:call/restart
     ##
     
-    ##   UPDATE ONLINE LIST
+    ## UPDATE ONLINE LIST
         scoreboard players operation #lastplayercount l.login.online = #playercount l.login.online
-        execute store result score #playercount l.login.online if entity @a
+        execute store result score #playercount l.login.online if entity @a[predicate=l.core:is_online]
     ##
 
     ## PLAYER JOINS

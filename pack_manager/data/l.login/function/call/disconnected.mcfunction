@@ -24,7 +24,7 @@
         $scoreboard players reset $(name)
         $scoreboard players operation $(name) l.player.id = #temp_score l.core.temp_condition
     ##
-    
+
     ## PERSONAL TEAM
         $team remove z_p$(name)
     ##
@@ -32,6 +32,4 @@
     ## SESSION DATA
         data remove storage leinad_perm:online session[{leaving:1b}]
     ##
-
-    
 ##
