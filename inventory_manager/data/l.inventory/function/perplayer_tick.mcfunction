@@ -22,9 +22,5 @@
             execute in l.core:void if entity @s[scores={l.inventory.cache_echest_timer=0},advancements={l.inventory:inventory_changed=true}] run function l.inventory:cache/update_withnt_echest
         ##
     ##
-
-    ## REVOKE ADV
-        advancement revoke @s only l.inventory:tick
-    ##
 ##
 
