@@ -78,9 +78,8 @@ Data inside **`l.item:$(dimension)`**
 
 Items are updated (inside their respective inventories) when:
 - A player inventory changes
-- A chest gets opened by a player // OJO MARCARLOS NO FUNCIONA BIEN DE FORMA DIRECTA CON LOS COPPER GOLEMS NI HOPPERS/DROPPERS
+- A chest gets opened by a player* // MARCARLOS NO ES VIABLE
+- \*This comes with lag issues, a _frecuent (period of 5-10 ticks)_ periodical check could work on this instead
 
 Block checks are done like the following:
 - A player interacts with a container
-
-
