@@ -1,6 +1,10 @@
 ### REQUIRES leinad_temp:item current_custom AND leinad_temp:item current_all TO BE SET
 ### UPDATES leinad_temp:item current_all WITH THE FINAL DATA
 
+## ITEM ID
+    $data modify storage leinad_temp:item current_all.id set from storage l.item:data $(item_group).$(item_id).item
+##
+
 ## MERGE
     $data modify storage leinad_temp:item current_all.components merge from storage l.item:data $(item_group).$(item_id).components
 ##

@@ -5,8 +5,9 @@
 Data inside a vanilla item
 ```C
 {
-    id: STRING, 
-        // currently NOT managed
+    id: $(item), 
+        // [STRING] vanilla id of the item 
+        // (be careful with hardcoded behaviour!)
     components: {
         "minecraft:custom_data":{
             l:{
@@ -28,11 +29,11 @@ Apart from merging `$(components)`, users can merge data inside `components."min
 Data inside **`l.item:data`**
 ```C
 {
-    dimensions: [
-        { dimension: $(dimension1)},
-        { dimension: $(dimension2)},
-        ... // dimensions present here will update items in their BLOCK containers
-    ],
+    // dimensions: [
+    //     { dimension: $(dimension1)},
+    //     { dimension: $(dimension2)},
+    //     ... // dimensions present here will update items in their BLOCK containers
+    // ],
     groups: [
         { gid: $(gid1), version: [INT] $(version1)},
         { gid: $(gid2), version: [INT] $(version2)},
@@ -42,22 +43,27 @@ Data inside **`l.item:data`**
         // are no longer supported on the world, if you want to remove
         // items from the db, you should consider making a dummy group
         // that adds the equivalent amount of versions
-    $(gid1): [
-        {
-            id: $(id),
+    $(gid1): {
+        // map of custom ids to their data
+        $(id): { 
+            // all fields MUST be set (empty maps are allowed)
+            
+            id: ,
                 // used to identify it along with the group id
                 // MUST be unique
             version: [INT] $(version),
                 // (<=) than the one on the item -> SHOULD UPDATE
+            item: [STRING] $(item),
+                // vanilla item id to be set
             components: [MAP] $(components),
                 // raw data to merge inside vanilla `components`
             enchantments: [MAP] $(enchantments)
                 // {"enchant:id1": lvl1, "enchant:id2": lvl2, ...}
         },
-        ... // all fields MUST be set (empty maps are allowed) 
-    ],
+        ...  
+    },
         // contains data from all the items of the group
-    $(gid2): [],
+    $(gid2): {},
         // a group can be empty, but an item inside of one cannot
     ...
 }

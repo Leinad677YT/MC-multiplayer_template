@@ -3,6 +3,7 @@
 ##
 
 ## UPDATE DATABASE
+    data remove storage l.item:data groups
     function #zleinad_pack_manager:call/item/load_data
 ##
 
@@ -10,6 +11,8 @@
     scoreboard players add #l.item.global_item_version l.core.temp_condition 0
     scoreboard players set #l.item.new_item_version l.core.temp_condition 0
     execute if data storage l.item:data groups[0] run function l.item:zaux/get_current_version_iter with storage l.item:data groups[-1]
+    data modify storage l.item:data groups set from storage leinad_temp:item groups
+    data remove storage leinad_temp:item groups
 ##
 
 ## SAME VERSION
