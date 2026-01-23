@@ -2,28 +2,31 @@
     "carvers": [],
     "downfall": 2921009,
     "effects": {
-        "sky_color": 7585016,
-        "fog_color": 10484223,
         "water_color": 4047306,
-        "water_fog_color": 4813723,
         "grass_color": 5418322,
         "foliage_color": 4361026,
-        "dry_foliage_color": 15128140,
-        "mood_sound": {
-            "sound": "minecraft:intentionally_empty",
-            "tick_delay": -1000000000,
-            "block_search_extent": 0,
-            "offset": 0
-        },
-        "ambient_sound": {
-            "sound_id": "minecraft:intentionally_empty",
-            "range": -1
-        },
-        "music": []
+        "dry_foliage_color": 15128140
     },
     "features": [],
     "has_precipitation": false,
     "spawn_costs": {},
     "spawners": {},
-    "temperature": 0.5
+    "temperature": 0.5,
+    "attributes": {
+        "minecraft:visual/sky_color": 7585016,
+        "minecraft:visual/fog_color": 10484223,
+        "minecraft:visual/water_fog_color": 4813723,
+        "minecraft:audio/ambient_sounds": {
+            "loop": {
+                "sound_id": "minecraft:intentionally_empty",
+                "range": -1
+            },
+            "mood": {
+                "sound": "minecraft:intentionally_empty",
+                "tick_delay": -1000000000,
+                "block_search_extent": 0,
+                "offset": 0
+            }
+        } 
+    }
 }
