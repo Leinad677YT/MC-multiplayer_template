@@ -1,15 +1,15 @@
 ## iterate through clearing tools
     scoreboard players set #temp l.instance.current 0
     # bvol
-    $execute in $(dimension) as @e[tag=l.instance.on_i$(id), tag=l.instance.clear_bvol,limit=1] at @s run function l.instance:clear/bvol with entity @s data
+    $execute as @e[tag=l.instance.on_i$(id), tag=l.instance.clear_bvol,limit=1] at @s run function l.instance:clear/bvol with entity @s data
     # etag
-    $execute if score #temp l.instance.current matches 0 in $(dimension) run function l.instance:clear/etag with storage leinad_perm:data instance_db[{id:$(id)}]
+    $execute if score #temp l.instance.current matches 0 run function l.instance:clear/etag with storage leinad_perm:data instance_db[{id:$(id)}]
     # evol
-    $execute if score #temp l.instance.current matches 0 in $(dimension) as @e[tag=l.instance.on_i$(id), tag=l.instance.clear_evol,x=0,limit=1] at @s run function l.instance:clear/evol with entity @s data
+    $execute if score #temp l.instance.current matches 0 as @e[tag=l.instance.on_i$(id), tag=l.instance.clear_evol,x=0,limit=1] at @s run function l.instance:clear/evol with entity @s data
     # cplace
-    $execute if score #temp l.instance.current matches 0 in $(dimension) as @e[tag=l.instance.on_i$(id), tag=l.instance.clear_cplace,x=0,limit=1] at @s run function l.instance:clear/cplace with entity @s data
+    $execute if score #temp l.instance.current matches 0 as @e[tag=l.instance.on_i$(id), tag=l.instance.clear_cplace,x=0,limit=1] at @s run function l.instance:clear/cplace with entity @s data
     # cfunct
-    $execute if score #temp l.instance.current matches 0 in $(dimension) as @e[tag=l.instance.on_i$(id), tag=l.instance.clear_cfunct,x=0,limit=1] at @s run function l.instance:clear/cfunct with entity @s data
+    $execute if score #temp l.instance.current matches 0 as @e[tag=l.instance.on_i$(id), tag=l.instance.clear_cfunct,x=0,limit=1] at @s run function l.instance:clear/cfunct with entity @s data
 
     ## STILL LEFT => REITERATE
         $execute if score #temp l.instance.current matches 0 run function l.schedule:no_context/schedule {ticks:1,function:"l.user:misc/redirect",context:{target_function:"l.instance:manage_instance with storage leinad_perm:data instance_db[{id:$(id)}]"}}

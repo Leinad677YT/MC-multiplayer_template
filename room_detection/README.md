@@ -12,6 +12,7 @@ This pack places on a scoreboard the _room id_ of the place the player is inside
 - **predicate**
     - `l.user:room/check`  
         > Successful if the entity `l.room.current` score matches with the one on `#check l.room.current`.  
+        > BE CAREFUL WITH THIS PREDICATE! It checks scores, so it can fail with high values (from testing, it seems that up to 1000000 its fine).  
 - **entity tag**
     - `l.room.inside`  
         > Applied to entities after a detection if they are inside a room.  

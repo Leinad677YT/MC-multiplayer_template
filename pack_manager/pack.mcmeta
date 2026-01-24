@@ -1,10 +1,10 @@
 {
     "pack": {
         "supported_formats": [65, 94],
-        "pack_format": 94,
+        "pack_format": 81,
         "description": {"text":"Hola leinad del futuro :3","color": "#00fff7"},
         "min_format": 65,
-        "max_format": 9999
+        "max_format": [94,1]
     },
     "overlays": {
         "entries": [
@@ -13,7 +13,9 @@
                 "formats": {
                     "max_inclusive": 88,
                     "min_inclusive": 65
-                }
+                },
+                "min_format": 65,
+                "max_format": 88
             }
         ]
     }

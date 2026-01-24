@@ -1,5 +1,7 @@
-execute if entity @s[tag=l.instance.already_waiting] run return run function l.core:show_error {error_code:"ALREADY_WAITING_INSTANCE_QUEUE"}
-execute if entity @s[tag=l.instance.already_assigned] run return run function l.core:show_error {error_code:"ALREADY_PLAYING_INSTANCE_QUEUE"}
+## PRE-JOIN ERRORS
+    execute if entity @s[tag=l.instance.already_waiting] run return run function l.core:show_error {error_code:"ALREADY_WAITING_INSTANCE_QUEUE"}
+    execute if entity @s[tag=l.instance.already_assigned] run return run function l.core:show_error {error_code:"ALREADY_PLAYING_INSTANCE_QUEUE"}
+##
 
 ## GET ID
     execute store result storage leinad_temp:player playerdata.id int 1 run scoreboard players get @s l.player.id
