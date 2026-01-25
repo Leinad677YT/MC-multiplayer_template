@@ -4,7 +4,7 @@
 ##
 
 ## FINISH RETURN IF CHECKED
-    $execute store result score #bool l.room.inf_gen_leave if data storage leinad_temp:room already_checked[$(id)]
+    $execute store result score #bool l.room.inf_gen_leave if data storage leinad_temp:room already_checked{list:[$(id)]}
     execute unless score #bool l.room.inf_gen_leave matches 0 run return fail
 ##
 
@@ -18,7 +18,7 @@
 ##
 
 ## ADD TO CHECKED LIST
-    data modify storage leinad_temp:room already_checked append from storage leinad_temp:room current_room.id
+    data modify storage leinad_temp:room already_checked.list append from storage leinad_temp:room current_room.id
 ##
 
 ## APPEND CONNECTIONS TO NEXT LAYER

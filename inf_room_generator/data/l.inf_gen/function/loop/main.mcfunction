@@ -13,10 +13,10 @@
 
 ## LAYER 0
     # {id:INT,[...]}
-    data remove storage leinad_temp:room current_layer[]
-    data remove storage leinad_temp:room next_layer[]
+    data remove storage leinad_temp:room current_layer
+    data remove storage leinad_temp:room next_layer
     # INT
-    data remove storage leinad_temp:room already_checked[]
+    data remove storage leinad_temp:room already_checked
 
 
     ## APPEND LAYER
