@@ -12,5 +12,5 @@
 ##
 
 ## GO DEEPER
-    execute if score #current_depth l.room.current < #max_depth l.room.current if data storage leinad_temp:room next_layer[0] run function l.inf_gen:loop/change_layer
+    execute if score #current_depth l.room.current <= #max_depth l.room.current if data storage leinad_temp:room next_layer[0] run function l.inf_gen:loop/change_layer
 ##

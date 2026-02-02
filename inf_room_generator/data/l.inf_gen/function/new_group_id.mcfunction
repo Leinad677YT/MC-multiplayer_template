@@ -5,4 +5,4 @@
     data remove storage leinad_temp:room new_id
 ##
 
-## NEW ID IS INSIDE #inf_gen_new_id l.core.temp_condition
+## NEW ID IS INSIDE #inf_gen_new_group_id l.core.temp_condition
