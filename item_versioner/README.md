@@ -52,13 +52,13 @@ Data inside **`l.item:data`**
                 // used to identify it along with the group id
                 // MUST be unique
             version: [INT] $(version),
-                // (<=) than the one on the item -> SHOULD UPDATE
+                // (>=) than the one on the item -> SHOULD UPDATE
             item: [STRING] $(item),
                 // vanilla item id to be set
             components: [MAP] $(components),
                 // raw data to merge inside vanilla `components`
             enchantments: [MAP] $(enchantments)
-                // {"enchant:id1": lvl1, "enchant:id2": lvl2, ...}
+                // {"enchant_id1": lvl1, "enchant_id2": lvl2, ...}
         },
         ...  
     },
