@@ -26,4 +26,6 @@
             "argument": true,
             "modifier": "override"
         }
-    }}
+    },
+    "has_ender_dragon_fight": false
+}
