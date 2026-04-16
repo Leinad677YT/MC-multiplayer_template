@@ -17,7 +17,8 @@
 
     ## MAKE COPIES OF DATA
         data modify storage leinad_temp:item current_all set from storage leinad_temp:item Items[0]
-        data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
+        data remove storage leinad_temp:item current_custom
+        execute if data storage leinad_temp:item current_all.components."minecraft:custom_data".l run data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
     ##
 
     ## IS IT UPDATED?
@@ -48,7 +49,8 @@
 
         ## MAKE COPIES OF DATA
                 data modify storage leinad_temp:item current_all set from storage leinad_temp:item Items[1]
-                data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
+data remove storage leinad_temp:item current_custom
+         execute if data storage leinad_temp:item current_all.components."minecraft:custom_data".l run data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
         ##
 
         ## IS IT UPDATED?
@@ -78,7 +80,8 @@
 
         ## MAKE COPIES OF DATA
                 data modify storage leinad_temp:item current_all set from storage leinad_temp:item Items[2]
-                data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
+data remove storage leinad_temp:item current_custom
+         execute if data storage leinad_temp:item current_all.components."minecraft:custom_data".l run data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
         ##
 
         ## IS IT UPDATED?
@@ -108,7 +111,8 @@
 
         ## MAKE COPIES OF DATA
                 data modify storage leinad_temp:item current_all set from storage leinad_temp:item Items[3]
-                data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
+data remove storage leinad_temp:item current_custom
+         execute if data storage leinad_temp:item current_all.components."minecraft:custom_data".l run data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
         ##
 
         ## IS IT UPDATED?
@@ -138,7 +142,8 @@
 
         ## MAKE COPIES OF DATA
                 data modify storage leinad_temp:item current_all set from storage leinad_temp:item Items[4]
-                data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
+data remove storage leinad_temp:item current_custom
+         execute if data storage leinad_temp:item current_all.components."minecraft:custom_data".l run data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
         ##
 
         ## IS IT UPDATED?
@@ -168,7 +173,8 @@
 
         ## MAKE COPIES OF DATA
                 data modify storage leinad_temp:item current_all set from storage leinad_temp:item Items[5]
-                data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
+data remove storage leinad_temp:item current_custom
+         execute if data storage leinad_temp:item current_all.components."minecraft:custom_data".l run data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
         ##
 
         ## IS IT UPDATED?
@@ -198,7 +204,8 @@
 
         ## MAKE COPIES OF DATA
                 data modify storage leinad_temp:item current_all set from storage leinad_temp:item Items[6]
-                data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
+data remove storage leinad_temp:item current_custom
+         execute if data storage leinad_temp:item current_all.components."minecraft:custom_data".l run data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
         ##
 
         ## IS IT UPDATED?
@@ -228,7 +235,8 @@
 
         ## MAKE COPIES OF DATA
                 data modify storage leinad_temp:item current_all set from storage leinad_temp:item Items[7]
-                data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
+data remove storage leinad_temp:item current_custom
+         execute if data storage leinad_temp:item current_all.components."minecraft:custom_data".l run data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
         ##
 
         ## IS IT UPDATED?
@@ -258,7 +266,8 @@
 
         ## MAKE COPIES OF DATA
                 data modify storage leinad_temp:item current_all set from storage leinad_temp:item Items[8]
-                data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
+data remove storage leinad_temp:item current_custom
+         execute if data storage leinad_temp:item current_all.components."minecraft:custom_data".l run data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
         ##
 
         ## IS IT UPDATED?
@@ -288,7 +297,8 @@
 
         ## MAKE COPIES OF DATA
                 data modify storage leinad_temp:item current_all set from storage leinad_temp:item Items[9]
-                data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
+data remove storage leinad_temp:item current_custom
+         execute if data storage leinad_temp:item current_all.components."minecraft:custom_data".l run data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
         ##
 
         ## IS IT UPDATED?
@@ -318,7 +328,8 @@
 
         ## MAKE COPIES OF DATA
                 data modify storage leinad_temp:item current_all set from storage leinad_temp:item Items[10]
-                data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
+data remove storage leinad_temp:item current_custom
+         execute if data storage leinad_temp:item current_all.components."minecraft:custom_data".l run data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
         ##
 
         ## IS IT UPDATED?
@@ -348,7 +359,8 @@
 
         ## MAKE COPIES OF DATA
                 data modify storage leinad_temp:item current_all set from storage leinad_temp:item Items[11]
-                data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
+data remove storage leinad_temp:item current_custom
+         execute if data storage leinad_temp:item current_all.components."minecraft:custom_data".l run data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
         ##
 
         ## IS IT UPDATED?
@@ -378,7 +390,8 @@
 
         ## MAKE COPIES OF DATA
                 data modify storage leinad_temp:item current_all set from storage leinad_temp:item Items[12]
-                data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
+data remove storage leinad_temp:item current_custom
+         execute if data storage leinad_temp:item current_all.components."minecraft:custom_data".l run data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
         ##
 
         ## IS IT UPDATED?
@@ -408,7 +421,8 @@
 
         ## MAKE COPIES OF DATA
                 data modify storage leinad_temp:item current_all set from storage leinad_temp:item Items[13]
-                data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
+data remove storage leinad_temp:item current_custom
+         execute if data storage leinad_temp:item current_all.components."minecraft:custom_data".l run data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
         ##
 
         ## IS IT UPDATED?
@@ -438,7 +452,8 @@
 
         ## MAKE COPIES OF DATA
                 data modify storage leinad_temp:item current_all set from storage leinad_temp:item Items[14]
-                data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
+data remove storage leinad_temp:item current_custom
+         execute if data storage leinad_temp:item current_all.components."minecraft:custom_data".l run data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
         ##
 
         ## IS IT UPDATED?
@@ -468,7 +483,8 @@
 
         ## MAKE COPIES OF DATA
                 data modify storage leinad_temp:item current_all set from storage leinad_temp:item Items[15]
-                data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
+data remove storage leinad_temp:item current_custom
+         execute if data storage leinad_temp:item current_all.components."minecraft:custom_data".l run data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
         ##
 
         ## IS IT UPDATED?
@@ -498,7 +514,8 @@
 
         ## MAKE COPIES OF DATA
                 data modify storage leinad_temp:item current_all set from storage leinad_temp:item Items[16]
-                data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
+data remove storage leinad_temp:item current_custom
+         execute if data storage leinad_temp:item current_all.components."minecraft:custom_data".l run data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
         ##
 
         ## IS IT UPDATED?
@@ -528,7 +545,8 @@
 
         ## MAKE COPIES OF DATA
                 data modify storage leinad_temp:item current_all set from storage leinad_temp:item Items[17]
-                data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
+data remove storage leinad_temp:item current_custom
+         execute if data storage leinad_temp:item current_all.components."minecraft:custom_data".l run data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
         ##
 
         ## IS IT UPDATED?
@@ -558,7 +576,8 @@
 
         ## MAKE COPIES OF DATA
                 data modify storage leinad_temp:item current_all set from storage leinad_temp:item Items[18]
-                data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
+data remove storage leinad_temp:item current_custom
+         execute if data storage leinad_temp:item current_all.components."minecraft:custom_data".l run data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
         ##
 
         ## IS IT UPDATED?
@@ -588,7 +607,8 @@
 
         ## MAKE COPIES OF DATA
                 data modify storage leinad_temp:item current_all set from storage leinad_temp:item Items[19]
-                data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
+data remove storage leinad_temp:item current_custom
+         execute if data storage leinad_temp:item current_all.components."minecraft:custom_data".l run data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
         ##
 
         ## IS IT UPDATED?
@@ -618,7 +638,8 @@
 
         ## MAKE COPIES OF DATA
                 data modify storage leinad_temp:item current_all set from storage leinad_temp:item Items[20]
-                data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
+data remove storage leinad_temp:item current_custom
+         execute if data storage leinad_temp:item current_all.components."minecraft:custom_data".l run data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
         ##
 
         ## IS IT UPDATED?
@@ -648,7 +669,8 @@
 
         ## MAKE COPIES OF DATA
                 data modify storage leinad_temp:item current_all set from storage leinad_temp:item Items[21]
-                data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
+data remove storage leinad_temp:item current_custom
+         execute if data storage leinad_temp:item current_all.components."minecraft:custom_data".l run data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
         ##
 
         ## IS IT UPDATED?
@@ -678,7 +700,8 @@
 
         ## MAKE COPIES OF DATA
                 data modify storage leinad_temp:item current_all set from storage leinad_temp:item Items[22]
-                data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
+data remove storage leinad_temp:item current_custom
+         execute if data storage leinad_temp:item current_all.components."minecraft:custom_data".l run data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
         ##
 
         ## IS IT UPDATED?
@@ -708,7 +731,8 @@
 
         ## MAKE COPIES OF DATA
                 data modify storage leinad_temp:item current_all set from storage leinad_temp:item Items[23]
-                data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
+data remove storage leinad_temp:item current_custom
+         execute if data storage leinad_temp:item current_all.components."minecraft:custom_data".l run data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
         ##
 
         ## IS IT UPDATED?
@@ -738,7 +762,8 @@
 
         ## MAKE COPIES OF DATA
                 data modify storage leinad_temp:item current_all set from storage leinad_temp:item Items[24]
-                data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
+data remove storage leinad_temp:item current_custom
+         execute if data storage leinad_temp:item current_all.components."minecraft:custom_data".l run data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
         ##
 
         ## IS IT UPDATED?
@@ -768,7 +793,8 @@
 
         ## MAKE COPIES OF DATA
                 data modify storage leinad_temp:item current_all set from storage leinad_temp:item Items[25]
-                data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
+data remove storage leinad_temp:item current_custom
+         execute if data storage leinad_temp:item current_all.components."minecraft:custom_data".l run data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
         ##
 
         ## IS IT UPDATED?
@@ -798,7 +824,8 @@
 
         ## MAKE COPIES OF DATA
                 data modify storage leinad_temp:item current_all set from storage leinad_temp:item Items[26]
-                data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
+data remove storage leinad_temp:item current_custom
+         execute if data storage leinad_temp:item current_all.components."minecraft:custom_data".l run data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
         ##
 
         ## IS IT UPDATED?

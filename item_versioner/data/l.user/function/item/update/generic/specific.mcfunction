@@ -6,7 +6,8 @@
 
     ## FILL DATA
         execute in l.core:void run data modify storage leinad_temp:item current_all set from block 15 0 15 Items[0]
-        data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
+        data remove storage leinad_temp:item current_custom
+        execute if data storage leinad_temp:item current_all.components."minecraft:custom_data".l run data modify storage leinad_temp:item current_custom set from storage leinad_temp:item current_all.components."minecraft:custom_data".l
     ##
 
     ## UPDATE
