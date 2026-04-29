@@ -7,6 +7,11 @@
     function #zleinad_pack_manager:call/item/load_data
 ##
 
+## FORCELOAD
+    # inv cache
+    execute in l.core:void run fill 1 0 0 1 63 3 barrel strict
+##
+
 ## GET CURRENT VERSION
     scoreboard players add #l.item.global_item_version l.core.temp_condition 0
     scoreboard players set #l.item.new_item_version l.core.temp_condition 0
