@@ -17,7 +17,9 @@
 ##
 
 ## ITEMS
-    execute if data storage leinad_temp:player inventory{stores_items:false} run return fail
+    $data modify storage leinad_temp:player inventory set from storage z_p$(lower):root data.mode.$(mode).inventory.light
+    execute if data storage leinad_temp:player inventory{stores_items:false} run return run data remove storage leinad_temp:player inventory
+    
     $data modify storage z_p$(lower):root data.mode.$(mode).inventory.heavy.e_chest set from block ~ ~ ~ Items
     $data modify storage z_p$(lower):root data.mode.$(mode).inventory.heavy.inventory set from block ~ ~ ~1 Items
     $data modify storage z_p$(lower):root data.mode.$(mode).inventory.heavy.equipment set from block ~ ~ ~2 Items

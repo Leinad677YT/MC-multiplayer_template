@@ -95,3 +95,5 @@ item replace entity @s player.crafting.0 from block ~ ~ ~2 container.15
 item replace entity @s player.crafting.1 from block ~ ~ ~2 container.16
 item replace entity @s player.crafting.2 from block ~ ~ ~2 container.17
 item replace entity @s player.crafting.3 from block ~ ~ ~2 container.18
+
+data remove storage leinad_temp:player inventory
