@@ -1,10 +1,10 @@
 ## IF THERE IS GENERATION TO DO, GO TO THE LOOP
     execute unless data storage leinad_perm:data pending_inf_gen[0] run return fail
-    
+
     ## LOOP
         function l.inf_gen:loop/main with storage leinad_perm:data pending_inf_gen[0]
     ##
-    
+
     ## RESCHEDULE UNFINISHED ROOMS
         data modify storage leinad_perm:data pending_inf_gen set from storage leinad_temp:room pending_inf_gen
         data remove storage leinad_temp:room pending_inf_gen

@@ -2,6 +2,12 @@
     $data modify storage leinad_temp:room checking_group set from storage leinad_perm:data inf_gen_groups[{id:$(group)}]
 ##
 
+## IF DOES NOT EXIST CONTINUE
+    $execute unless data storage leinad_perm:data pending_inf_gen[{group:$(group)}] run data remove storage leinad_perm:data pending_inf_gen[{group:$(group)}]
+    $execute unless data storage leinad_perm:data pending_inf_gen[{group:$(group)}] if data storage leinad_perm:data pending_inf_gen[0] run function l.inf_gen:loop/main with storage leinad_perm:data pending_inf_gen[-1]
+##
+
+
 ## GET DEPTH
     execute store result score #max_depth l.room.current run data get storage leinad_temp:room checking_group.depth
     scoreboard players operation #max_depth- l.room.current = #max_depth l.room.current

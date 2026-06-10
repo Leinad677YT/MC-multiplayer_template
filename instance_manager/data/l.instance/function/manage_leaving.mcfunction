@@ -1,4 +1,6 @@
-$tag @a[scores={l.instance.current=$(id)},limit=1] add l.instance.temp
+$tag @a[tag=l.login.online,scores={l.instance.current=$(id)},limit=1] add l.instance.temp
+$tag @a[scores={l.player.id=$(player_id)}] remove l.instance.temp
+
 execute store success score #bool l.core.temp_condition if entity @a[tag=l.instance.temp,limit=1]
 
 execute if score #bool l.core.temp_condition matches 1 store result storage leinad_temp:player playerdata.id int 1 run scoreboard players get @a[tag=l.instance.temp,limit=1] l.player.id
@@ -13,7 +15,7 @@ tag @a remove l.instance.temp
 execute if score #bool l.core.temp_condition matches 1 run return run function l.instance:zaux/add_leave_trigger with storage leinad_temp:player playerdata
 
 # IT WAS THE LAST PLAYER ON THE INSTANCE
-
+say debug leaving
 ## RUN START CLEARING CALL
     $function #zleinad_pack_manager:call/instance/start_clearing with storage leinad_perm:data instance_db[{id:$(id)}]
 ##

@@ -6,3 +6,7 @@
     data modify storage leinad_temp:instance waiting_dupe set from storage leinad_perm:instance waiting
     function l.instance:zaux/waiting_loop with storage leinad_temp:instance waiting_dupe[-1]
 ##
+
+## INSTANCE LOGIC
+    # MANAGED AUTOMATICALLY BY THE SCHEDULER
+##
