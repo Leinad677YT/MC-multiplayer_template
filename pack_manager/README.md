@@ -60,7 +60,7 @@ Inside their related function call folders or root folders, there should be a RE
 
 ## Content
 
-As the core of the library, this datapack controls the order of execution inside the `#tick` and `#load` functions, basic function calls and certain must-have aspects of multiplayer-friendly enviroments
+As the core of the library, this datapack controls the order of execution inside the `#tick` and `#load` functions, basic function calls and certain must-have aspects of multiplayer-friendly environments
 
 ### Specification
 
