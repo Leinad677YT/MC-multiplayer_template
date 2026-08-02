@@ -13,5 +13,5 @@
 ##
 
 ## REENABLE TICKING INVENTORY LOGIC
-    advancement revoke @s only l.inventory:tick
+    advancement revoke @s only l.inventory:inventory_changed
 ##
