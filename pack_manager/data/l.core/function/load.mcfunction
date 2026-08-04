@@ -26,6 +26,11 @@
     scoreboard objectives add l.core.time_since_death minecraft.custom:minecraft.time_since_death
 ## 
 
+## DATAFIX FOR SINGLEPLAYER CRASH
+    execute store result score #sync.aux l.core.temp_condition if entity @a
+    execute if score #sync.aux l.core.temp_condition matches 1 unless entity @a[scores={l.login.left=1}] in l.core:void run function l.core:auxiliary/validate_crash
+##
+
 ## LOAD MODULES
     function #zleinad_pack_manager:load
     tellraw @a[tag=l.core.tellraw] [{translate:"leinad.debug.tellraw.load",fallback:"<Leinad677YT> All data from compatible packs has been loaded! "},{text:"\nIF YOU READ THE READMES, OF COURSE",bold:true}]
