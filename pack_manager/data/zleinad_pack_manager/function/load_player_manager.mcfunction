@@ -24,5 +24,6 @@
     function #zleinad_pack_manager:call/db/saved_score_list
     execute store result score #saved_scores l.core.temp_condition if data storage leinad_perm:data saved_scores[]
     data remove storage leinad_perm:data imported_scores[]
+    # @todo actually implement this lol
     function #zleinad_pack_manager:call/db/imported_score_list
 ##

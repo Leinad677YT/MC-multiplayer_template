@@ -9,7 +9,7 @@ Without them, none of the modules would work.
 > **This is still WIP.** Most things may break if you update any previous install of this to a new version
 
 > [!NOTE]
-> At this moment, it should work from 1.21.5 to 1.21.11
+> At this moment, it should work from 1.21.5 to 26.2
 
 ## CONTENT LIST
 
@@ -19,7 +19,7 @@ Without them, none of the modules would work.
 >   - Adds function calls for login related events
 >   - Creates and manages 1 storage for every player, to move the data by moving the file
 >   - Creates a team for every player in the world
->   - This allows to customize prefixes/suffixes, to allow friendly fire, see the `hit_detection` module
+>     - This allows to customize prefixes/suffixes, to allow friendly fire, see the `hit_detection` module
 > ### CORE MODULES (works as core, but not required)
 > - **new_entity_handler**
 >   - Automatically adds IDs to all entities in the core tag, if `hit_detection` is also enabled, it autoprepares entities inside it's tag
@@ -63,3 +63,12 @@ All the `zContent.*` datapacks are fully compatible (and dependant on all the mo
 
 To get a better understanding of this library, I recommend you to install JUST THE CORE datapacks in a void superflat and read the `pack_manager` documentation.
 If you still find yourself with issues, feel free to DM me on discord @leinad677yt
+
+### Limitations
+
+At the moment, there exists a single known scenario where the library can fail abruptly. If a player leaves during singleplayer or a server crash happens on the serverside and then "someone" rejoins on singleplayer with a **different nickname capitalization but under the same nick**, due to minecraft's limitations, getting their old scores and moving them to their nickname would be impossible due to the scoreboard selector ignoring capitalization when the player is online.
+
+The only way to avoid this if you are going to do a namechange is to open the game on a server to let it run the disconnection function with no players online, or to open it under a completely different nickname meanwhile.
+
+> [!NOTE]
+> Remember, the disconnection calls on singleplayer run after joining a world and right before their respective join calls.

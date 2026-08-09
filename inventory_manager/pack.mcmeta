@@ -13,7 +13,18 @@
                 "formats": {
                     "max_inclusive": 81,
                     "min_inclusive": 65
-                }
+                },
+                "min_format": 65,
+                "max_format": 81
+            },
+            {
+                "directory": "pre_26_2",
+                "formats": {
+                    "max_inclusive": 107,
+                    "min_inclusive": 65
+                },
+                "min_format": 65,
+                "max_format": 107
             }
         ]
     }
