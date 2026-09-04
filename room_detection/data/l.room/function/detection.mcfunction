@@ -1,6 +1,6 @@
 ## GET OLD
     scoreboard players reset #temp l.room.current
-    scoreboard players operation #temp l.room.current = @s l.room.current
+    execute if score @s l.room.current matches -2147483648..2147483647 run scoreboard players operation #temp l.room.current = @s l.room.current
     tag @s remove l.room.inside
 ##
 
@@ -16,5 +16,6 @@
 ##
 
 ## IF ROOM CHANGED => MAKE A CALL
+    execute unless score @s l.room.current matches -2147483648..2147483647 unless score #temp l.room.current matches -2147483648..2147483647 run return run return fail
     execute if entity @s[type=player] unless score #temp l.room.current = @s l.room.current at @s run function #zleinad_pack_manager:call/room/changed
 ##
