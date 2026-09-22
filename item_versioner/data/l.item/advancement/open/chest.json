@@ -1,14 +1,12 @@
 {
     "criteria": {
-        "container":{
+        "container": {
             "trigger": "minecraft:default_block_use",
             "conditions": {
-                "location": [
-                    {
-                        "condition": "minecraft:block_state_property",
-                        "block": "minecraft:chest"
-                    }
-                ]
+                "location": {
+                    "type": "minecraft:match_block",
+                    "blocks": "minecraft:chest"
+                }
             }
         }
     },

@@ -1,8 +1,6 @@
-[
-    {
-      "function": "minecraft:set_enchantments",
-      "enchantments": {
+{
+    "type": "minecraft:set_enchantments",
+    "enchantments": {
         "l.hit_det:main": 0
-      }
     }
-  ]
+}

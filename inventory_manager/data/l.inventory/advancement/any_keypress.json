@@ -1,70 +1,68 @@
 {
     "criteria": {
-        "keypress":{
+        "keypress": {
             "trigger": "tick",
             "conditions": {
-                "player": [
-                    {
-                        "condition": "any_of",
-                        "terms": [
-                            {
-                                "condition": "entity_properties",
-                                "entity": "this",
-                                "predicate": {
-                                    "type_specific/player": {
-                                        "input": {
-                                            "backward": true
-                                        }
-                                    }
-                                }
-                            },
-                            {
-                                "condition": "entity_properties",
-                                "entity": "this",
-                                "predicate": {
-                                    "type_specific/player": {
-                                        "input": {
-                                            "forward": true
-                                        }
-                                    }
-                                }
-                            },
-                            {
-                                "condition": "entity_properties",
-                                "entity": "this",
-                                "predicate": {
-                                    "type_specific/player": {
-                                        "input": {
-                                            "left": true
-                                        }
-                                    }
-                                }
-                            },
-                            {
-                                "condition": "entity_properties",
-                                "entity": "this",
-                                "predicate": {
-                                    "type_specific/player": {
-                                        "input": {
-                                            "right": true
-                                        }
-                                    }
-                                }
-                            },
-                            {
-                                "condition": "entity_properties",
-                                "entity": "this",
-                                "predicate": {
-                                    "type_specific/player": {
-                                        "input": {
-                                            "jump": true
-                                        }
+                "player": {
+                    "type": "any_of",
+                    "terms": [
+                        {
+                            "type": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "type_specific/player": {
+                                    "input": {
+                                        "backward": true
                                     }
                                 }
                             }
-                        ]
-                    }
-                ]
+                        },
+                        {
+                            "type": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "type_specific/player": {
+                                    "input": {
+                                        "forward": true
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "type": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "type_specific/player": {
+                                    "input": {
+                                        "left": true
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "type": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "type_specific/player": {
+                                    "input": {
+                                        "right": true
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "type": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "type_specific/player": {
+                                    "input": {
+                                        "jump": true
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
             }
         }
     }

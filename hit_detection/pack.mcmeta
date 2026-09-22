@@ -5,5 +5,18 @@
         "description": [{"text": "Made by Leinad677\n","color": "#3c00ff"},{"text": "Adds a fixed item on entities that manages all entity related damage, NOT ENVIRONMENT","color":"#a4dfeb"}],
         "min_format": 65,
         "max_format": 9999
-               }
+    },
+    "overlays": {
+        "entries": [
+            {
+                "directory": "pre_26_3",
+                "formats": {
+                    "max_inclusive": 120,
+                    "min_inclusive": 65
+                },
+                "min_format": 65,
+                "max_format": 120
+            }
+        ]
+    }
 }

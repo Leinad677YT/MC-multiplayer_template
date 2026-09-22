@@ -25,6 +25,15 @@
                 },
                 "min_format": 65,
                 "max_format": [107,0]
+            },
+            {
+                "directory": "pre_26_3",
+                "formats": {
+                    "max_inclusive": 120,
+                    "min_inclusive": 65
+                },
+                "min_format": 65,
+                "max_format": 120
             }
         ]
     }

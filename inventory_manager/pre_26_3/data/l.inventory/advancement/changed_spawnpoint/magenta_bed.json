@@ -1,0 +1,24 @@
+{
+    "criteria": {
+        "respawn_blocks":{
+            "trigger": "any_block_use",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "minecraft:magenta_bed"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "l.inventory:auxiliary/new_spawn_type/magenta_bed"
+    }
+}

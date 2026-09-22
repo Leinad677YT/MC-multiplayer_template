@@ -1,0 +1,37 @@
+{
+    "condition": "minecraft:any_of",
+    "terms": [
+        {
+            "condition": "minecraft:inverted",
+            "term": {
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "leinad_temp:item",
+                    "path": "block.components.\"minecraft:custom_data\".l_item_global_version"
+                },
+                "range": {
+                    "min": 0
+                }
+            }
+        },
+        {
+            "condition": "minecraft:value_check",
+            "value": {
+                "type": "minecraft:storage",
+                "storage": "leinad_temp:item",
+                "path": "block.components.\"minecraft:custom_data\".l_item_global_version"
+            },
+            "range": {
+                "max": {
+                    "type": "minecraft:score",
+                    "target": {
+                        "type": "minecraft:fixed",
+                        "name": "#l.item.global_item_version"
+                    },
+                    "score": "l.core.temp_condition"
+                }
+            }
+        }
+    ]
+}

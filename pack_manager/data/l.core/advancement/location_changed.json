@@ -1,40 +1,45 @@
 {
     "criteria": {
-        "change":{
+        "change": {
             "trigger": "tick",
             "conditions": {
                 "player": {
-                    "movement": {
-                        "speed": {
-                            "min": 0.0000001
-                        }
-                    },
-                    "periodic_tick":4
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "movement": {
+                            "speed": {
+                                "min": 1e-07
+                            }
+                        },
+                        "periodic_tick": 4
+                    }
                 }
             }
         },
-		"pearl": {
-			"trigger": "minecraft:entity_hurt_player",
-			"conditions": {
+        "pearl": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
                 "damage": {
                     "type": {
                         "tags": [
                             {
-                                "id": "is_fall",
+                                "id": "#is_fall",
                                 "expected": true
                             }
                         ]
                     }
                 }
             }
-		}
+        }
     },
-	"requirements": [
-		[
-			"change","pearl"
-		]
-	],
+    "requirements": [
+        [
+            "change",
+            "pearl"
+        ]
+    ],
     "rewards": {
-		"function": "l.core:player_management/player_moved_speed"
+        "function": "l.core:player_management/player_moved_speed"
     }
 }

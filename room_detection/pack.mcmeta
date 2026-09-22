@@ -5,5 +5,18 @@
         "description": "Adds an easy way to get which room a player is inside of",
         "min_format": 65,
         "max_format": 9999
-               }
+    },
+    "overlays": {
+        "entries": [
+            {
+                "directory": "pre_26_3",
+                "formats": {
+                    "max_inclusive": 120,
+                    "min_inclusive": 65
+                },
+                "min_format": 65,
+                "max_format": 120
+            }
+        ]
+    }
 }

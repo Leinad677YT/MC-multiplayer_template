@@ -1,8 +1,8 @@
 {
-    "condition": "minecraft:all_of",
+    "type": "minecraft:all_of",
     "terms": [
         {
-            "condition": "entity_scores",
+            "type": "entity_scores",
             "entity": "this",
             "scores": {
                 "l.core.time_since_death": {
@@ -11,9 +11,9 @@
             }
         },
         {
-            "condition": "inverted",
+            "type": "inverted",
             "term": {
-                "condition": "entity_scores",
+                "type": "entity_scores",
                 "entity": "this",
                 "scores": {
                     "l.core.deathCount": 0

@@ -1,8 +1,8 @@
 {
-    "condition": "any_of",
+    "type": "any_of",
     "terms": [
         {
-            "condition": "entity_properties",
+            "type": "entity_properties",
             "entity": "this",
             "predicate": {
                 "type_specific/player": {
@@ -13,7 +13,7 @@
             }
         },
         {
-            "condition": "entity_properties",
+            "type": "entity_properties",
             "entity": "this",
             "predicate": {
                 "type_specific/player": {
@@ -24,7 +24,7 @@
             }
         },
         {
-            "condition": "entity_properties",
+            "type": "entity_properties",
             "entity": "this",
             "predicate": {
                 "type_specific/player": {
@@ -35,7 +35,7 @@
             }
         },
         {
-            "condition": "entity_properties",
+            "type": "entity_properties",
             "entity": "this",
             "predicate": {
                 "type_specific/player": {
@@ -46,7 +46,7 @@
             }
         },
         {
-            "condition": "entity_properties",
+            "type": "entity_properties",
             "entity": "this",
             "predicate": {
                 "type_specific/player": {

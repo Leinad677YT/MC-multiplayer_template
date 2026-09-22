@@ -1,17 +1,17 @@
 {
-    "condition": "minecraft:all_of",
+    "type": "minecraft:all_of",
     "terms": [
         {
-            "condition": "entity_scores",
+            "type": "entity_scores",
             "entity": "this",
             "scores": {
                 "l.login.online": 1
             }
         },
         {
-            "condition": "inverted",
+            "type": "inverted",
             "term": {
-                "condition": "entity_scores",
+                "type": "entity_scores",
                 "entity": "this",
                 "scores": {
                     "l.login.left": {

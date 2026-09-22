@@ -1,20 +1,18 @@
 {
     "criteria": {
-        "respawn_blocks":{
+        "respawn_blocks": {
             "trigger": "any_block_use",
             "conditions": {
-                "location": [
-                    {
-                        "condition": "location_check",
-                        "predicate": {
-                            "block": {
-                                "blocks": [
-                                    "minecraft:cyan_bed"
-                                ]
-                            }
+                "location": {
+                    "type": "location_check",
+                    "predicate": {
+                        "block": {
+                            "blocks": [
+                                "minecraft:cyan_bed"
+                            ]
                         }
                     }
-                ]
+                }
             }
         }
     },

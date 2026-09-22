@@ -1,0 +1,12 @@
+{
+    "condition": "minecraft:location_check",
+    "predicate": {
+        "block": {
+            "predicates": {
+                "minecraft:custom_data": {
+                    "l_item_global_version": {}
+                }
+            }
+        }
+    }
+}

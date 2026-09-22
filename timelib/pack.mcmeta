@@ -5,5 +5,19 @@
         "description": "Data Pack library for getting the real life date & time.\nCreated by CMDred.",
         "min_format": 65,
         "max_format": 9999
+    },
+    "overlays": {
+        "entries": [
+            {
+                "directory": "pre_26_3",
+                "formats": {
+                    "max_inclusive": 120,
+                    "min_inclusive": 65
+                },
+                "min_format": 65,
+                "max_format": 120
+            }
+        ]
     }
+
 }
