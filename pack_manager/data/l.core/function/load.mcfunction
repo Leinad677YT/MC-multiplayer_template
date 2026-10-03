@@ -20,8 +20,6 @@
         scoreboard players add #newID l.core.entity_id 0
     scoreboard objectives add l.core.entity_type dummy
         # 10 = on-spot_menus
-    scoreboard objectives add l.core.owner_id dummy
-    scoreboard objectives add l.core.last_dimension dummy
     scoreboard objectives add l.core.deathCount deathCount
     scoreboard objectives add l.core.time_since_death minecraft.custom:minecraft.time_since_death
 ## 

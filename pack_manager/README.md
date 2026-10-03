@@ -130,6 +130,8 @@ As the core of the library, this datapack controls the order of execution inside
     - `l.user:login/session/update_mode_with_\*`  
         > Modifies the `mode` the target player is on, this is what modules like `inventory_manager` will use for "sub-saves" on the player data file.
     ___
+    - `l.user:misc/is_mt_loaded`  
+        > Returns 1, works as a standard way to check if the library has been loaded.
     - `l.user:misc/lowercase_nickname`  
         > Sets the `lower` subpath of the storage `leinad_temp:player playerdata` with the lowercased version of it's other subpath `name`.
     - `l.user:misc/execute_queue`  
